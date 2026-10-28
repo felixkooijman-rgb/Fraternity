@@ -1,0 +1,37 @@
+{
+  "slug": "YYYY-MM-DD-home-away-player",
+  "theme": "psv",
+  "match": {
+    "home": { "name": "Full club name", "display": "SHORT" },
+    "away": { "name": "Full club name", "display": "SHORT" },
+    "score": { "home": 0, "away": 0 },
+    "date": "YYYY-MM-DD",
+    "kickoff": null,
+    "stadium": "Stadium name at the time",
+    "city": "",
+    "country": "",
+    "competition": "",
+    "phase": "",
+    "matchday": null
+  },
+  "goals": [
+    { "team": "home", "player": "Full Name", "display": "SURNAME", "minute": 90, "stoppage": null, "type": "regular" }
+  ],
+  "featured": {
+    "player": { "full_name": "", "display": "SURNAME", "number": 0, "team": "home", "position": "", "started": true },
+    "moment": { "kind": "goal", "minute": 90 },
+    "headline": "Short factual headline"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not an official tactical formation.",
+    "home": { "formation": { "value": "4-3-3", "status": "estimated" }, "rows": [[], [], [], []], "subs": [], "manager": "" },
+    "away": { "formation": { "value": "4-3-3", "status": "estimated" }, "rows": [[], [], [], []], "subs": [], "manager": "" }
+  },
+  "display": { "showScorers": true, "showLineups": true, "showSubs": true },
+  "brand": { "name": "FRATERNITY" },
+  "verification": {
+    "confirmed": [],
+    "needs_manual_check": [],
+    "sources": [{ "title": "", "url": "", "used_for": "" }]
+  }
+}

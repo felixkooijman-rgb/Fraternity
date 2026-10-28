@@ -1,0 +1,33 @@
+{
+  "generated": "2026-10-28T13:24:31.626Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation 4-3-3 is estimated; it is not printed as fact",
+      "lineups.away formation 4-1-4-1 is estimated; it is not printed as fact",
+      "MANUAL CHECK: Tillman's first goal: 87' (ESPN, Sportsmole, Worldfootball) vs 88' (Football Web Pages) – 87' used",
+      "MANUAL CHECK: Full bench lists (unused substitutes) taken from the brand reference poster; not cross-checked against the official UEFA match sheet",
+      "MANUAL CHECK: Shakhtar manager Marino Pušić – matches the period, confirm against UEFA match sheet",
+      "MANUAL CHECK: Line-up row arrangement is a display arrangement, not a verified tactical formation",
+      "MANUAL CHECK: PSV wore the red/white striped home kit (standard for home matches) – confirm against match photography before print"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"SHAKHTAR\" 112→111.36"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

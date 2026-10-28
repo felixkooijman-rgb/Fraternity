@@ -1,0 +1,20 @@
+{
+  "id": "psv",
+  "label": "PSV Eindhoven – red/white striped home shirt",
+  "colors": {
+    "background": "#E1181F",
+    "stripe": "#FFFFFF",
+    "text": "#FFFFFF",
+    "rule": "#111111",
+    "accent": "#D9A11B",
+    "numberGap": "#E1181F",
+    "nameOutline": "#E1181F",
+    "frame": "#161616",
+    "brand": "#111111"
+  },
+  "stripes": {
+    "side": true,
+    "collar": true,
+    "lowerShirt": true
+  }
+}

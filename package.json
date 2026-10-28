@@ -1,0 +1,12 @@
+{
+  "name": "fraternity-posters",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Print-ready football match poster pipeline",
+  "scripts": {
+    "render": "node poster/render.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.47.0"
+  }
+}

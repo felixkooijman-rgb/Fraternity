@@ -1,0 +1,235 @@
+{
+  "slug": "2024-11-27-psv-shakhtar-tillman",
+  "theme": "psv",
+  "match": {
+    "home": {
+      "name": "PSV Eindhoven",
+      "display": "PSV"
+    },
+    "away": {
+      "name": "Shakhtar Donetsk",
+      "display": "SHAKHTAR"
+    },
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "date": "2024-11-27",
+    "kickoff": "21:00 CET",
+    "stadium": "Philips Stadion",
+    "city": "Eindhoven",
+    "country": "Netherlands",
+    "competition": "Champions League",
+    "phase": "League Phase",
+    "matchday": 5
+  },
+  "goals": [
+    {
+      "team": "away",
+      "player": "Danylo Sikan",
+      "display": "SIKAN",
+      "minute": 8,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Oleksandr Zubkov",
+      "display": "ZUBKOV",
+      "minute": 37,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Malik Tillman",
+      "display": "TILLMAN",
+      "minute": 87,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Malik Tillman",
+      "display": "TILLMAN",
+      "minute": 90,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Ricardo Pepi",
+      "display": "PEPI",
+      "minute": 90,
+      "stoppage": 5,
+      "type": "regular"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Malik Tillman",
+      "display": "TILLMAN",
+      "number": 7,
+      "team": "home",
+      "position": "Attacking midfielder",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 90
+    },
+    "headline": "Tillman strikes twice late as PSV turn 0-2 into a 3-2 win"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper) based on published line-ups, not an official tactical formation.",
+    "home": {
+      "formation": {
+        "value": "4-3-3",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Lang",
+          "De Jong",
+          "Bakayoko"
+        ],
+        [
+          "Tillman",
+          "Mauro Júnior",
+          "Saibari"
+        ],
+        [
+          "Dams",
+          "Boscagli",
+          "Flamingo",
+          "Karsdorp"
+        ],
+        [
+          "Benítez"
+        ]
+      ],
+      "subs": [
+        "Schiks",
+        "Drommel",
+        "Obispo",
+        "Oppegård",
+        "Babadi",
+        "Til",
+        "Ledezma",
+        "Lozano",
+        "Pepi"
+      ],
+      "manager": "Peter Bosz"
+    },
+    "away": {
+      "formation": {
+        "value": "4-1-4-1",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Kevin",
+          "Sikan",
+          "Zubkov"
+        ],
+        [
+          "Sudakov",
+          "Bondarenko",
+          "Kryskiv"
+        ],
+        [
+          "P. Henrique",
+          "Matviyenko",
+          "Bondar",
+          "Konoplya"
+        ],
+        [
+          "Riznyk"
+        ]
+      ],
+      "subs": [
+        "Fesyun",
+        "Ghram",
+        "Azarov",
+        "Tobias",
+        "Stepanenko",
+        "Franjic",
+        "Gomes",
+        "Newerton",
+        "Eguinaldo",
+        "Shved",
+        "Pedrinho",
+        "Traoré"
+      ],
+      "manager": "Marino Pušić"
+    }
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": true
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "verification": {
+    "confirmed": [
+      "Final score PSV 3-2 Shakhtar Donetsk (ESPN, Reuters/SuperSport, beIN, NL Times)",
+      "Date 27.11.2024, Philips Stadion, UEFA Champions League league phase (ESPN, Worldfootball)",
+      "Goals: Sikan 8', Zubkov 37', Tillman 87', Tillman 90', Pepi 90+5' (ESPN, Sportsmole, Worldfootball)",
+      "Malik Tillman wore #7 for PSV in 2024/25 (Eindhoven News squad numbers July 2024, ESPN, Sofascore)",
+      "Tillman started; Pepi came on as a substitute (ESPN, SuperSport)",
+      "Starting XIs of both teams (ESPN, Worldfootball, Soccerway)"
+    ],
+    "needs_manual_check": [
+      "Tillman's first goal: 87' (ESPN, Sportsmole, Worldfootball) vs 88' (Football Web Pages) – 87' used",
+      "Full bench lists (unused substitutes) taken from the brand reference poster; not cross-checked against the official UEFA match sheet",
+      "Shakhtar manager Marino Pušić – matches the period, confirm against UEFA match sheet",
+      "Line-up row arrangement is a display arrangement, not a verified tactical formation",
+      "PSV wore the red/white striped home kit (standard for home matches) – confirm against match photography before print"
+    ],
+    "sources": [
+      {
+        "title": "ESPN – PSV 3-2 Shakhtar line-ups",
+        "url": "https://www.espn.com/soccer/lineups/_/gameId/720408",
+        "used_for": "line-ups, goals"
+      },
+      {
+        "title": "ESPN – match centre",
+        "url": "https://global.espn.com/football/match/_/gameId/720408/shakhtar-donetsk-psv-eindhoven",
+        "used_for": "score, goal minutes"
+      },
+      {
+        "title": "Worldfootball.net – line-ups",
+        "url": "https://www.worldfootball.net/match-report/co19/champions-league/ma10681697/psv-eindhoven_shakhtar-donetsk/lineup/",
+        "used_for": "line-ups, goals"
+      },
+      {
+        "title": "Soccerway – match page",
+        "url": "https://int.soccerway.com/matches/2024/11/27/europe/uefa-champions-league/psv-nv/joint-stock-company-fc-shakhtar-donetsk/4526853/",
+        "used_for": "Shakhtar XI"
+      },
+      {
+        "title": "Sportsmole – match page",
+        "url": "https://www.sportsmole.co.uk/football/league/psv-eindhoven-vs-shakhtar-donetsk_game_216347.html",
+        "used_for": "goal minutes"
+      },
+      {
+        "title": "Football Web Pages – match page",
+        "url": "https://www.footballwebpages.co.uk/match/2024-2025/champions-league/psv-eindhoven/shakhtar-donetsk/512099",
+        "used_for": "goal minutes (87'/88' discrepancy)"
+      },
+      {
+        "title": "SuperSport / Reuters – match report",
+        "url": "https://supersport.com/football/general/news/c6d9eab4-54b9-41f1-a4f9-c646d8492251/psv-stage-dramatic-comeback-with-three-late-goals-to-beat-shakhtar",
+        "used_for": "narrative, Pepi as substitute"
+      },
+      {
+        "title": "NL Times – match report",
+        "url": "https://nltimes.nl/2024/11/27/psv-score-three-goals-ten-minutes-complete-astounding-comeback-shakhtar",
+        "used_for": "narrative"
+      },
+      {
+        "title": "Eindhoven News – PSV shirt numbers 2024/25",
+        "url": "https://eindhovennews.com/news/2024/07/psv-announces-shirt-numbers-for-2024-25-season",
+        "used_for": "Tillman #7"
+      }
+    ]
+  }
+}

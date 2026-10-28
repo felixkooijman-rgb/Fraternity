@@ -1,0 +1,185 @@
+#!/usr/bin/env node
+'use strict';
+// Usage: node poster/render.js matches/<slug>.json [--force] [--no-print] [--out output]
+//
+// Produces in output/<slug>/:
+//   poster.svg       editable master (live text, embedded fonts, fitted)
+//   preview.jpg      1200×1800 web preview (trim area)
+//   print.pdf        vector print file incl. bleed (fonts embedded by Chromium)
+//   print.png        6000×9000 trim (+bleed) raster at 300 dpi for 50.8×76.2 cm
+//   match.json       the verified match data used
+//   sources.md       sources + items flagged for manual confirmation
+//   qa-report.json   data checks + layout checks (overlaps, safe area, fitting)
+
+const fs = require('fs');
+const path = require('path');
+const { chromium } = require('playwright');
+const { validate } = require('./lib/validate');
+const { buildSvg } = require('./lib/build-svg');
+
+const ROOT = path.join(__dirname, '..');
+const PRINT_SCALE = 3; // 2000 units × 3 = 6000 px trim width
+
+function parseArgs(argv) {
+  const args = { force: false, print: true, out: path.join(ROOT, 'output') };
+  const rest = [];
+  for (let i = 0; i < argv.length; i++) {
+    if (argv[i] === '--force') args.force = true;
+    else if (argv[i] === '--no-print') args.print = false;
+    else if (argv[i] === '--out') args.out = path.resolve(argv[++i]);
+    else rest.push(argv[i]);
+  }
+  args.input = rest[0];
+  return args;
+}
+
+function sourcesMd(data, qa) {
+  const v = data.verification || {};
+  const lines = [`# Sources – ${data.match.home.name} ${data.match.score.home}-${data.match.score.away} ${data.match.away.name} (${data.match.date})`, ''];
+  lines.push('## Sources', '');
+  for (const s of v.sources || []) lines.push(`- [${s.title}](${s.url}) — ${s.used_for}`);
+  lines.push('', '## Confirmed', '');
+  for (const c of v.confirmed || []) lines.push(`- ${c}`);
+  lines.push('', '## Needs manual confirmation', '');
+  for (const c of v.needs_manual_check || []) lines.push(`- [ ] ${c}`);
+  if (qa.layout.errors.length) {
+    lines.push('', '## Layout QA errors', '');
+    for (const e of qa.layout.errors) lines.push(`- ${e}`);
+  }
+  return lines.join('\n') + '\n';
+}
+
+// Runs inside the page: shrink text that is too wide, then check overlaps and safe area.
+function fitAndCheck() {
+  const svg = document.querySelector('svg');
+  const fitted = [];
+  for (const t of svg.querySelectorAll('text[data-maxw]')) {
+    const max = parseFloat(t.dataset.maxw);
+    const w = t.getBBox().width;
+    if (w > max) {
+      const s = parseFloat(t.getAttribute('font-size'));
+      const ns = Math.floor(s * (max / w) * 100) / 100;
+      t.setAttribute('font-size', ns);
+      if (t.hasAttribute('letter-spacing')) t.setAttribute('letter-spacing', (parseFloat(t.getAttribute('letter-spacing')) * ns / s).toFixed(2));
+      fitted.push(`"${t.textContent}" ${s}→${ns}`);
+    }
+  }
+  const [sx, sy, sw, sh] = svg.dataset.safe.split(' ').map(Number);
+  const boxes = [...svg.querySelectorAll('text[data-qa]')].map((t) => ({ t: t.textContent, b: t.getBBox() }));
+  const errors = [];
+  for (const { t, b } of boxes) {
+    if (b.x < sx || b.y < sy || b.x + b.width > sx + sw || b.y + b.height > sy + sh) errors.push(`"${t}" leaves the safe area`);
+  }
+  // Glyph boxes include ascender/descender space; shrink vertically so stacked lines don't false-positive.
+  const tight = (b) => ({ x: b.x, y: b.y + b.height * 0.22, w: b.width, h: b.height * 0.6 });
+  for (let i = 0; i < boxes.length; i++) {
+    for (let j = i + 1; j < boxes.length; j++) {
+      const a = tight(boxes[i].b);
+      const b = tight(boxes[j].b);
+      if (a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.h && b.y < a.y + a.h) {
+        errors.push(`"${boxes[i].t}" overlaps "${boxes[j].t}"`);
+      }
+    }
+  }
+  for (const t of svg.querySelectorAll('[data-maxw],[data-qa]')) {
+    t.removeAttribute('data-maxw');
+    t.removeAttribute('data-qa');
+  }
+  return { fitted, errors, svg: svg.outerHTML };
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  if (!args.input) {
+    console.error('usage: node poster/render.js matches/<slug>.json [--force] [--no-print] [--out dir]');
+    process.exit(2);
+  }
+  const data = JSON.parse(fs.readFileSync(args.input, 'utf8'));
+  const theme = typeof data.theme === 'string'
+    ? JSON.parse(fs.readFileSync(path.join(__dirname, 'themes', `${data.theme}.json`), 'utf8'))
+    : data.theme;
+
+  const check = validate(data);
+  check.warnings.forEach((w) => console.warn(`warn  ${w}`));
+  check.errors.forEach((e) => console.error(`ERROR ${e}`));
+  if (check.errors.length && !args.force) {
+    console.error('Data validation failed – fix the match file (or use --force for a draft).');
+    process.exit(1);
+  }
+
+  const logoPath = path.join(__dirname, 'assets', 'brand', 'logo.svg');
+  const brandLogo = fs.existsSync(logoPath)
+    ? fs.readFileSync(logoPath, 'utf8').replace(/<\?xml[^>]*>/, '')
+    : null;
+  const { svg, W, H, bleed } = buildSvg(data, theme, { brandLogo });
+  const fullW = W + 2 * bleed;
+  const fullH = H + 2 * bleed;
+
+  const outDir = path.join(args.out, data.slug);
+  fs.mkdirSync(outDir, { recursive: true });
+
+  const browser = await chromium.launch();
+  try {
+    const html = `<!doctype html><html><head><meta charset="utf-8"><style>
+      @page { size: ${fullW / 100}in ${fullH / 100}in; margin: 0 }
+      html, body { margin: 0; padding: 0; background: #fff }
+      svg { display: block; width: ${fullW}px; height: ${fullH}px }
+    </style></head><body>${svg}</body></html>`;
+
+    const page = await browser.newPage({ viewport: { width: fullW, height: fullH } });
+    await page.setContent(html);
+    await page.evaluate(() => document.fonts.ready);
+    const fontsOk = await page.evaluate(() => document.fonts.check('100px "Poster Display"') && document.fonts.check('600 100px "Poster Text"'));
+    const layout = await page.evaluate(fitAndCheck);
+    if (!fontsOk) layout.errors.push('embedded fonts failed to load');
+    fs.writeFileSync(path.join(outDir, 'poster.svg'), layout.svg);
+
+    const finalHtml = html.replace(svg, layout.svg);
+    const trimClip = { x: bleed, y: bleed, width: W, height: H };
+
+    const preview = await browser.newPage({ viewport: { width: fullW, height: fullH }, deviceScaleFactor: 0.6 });
+    await preview.setContent(finalHtml);
+    await preview.evaluate(() => document.fonts.ready);
+    await preview.screenshot({ path: path.join(outDir, 'preview.jpg'), type: 'jpeg', quality: 88, clip: trimClip });
+    await preview.close();
+
+    if (args.print) {
+      await page.setContent(finalHtml);
+      await page.evaluate(() => document.fonts.ready);
+      await page.pdf({ path: path.join(outDir, 'print.pdf'), width: `${fullW / 100}in`, height: `${fullH / 100}in`, printBackground: true, preferCSSPageSize: true });
+
+      const big = await browser.newPage({ viewport: { width: fullW, height: fullH }, deviceScaleFactor: PRINT_SCALE });
+      await big.setContent(finalHtml);
+      await big.evaluate(() => document.fonts.ready);
+      await big.screenshot({ path: path.join(outDir, 'print.png'), type: 'png', fullPage: false });
+      await big.close();
+    }
+
+    const qa = {
+      generated: new Date().toISOString(),
+      data: check,
+      layout: { fitted: layout.fitted, errors: layout.errors },
+      output: {
+        trim_px: [W * PRINT_SCALE, H * PRINT_SCALE],
+        bleed_px: bleed * PRINT_SCALE,
+        print_png_px: args.print ? [fullW * PRINT_SCALE, fullH * PRINT_SCALE] : null,
+        dpi_at: `${(W * PRINT_SCALE / 300 * 2.54).toFixed(1)} × ${(H * PRINT_SCALE / 300 * 2.54).toFixed(1)} cm trim @ 300 dpi`,
+      },
+    };
+    fs.writeFileSync(path.join(outDir, 'qa-report.json'), JSON.stringify(qa, null, 2) + '\n');
+    fs.writeFileSync(path.join(outDir, 'match.json'), JSON.stringify(data, null, 2) + '\n');
+    fs.writeFileSync(path.join(outDir, 'sources.md'), sourcesMd(data, qa));
+
+    layout.fitted.forEach((f) => console.log(`fit   ${f}`));
+    layout.errors.forEach((e) => console.error(`LAYOUT ${e}`));
+    console.log(`done  ${path.relative(ROOT, outDir)}/ (${fs.readdirSync(outDir).join(', ')})`);
+    if (layout.errors.length) process.exitCode = 1;
+  } finally {
+    await browser.close();
+  }
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
