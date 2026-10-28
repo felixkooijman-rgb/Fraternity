@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T13:36:41.342Z",
+  "generated": "2026-10-28T13:38:49.749Z",
   "data": {
     "errors": [],
     "warnings": [
@@ -16,8 +16,10 @@
   },
   "layout": {
     "fitted": [
+      "\"DERDE DIVISIE SIDE EXCELSIOR ’31 KNOCK EREDIVISIE CLUB ADO OUT ON PENALTIES\" 34→33.26",
       "\"EXCELSIOR ’31\" 112→85.1",
-      "\"ADO DEN HAAG\" 112→80.14"
+      "\"ADO DEN HAAG\" 112→80.14",
+      "\"EXCELSIOR\" 300→294.14"
     ],
     "errors": []
   },

@@ -1,5 +1,5 @@
 {
-  "slug": "2026-10-27-excelsior31-ado-reimink",
+  "slug": "2026-10-27-excelsior31-ado",
   "theme": "excelsior31",
   "match": {
     "home": {
@@ -56,18 +56,16 @@
     ]
   },
   "featured": {
-    "player": {
-      "full_name": "Kevin Reimink",
-      "display": "REIMINK",
-      "number": 1,
-      "team": "home",
-      "position": "Goalkeeper",
-      "started": true
+    "club": {
+      "name": "Excelsior '31",
+      "display": "EXCELSIOR",
+      "mark": "’31",
+      "team": "home"
     },
     "moment": {
       "kind": "shootout"
     },
-    "headline": "Reimink saves twice as Excelsior ’31 knock ADO out on penalties"
+    "headline": "Derde Divisie side Excelsior ’31 knock Eredivisie club ADO out on penalties"
   },
   "lineups": {
     "note": "Rows are a display arrangement (attack → goalkeeper) following the published line-up order, not verified tactical positions.",
@@ -158,10 +156,10 @@
       "Tuesday 27.10.2026, Sportpark De Koerbelt, Rijssen, KNVB Beker first round (Oost, NL Times, fcupdate)",
       "Goals: Schrijver before half-time (header from a corner), Thomas 57' (assist Žamburek) (NOS, Omroep West, fcupdate)",
       "Kevin Reimink started in goal and saved two penalties (Van Mieghem, Kilo) (Voetbalprimeur, NL Times)",
-      "Reimink wears #1 for Excelsior '31 (club squad page, club player profile, voetbal.com, Flashscore)",
       "Excelsior '31 XI: Reimink, De Wilde, Schrijver, De Jong, Schmidt, Leeflang, Wesselink, Ter Haar, Leemhuis, Holsink, Seppenwoolde (Omroep West/Haaglanden Voetbal, ADO match report)",
       "ADO XI: Thiede, Raterink, Wilhelm, Hokke, Sylla, Jiménez, Žamburek, De Bruin, Thomas, Pozo, Peupion (Omroep West live blog)",
-      "Excelsior '31 home kit: red shirt, white shorts, red socks (excelsior31.nl, nl.wikipedia)"
+      "Excelsior '31 home kit: red shirt, white shorts, red socks (excelsior31.nl, nl.wikipedia)",
+      "Excelsior '31 play in the Derde Divisie, ADO Den Haag in the Eredivisie (Voetbalzone, Omroep West, fcupdate)"
     ],
     "needs_manual_check": [
       "Schrijver's goal minute 45+2' comes from one line-up source; other reports only say 'just before half-time'",
@@ -229,19 +227,14 @@
         "used_for": "date, venue, goals"
       },
       {
-        "title": "Excelsior'31 – Kevin Reimink (selectie)",
-        "url": "https://www.excelsior31.nl/vereniging/teams/veld-zaterdag/senioren-1/selectie/keeper-kevin-reimink",
-        "used_for": "shirt number 1"
-      },
-      {
         "title": "Excelsior'31 – algemene informatie",
         "url": "https://www.excelsior31.nl/vereniging/algemene-informatie-over-excelsior311",
         "used_for": "home kit colours"
       },
       {
-        "title": "voetbal.com – Excelsior '31 selectie",
-        "url": "https://www.voetbal.com/teams/te575/excelsior-31/",
-        "used_for": "shirt number 1 (2026/27)"
+        "title": "Voetbalzone – derdedivisionist Excelsior '31 kegelt Eredivisie-club uit KNVB Beker",
+        "url": "https://www.voetbalzone.nl/lijsten/schande-compleet-ado-den-haag-door-derdedivisionist-uitgeschakeld-in-knvb-beker/bltec523050da1398bd",
+        "used_for": "league levels"
       }
     ]
   }

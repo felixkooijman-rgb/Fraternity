@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T13:24:31.626Z",
+  "generated": "2026-10-28T13:38:50.888Z",
   "data": {
     "errors": [],
     "warnings": [
@@ -24,10 +24,7 @@
       9000
     ],
     "bleed_px": 36,
-    "print_png_px": [
-      6072,
-      9072
-    ],
+    "print_png_px": null,
     "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
   }
 }

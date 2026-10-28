@@ -13,9 +13,8 @@
 - [Voetbalprimeur – Reimink kan niet te lang feestvieren](https://www.voetbalprimeur.nl/nieuws/2152100/excelsior-31-held-reimink-kan-niet-te-lang-feestvieren-na-bekerstunt-tegen-ado.html) — Reimink's saves
 - [Omroep West – Sylla: 'Oprecht mijn excuses'](https://www.omroepwest.nl/sport/5167863/ado-verdediger-sylla-na-uitschakeling-in-knvb-beker-door-excelsior-31-oprecht-mijn-excuses) — decisive miss
 - [fcupdate – Excelsior '31 zorgt voor enorme bekerstunt](https://www.fcupdate.nl/voetbalnieuws/2026/10/excelsior-31-zorgt-enorme-bekerstunt-knikkert) — date, venue, goals
-- [Excelsior'31 – Kevin Reimink (selectie)](https://www.excelsior31.nl/vereniging/teams/veld-zaterdag/senioren-1/selectie/keeper-kevin-reimink) — shirt number 1
 - [Excelsior'31 – algemene informatie](https://www.excelsior31.nl/vereniging/algemene-informatie-over-excelsior311) — home kit colours
-- [voetbal.com – Excelsior '31 selectie](https://www.voetbal.com/teams/te575/excelsior-31/) — shirt number 1 (2026/27)
+- [Voetbalzone – derdedivisionist Excelsior '31 kegelt Eredivisie-club uit KNVB Beker](https://www.voetbalzone.nl/lijsten/schande-compleet-ado-den-haag-door-derdedivisionist-uitgeschakeld-in-knvb-beker/bltec523050da1398bd) — league levels
 
 ## Confirmed
 
@@ -23,10 +22,10 @@
 - Tuesday 27.10.2026, Sportpark De Koerbelt, Rijssen, KNVB Beker first round (Oost, NL Times, fcupdate)
 - Goals: Schrijver before half-time (header from a corner), Thomas 57' (assist Žamburek) (NOS, Omroep West, fcupdate)
 - Kevin Reimink started in goal and saved two penalties (Van Mieghem, Kilo) (Voetbalprimeur, NL Times)
-- Reimink wears #1 for Excelsior '31 (club squad page, club player profile, voetbal.com, Flashscore)
 - Excelsior '31 XI: Reimink, De Wilde, Schrijver, De Jong, Schmidt, Leeflang, Wesselink, Ter Haar, Leemhuis, Holsink, Seppenwoolde (Omroep West/Haaglanden Voetbal, ADO match report)
 - ADO XI: Thiede, Raterink, Wilhelm, Hokke, Sylla, Jiménez, Žamburek, De Bruin, Thomas, Pozo, Peupion (Omroep West live blog)
 - Excelsior '31 home kit: red shirt, white shorts, red socks (excelsior31.nl, nl.wikipedia)
+- Excelsior '31 play in the Derde Divisie, ADO Den Haag in the Eredivisie (Voetbalzone, Omroep West, fcupdate)
 
 ## Needs manual confirmation
 

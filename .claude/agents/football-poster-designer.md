@@ -48,6 +48,8 @@ Render: `node poster/render.js matches/<slug>.json` (`--no-print` for a fast pre
 
 **Featured player** – full name, display surname, shirt number *at the time of the match*, club at the time, position, starter or substitute, decisive contribution. Never use a current number/club for a historical match.
 
+**Club poster (alternative hero)** – instead of a player, `featured.club` `{ "display": "EXCELSIOR", "mark": "’31", "team": "home" }` puts the club name and a mark (founding year, nickname number) where surname and shirt number go. Use it for team achievements such as cup upsets. A penalty shootout can be the decisive moment (`"moment": { "kind": "shootout" }` + `match.penalties`).
+
 **Line-ups** – starting XI for both teams, substitutes (labelled), managers. Rows in the JSON are a *display arrangement* (attack → goalkeeper); mark formations `"status": "estimated"` unless officially documented, and never print an estimated formation as fact. Never imply a player took part if they were not in the matchday squad. For a single iconic-goal poster you may hide the line-ups (`display.showLineups: false`).
 
 **Kit** – home/away kit actually worn, primary/secondary colours, collar/sleeve details, number & name style. Never assume the home team wore its home kit; never use a current-season kit for a historical match. If the exact kit cannot be verified, use a simplified, plausible design and flag it.

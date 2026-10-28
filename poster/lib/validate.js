@@ -47,19 +47,19 @@ function validate(data) {
   const sorted = [...goals].sort((a, b) => a.minute - b.minute || (a.stoppage || 0) - (b.stoppage || 0));
   if (sorted.some((g, i) => g !== goals[i])) warnings.push('goals are not in chronological order');
 
-  if (!featured || !featured.player) {
-    errors.push('featured.player is missing');
+  if (featured && featured.club) {
+    const cl = featured.club;
+    if (!cl.display) errors.push('featured.club.display is missing');
+    if (!cl.mark) errors.push('featured.club.mark is missing');
+    if (!['home', 'away'].includes(cl.team)) errors.push('featured.club.team must be home or away');
+    if (featured.moment && featured.moment.kind === 'goal') errors.push('a club poster cannot feature a single goal moment');
+  } else if (!featured || !featured.player) {
+    errors.push('featured.player or featured.club is missing');
   } else {
     const p = featured.player;
     if (!Number.isInteger(p.number) || p.number < 1 || p.number > 99) errors.push(`featured.player.number must be 1-99, got ${p.number}`);
     if (!p.display) errors.push('featured.player.display is missing');
     const mom = featured.moment;
-    if (mom && mom.kind === 'shootout') {
-      const pen = match.penalties;
-      if (!pen || !Number.isInteger(pen.home) || !Number.isInteger(pen.away)) errors.push('shootout moment needs match.penalties { home, away }');
-      else if (pen.home === pen.away) errors.push('a penalty shootout cannot end level');
-      if (match.score.home !== match.score.away) errors.push('a shootout needs a level score after play');
-    }
     if (mom && mom.kind === 'goal') {
       const hit = goals.find((g) => g.display === p.display && g.team === p.team && g.minute === mom.minute && (g.stoppage || 0) === (mom.stoppage || 0));
       if (!hit) errors.push(`featured moment ${formatMinute(mom)} is not a goal by ${p.display} in the goal list`);
@@ -72,6 +72,13 @@ function validate(data) {
       if (p.started === true && !inXI) errors.push(`featured player marked as starter but not in the ${p.team} XI`);
       if (p.started === false && inXI) errors.push(`featured player marked as substitute but listed in the ${p.team} XI`);
     }
+  }
+
+  if (featured && featured.moment && featured.moment.kind === 'shootout') {
+    const pen = match.penalties;
+    if (!pen || !Number.isInteger(pen.home) || !Number.isInteger(pen.away)) errors.push('shootout moment needs match.penalties { home, away }');
+    else if (pen.home === pen.away) errors.push('a penalty shootout cannot end level');
+    if (match.score.home !== match.score.away) errors.push('a shootout needs a level score after play');
   }
 
   if (lineups && display.showLineups !== false) {

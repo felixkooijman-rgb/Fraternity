@@ -168,7 +168,10 @@ function buildSvg(data, theme, opts = {}) {
   out.push(rule(1006, c.rule));
 
   // ---------- featured player ----------
-  const p = featured.player;
+  // Hero is either a player (surname + shirt number) or a club (name + mark such as ’31).
+  const p = featured.club
+    ? { display: featured.club.display, number: featured.club.mark }
+    : featured.player;
   out.push(text(CX, 1325, upper(p.display), { size: 300, family: 'Poster Display', weight: 400, fill: c.text, ls: 14, maxw: 1250, id: 'surname' }));
   const num = String(p.number);
   const numSize = 1080;

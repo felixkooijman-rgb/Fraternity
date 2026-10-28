@@ -1,0 +1,241 @@
+{
+  "slug": "2026-10-27-excelsior31-ado",
+  "theme": "excelsior31",
+  "match": {
+    "home": {
+      "name": "Excelsior '31",
+      "display": "Excelsior ’31"
+    },
+    "away": {
+      "name": "ADO Den Haag",
+      "display": "ADO Den Haag"
+    },
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "afterExtraTime": true,
+    "penalties": {
+      "home": 6,
+      "away": 5
+    },
+    "date": "2026-10-27",
+    "stadium": "Sportpark De Koerbelt",
+    "city": "Rijssen",
+    "country": "Netherlands",
+    "competition": "KNVB Beker",
+    "phase": "First Round"
+  },
+  "goals": [
+    {
+      "team": "home",
+      "player": "Mika Schrijver",
+      "display": "SCHRIJVER",
+      "minute": 45,
+      "stoppage": 2,
+      "type": "header"
+    },
+    {
+      "team": "away",
+      "player": "Nigel Thomas",
+      "display": "THOMAS",
+      "minute": 57,
+      "type": "regular",
+      "assist": "Jan Žamburek"
+    }
+  ],
+  "shootout": {
+    "note": "Order of kicks not fully verified; only these events are confirmed.",
+    "events": [
+      "De Jong (Excelsior '31) missed",
+      "Reimink saved from Van Mieghem (ADO)",
+      "Reimink saved from Kilo (ADO)",
+      "Schrijver (Excelsior '31) missed",
+      "Koelman (Excelsior '31) scored the decisive 6-5 kick",
+      "Sylla (ADO) shot wide"
+    ]
+  },
+  "featured": {
+    "club": {
+      "name": "Excelsior '31",
+      "display": "EXCELSIOR",
+      "mark": "’31",
+      "team": "home"
+    },
+    "moment": {
+      "kind": "shootout"
+    },
+    "headline": "Derde Divisie side Excelsior ’31 knock Eredivisie club ADO out on penalties"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper) following the published line-up order, not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "4-1-4-1",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Seppenwoolde"
+        ],
+        [
+          "Wesselink",
+          "Ter Haar",
+          "Leemhuis",
+          "Holsink"
+        ],
+        [
+          "Leeflang"
+        ],
+        [
+          "De Wilde",
+          "Schrijver",
+          "De Jong",
+          "Schmidt"
+        ],
+        [
+          "Reimink"
+        ]
+      ],
+      "subs": [
+        "Koelman",
+        "Maneschijn",
+        "Lbenay",
+        "Beverdam",
+        "Hofste",
+        "Scholten"
+      ],
+      "manager": null
+    },
+    "away": {
+      "formation": {
+        "value": "4-3-3",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Pozo",
+          "Thomas",
+          "Peupion"
+        ],
+        [
+          "Jiménez",
+          "Žamburek",
+          "De Bruin"
+        ],
+        [
+          "Sylla",
+          "Hokke",
+          "Wilhelm",
+          "Raterink"
+        ],
+        [
+          "Thiede"
+        ]
+      ],
+      "subs": [
+        "Eduardo",
+        "Waem",
+        "Kilo",
+        "Van Mieghem"
+      ],
+      "manager": "Robin Peter"
+    }
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "verification": {
+    "confirmed": [
+      "Excelsior '31 1-1 ADO Den Haag after extra time, Excelsior '31 won 6-5 on penalties (NL Times, Oost, Omroep West, ADO match report, VI)",
+      "Tuesday 27.10.2026, Sportpark De Koerbelt, Rijssen, KNVB Beker first round (Oost, NL Times, fcupdate)",
+      "Goals: Schrijver before half-time (header from a corner), Thomas 57' (assist Žamburek) (NOS, Omroep West, fcupdate)",
+      "Kevin Reimink started in goal and saved two penalties (Van Mieghem, Kilo) (Voetbalprimeur, NL Times)",
+      "Excelsior '31 XI: Reimink, De Wilde, Schrijver, De Jong, Schmidt, Leeflang, Wesselink, Ter Haar, Leemhuis, Holsink, Seppenwoolde (Omroep West/Haaglanden Voetbal, ADO match report)",
+      "ADO XI: Thiede, Raterink, Wilhelm, Hokke, Sylla, Jiménez, Žamburek, De Bruin, Thomas, Pozo, Peupion (Omroep West live blog)",
+      "Excelsior '31 home kit: red shirt, white shorts, red socks (excelsior31.nl, nl.wikipedia)",
+      "Excelsior '31 play in the Derde Divisie, ADO Den Haag in the Eredivisie (Voetbalzone, Omroep West, fcupdate)"
+    ],
+    "needs_manual_check": [
+      "Schrijver's goal minute 45+2' comes from one line-up source; other reports only say 'just before half-time'",
+      "Shootout score: majority of sources 6-5, one source 5-4 – 6-5 used",
+      "ESPN lists Maneschijn and Lbenay in the Excelsior '31 XI instead of Schmidt and Wesselink – the other sources were followed",
+      "Line-up rows are a display arrangement from the published order, not verified positions",
+      "Subs are not printed (ADO bench incomplete); the Excelsior '31 head coach was not found",
+      "Exact shirt design (plain red vs. details, collar) not verified – poster uses a simplified plain red field with tonal side bands",
+      "Excelsior '31 crest/sponsor are not reproduced (no licensed assets)"
+    ],
+    "sources": [
+      {
+        "title": "NL Times – Amateur club Excelsior '31 knocks ADO Den Haag out of Dutch Cup",
+        "url": "https://nltimes.nl/2026/10/28/amateur-club-excelsior-31-knocks-ado-den-haag-dutch-cup",
+        "used_for": "result, shootout events, venue"
+      },
+      {
+        "title": "Oost – Weergaloze bekersensatie in Rijssen",
+        "url": "https://www.oost.nl/sport/3712213/weergaloze-bekersensatie-in-rijssen-excelsior31-schakelt-na-strafschoppen-ado-den-haag-uit",
+        "used_for": "result, shootout"
+      },
+      {
+        "title": "Omroep West – Blamage ADO Den Haag in KNVB-beker",
+        "url": "https://www.omroepwest.nl/sport/5167585/blamage-ado-den-haag-in-knvb-beker-megastunt-drie-niveaus-lager-spelend-excelsior-31",
+        "used_for": "line-ups, goals"
+      },
+      {
+        "title": "ADO Den Haag – wedstrijdverslag",
+        "url": "https://adodenhaag.nl/nl/teams/1e-elftal/resultaten/excelsior-31-ado-den-haag-1368",
+        "used_for": "result, Excelsior XI"
+      },
+      {
+        "title": "Haaglanden Voetbal – ADO blameert zich in Rijssen",
+        "url": "https://haaglandenvoetbal.nl/nieuws/190616/knvb-beker-ado-den-haag-blameert-zich-in-rijssen-tegen-amateurclub/",
+        "used_for": "Excelsior XI and subs, goal minutes"
+      },
+      {
+        "title": "VI – match page",
+        "url": "https://www.vi.nl/wedstrijden/2026-10-27/excelsior-31-vs-ado-den-haag",
+        "used_for": "formation 4-1-4-1"
+      },
+      {
+        "title": "ESPN – match page",
+        "url": "https://www.espn.com/soccer/match/_/gameId/401925175/ado-den-haag-excelsior-31",
+        "used_for": "line-up cross-check (conflicting)"
+      },
+      {
+        "title": "NOS liveblog",
+        "url": "https://nos.nl/liveblog/2636918-amateurs-excelsior-31-op-voorsprong-tegen-ado-den-haag-strak-nog-acht-bekerduels",
+        "used_for": "goals, substitution"
+      },
+      {
+        "title": "Voetbalprimeur – Reimink kan niet te lang feestvieren",
+        "url": "https://www.voetbalprimeur.nl/nieuws/2152100/excelsior-31-held-reimink-kan-niet-te-lang-feestvieren-na-bekerstunt-tegen-ado.html",
+        "used_for": "Reimink's saves"
+      },
+      {
+        "title": "Omroep West – Sylla: 'Oprecht mijn excuses'",
+        "url": "https://www.omroepwest.nl/sport/5167863/ado-verdediger-sylla-na-uitschakeling-in-knvb-beker-door-excelsior-31-oprecht-mijn-excuses",
+        "used_for": "decisive miss"
+      },
+      {
+        "title": "fcupdate – Excelsior '31 zorgt voor enorme bekerstunt",
+        "url": "https://www.fcupdate.nl/voetbalnieuws/2026/10/excelsior-31-zorgt-enorme-bekerstunt-knikkert",
+        "used_for": "date, venue, goals"
+      },
+      {
+        "title": "Excelsior'31 – algemene informatie",
+        "url": "https://www.excelsior31.nl/vereniging/algemene-informatie-over-excelsior311",
+        "used_for": "home kit colours"
+      },
+      {
+        "title": "Voetbalzone – derdedivisionist Excelsior '31 kegelt Eredivisie-club uit KNVB Beker",
+        "url": "https://www.voetbalzone.nl/lijsten/schande-compleet-ado-den-haag-door-derdedivisionist-uitgeschakeld-in-knvb-beker/bltec523050da1398bd",
+        "used_for": "league levels"
+      }
+    ]
+  }
+}
