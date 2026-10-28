@@ -1,0 +1,34 @@
+{
+  "generated": "2026-10-28T14:15:23.165Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation 4-3-3 is estimated; it is not printed as fact",
+      "lineups.away formation 4-3-3 is estimated; it is not printed as fact",
+      "MANUAL CHECK: Parrott's goal: 54' in most sources, one says 55' (scored on the retake) – 54' used",
+      "MANUAL CHECK: One source spells the shootout 2–4 and others 4-2 from Go Ahead's view – AZ 2, Go Ahead Eagles 4 used",
+      "MANUAL CHECK: VI's preview had Edvardsen up front; the published line-up (Voetbalzone) is used",
+      "MANUAL CHECK: Line-up rows are a display arrangement, not verified positions",
+      "MANUAL CHECK: Purple colour (#4A1C72) and gold numbering approximated from photos; the shirt's leaf pattern is not reproduced",
+      "MANUAL CHECK: Club crests, trophy and sponsors not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"DEIJL'S LAST-GASP PENALTY PAVES THE WAY FOR GO AHEAD EAGLES' FIRST KNVB BEKER\" 34→31.99"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

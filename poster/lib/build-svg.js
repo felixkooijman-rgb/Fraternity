@@ -180,6 +180,10 @@ function buildSvg(data, theme, opts = {}) {
     if (home) out.push(text(CX - 100, 958, home, { size: 27, weight: 500, fill: c.text, anchor: 'end', maxw: 590 }));
     if (away) out.push(text(CX + 100, 958, away, { size: 27, weight: 500, fill: c.text, anchor: 'start', maxw: 590 }));
   }
+  // Shootout result under the score when the hero moment is a goal rather than the shootout.
+  if (match.penalties && featured.moment?.kind !== 'shootout') {
+    out.push(text(CX, 958, `PENS ${match.penalties.home}:${match.penalties.away}`, { size: 27, weight: 600, fill: c.accent, ls: 1, maxw: 180 }));
+  }
   out.push(rule(1006, c.rule));
 
   // ---------- featured player ----------

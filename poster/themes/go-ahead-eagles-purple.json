@@ -1,0 +1,17 @@
+{
+  "id": "go-ahead-eagles-purple",
+  "label": "Go Ahead Eagles – purple cup-final away shirt with gold numbering (2024-25). Tonal side bands are a graphic device.",
+  "colors": {
+    "background": "#4A1C72",
+    "stripe": "#FFFFFF",
+    "sideStripe": "#3A1460",
+    "text": "#FFFFFF",
+    "rule": "#E8AB4A",
+    "accent": "#E8AB4A",
+    "numberGap": "#4A1C72",
+    "nameOutline": "#4A1C72",
+    "frame": "#161616",
+    "brand": "#FFFFFF"
+  },
+  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+}
