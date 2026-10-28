@@ -12,8 +12,8 @@
 - [afc-ajax.info – Hercules - Ajax](https://www.afc-ajax.info/nl/wedstrijd/2023-12-21-Hercules-Ajax) — minutes cross-check
 - [NOS – Blamage voor Ajax](https://nos.nl/artikel/2502455-blamage-voor-ajax-nederlaag-tegen-amateurs-hercules-in-bekertoernooi) — result, narrative
 - [Sportsmole – result](https://www.sportsmole.co.uk/football/usv-hercules/knvb-beker/result/ajax-dumped-out-of-knvb-beker-by-fourth-tier-amateur-side_531928.html) — result, fourth tier
-- [USV Hercules – Geschiedenis](https://www.usvhercules.nl/algemeen/geschiedenis/) — club colours
-- [Voetbalarchieven – Hercules (Utrecht)](https://www.voetbalarchieven.nl/clubs/hercules-utrecht/) — kit description
+- [USV Hercules – Geschiedenis](https://www.usvhercules.nl/algemeen/geschiedenis/) — club colours (historical; superseded by match photo)
+- [Voetbalarchieven – Hercules (Utrecht)](https://www.voetbalarchieven.nl/clubs/hercules-utrecht/) — kit description (historical; superseded by match photo)
 - [ESPN NL – Mats Grotenbreg](https://www.espn.nl/voetbal/speler/_/id/260803/mats-grotenbreg) — shirt number, position
 
 ## Confirmed
@@ -24,7 +24,7 @@
 - Grotenbreg #4 (fcupdate line-ups, ESPN player profile 2023-24 KNVB Beker)
 - Hercules XI: Vonk, Carmelia, Beck, Zwart, Fonville, Bijl, Van Hussen, Lahri, Vermeulen, Pieters, Paulina (RTV Utrecht, Ajax Showtime)
 - Ajax XI: Ramaj, Gooijer, Šutalo, Hato, Ávila, Hlynsson, Taylor, Mikautadze, Van Axel Dongen, Akpom, Forbs (ESPN, Ajax Showtime)
-- Hercules colours: blue/white vertically striped shirt, black shorts, black socks (usvhercules.nl history, voetbalarchieven.nl)
+- Hercules kit worn vs Ajax: black/white vertically striped shirt, black shorts (match photo supplied by the brand)
 
 ## Needs manual confirmation
 
@@ -33,6 +33,6 @@
 - [ ] Hercules sub spelled 'Streng' (Voetbal.com) and 'Steng' (ESPN) – not printed
 - [ ] Ajax substitution minutes differ between sources (half-time vs ~67') – not printed
 - [ ] Line-up rows are a display arrangement, not verified positions
-- [ ] Kit actually worn at Galgenwaard (stripe width, collar) not verified against match photos – standard blue/white stripes used
 - [ ] Hercules/Ajax crests and sponsors not reproduced (no licensed assets)
 - [ ] Mats Grotenbreg passed away on 25 June 2026 – consider consulting USV Hercules / his family before selling this poster
+- [ ] Club history pages describe blue/white as the founding colours; the 2023 match photo shows black/white stripes – black/white used

@@ -1,16 +1,16 @@
 {
   "id": "hercules",
-  "label": "USV Hercules Utrecht – blue/white vertically striped shirt, black shorts",
+  "label": "USV Hercules Utrecht – black/white vertically striped shirt, black shorts (2023-24, per match photo)",
   "colors": {
-    "background": "#1C4FA1",
+    "background": "#121212",
     "stripe": "#FFFFFF",
     "text": "#FFFFFF",
-    "rule": "#111111",
-    "accent": "#111111",
-    "numberGap": "#1C4FA1",
-    "nameOutline": "#1C4FA1",
-    "frame": "#161616",
-    "brand": "#111111"
+    "rule": "#FFFFFF",
+    "accent": "#8C8C8C",
+    "numberGap": "#121212",
+    "nameOutline": "#121212",
+    "frame": "#2A2A2A",
+    "brand": "#121212"
   },
   "stripes": {
     "side": true,
