@@ -24,11 +24,31 @@ function upper(s) {
   return String(s).toLocaleUpperCase('en');
 }
 
-function fontFaces() {
+function fontFaces(theme) {
   const b64 = (f) => fs.readFileSync(path.join(FONT_DIR, f)).toString('base64');
+  const heroFont = theme.hero && theme.hero.font;
   return `
     @font-face { font-family: 'Poster Display'; src: url(data:font/ttf;base64,${b64('Anton-Regular.ttf')}) format('truetype'); }
-    @font-face { font-family: 'Poster Text'; font-weight: 200 700; src: url(data:font/ttf;base64,${b64('Oswald-Variable.ttf')}) format('truetype'); }`;
+    @font-face { font-family: 'Poster Text'; font-weight: 200 700; src: url(data:font/ttf;base64,${b64('Oswald-Variable.ttf')}) format('truetype'); }${heroFont ? `
+    @font-face { font-family: 'Poster Hero'; src: url(data:font/ttf;base64,${b64(heroFont)}) format('truetype'); }` : ''}`;
+}
+
+// Surname / shirt number in the kit's lettering style: the glyph plus an optional thin
+// parallel line (a copy in the line colour, partly covered by a copy in the background
+// colour). The group is fitted as one unit by the renderer (data-sync).
+function heroText(x, y, str, size, style, { ls = 0, maxw, line = true, id } = {}) {
+  const attrs = `font-family="${style.family}" font-size="${size}" text-anchor="middle"${ls ? ` letter-spacing="${ls}"` : ''}`;
+  const [dx, dy] = style.direction;
+  const parts = [`<g${id ? ` id="${id}"` : ''} data-sync="1">`];
+  if (line) {
+    const lo = size * style.lineOffset;
+    const go = size * style.gapOffset;
+    parts.push(`<text x="${(x + dx * lo).toFixed(1)}" y="${(y + dy * lo).toFixed(1)}" ${attrs} fill="${style.line}">${esc(str)}</text>`);
+    parts.push(`<text x="${(x + dx * go).toFixed(1)}" y="${(y + dy * go).toFixed(1)}" ${attrs} fill="${style.gap}">${esc(str)}</text>`);
+  }
+  parts.push(`<text x="${x}" y="${y}" ${attrs} fill="${style.fill}" data-qa="1"${maxw ? ` data-maxw="${maxw}"` : ''}>${esc(str)}</text>`);
+  parts.push('</g>');
+  return parts.join('\n');
 }
 
 // Deterministic PRNG so the same match always gets the same torn edges.
@@ -196,16 +216,22 @@ function buildSvg(data, theme, opts = {}) {
   const hero = compact
     ? { nameY: 1345, nameSize: 330, numSize: 1460, numY: 2665 }
     : { nameY: 1325, nameSize: 300, numSize: 1080, numY: 2290 };
-  out.push(text(CX, hero.nameY, upper(p.display), { size: hero.nameSize, family: 'Poster Display', weight: 400, fill: c.text, ls: 14, maxw: 1250, id: 'surname' }));
-  const num = String(p.number);
-  const { numSize, numY } = hero;
-  const off = numSize / 1080; // keep the accent offset proportional to the number
-  const numAttrs = `font-family="Poster Display" font-size="${numSize}" text-anchor="middle"`;
-  out.push(`<g id="number">`);
-  out.push(`<text x="${CX + 30 * off}" y="${numY + 30 * off}" ${numAttrs} fill="${c.accent}">${esc(num)}</text>`);
-  out.push(`<text x="${CX + 16 * off}" y="${numY + 16 * off}" ${numAttrs} fill="${c.numberGap}">${esc(num)}</text>`);
-  out.push(`<text x="${CX}" y="${numY}" ${numAttrs} fill="${c.text}" data-qa="1" data-maxw="1250">${esc(num)}</text>`);
-  out.push(`</g>`);
+  // theme.hero mirrors the kit's name/number lettering (font, colour, line); defaults to Anton.
+  const th = theme.hero || {};
+  const style = {
+    family: th.font ? 'Poster Hero' : 'Poster Display',
+    fill: th.fill || c.text,
+    line: th.line || c.accent,
+    gap: th.gap || c.numberGap,
+    direction: th.direction || [1, 1],
+    lineOffset: th.lineOffset ?? 30 / 1080,
+    gapOffset: th.gapOffset ?? 16 / 1080,
+  };
+  const scale = th.sizeScale || 1;
+  out.push(heroText(CX, hero.nameY, upper(p.display), hero.nameSize * scale, style,
+    { ls: th.nameLetterSpacing ?? 14, maxw: 1250, line: !!th.nameLine, id: 'surname' }));
+  out.push(heroText(CX, hero.numY, String(p.number), hero.numSize * (th.numberScale || scale), style,
+    { maxw: 1250, id: 'number' }));
   if (!compact) out.push(rule(2395, c.rule));
 
   // ---------- line-ups ----------
@@ -267,7 +293,7 @@ function buildSvg(data, theme, opts = {}) {
   const safe = { x: art.x + 4, y: art.y + 4, w: art.w - 8, h: art.h - 8 }; // ≥10 mm from trim either way
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${-bleed} ${-bleed} ${W + 2 * bleed} ${H + 2 * bleed}" width="${W + 2 * bleed}" height="${H + 2 * bleed}" data-safe="${safe.x} ${safe.y} ${safe.w} ${safe.h}" data-trim="0 0 ${W} ${H}">
 <title>${esc(`${match.home.display} ${match.score.home}:${match.score.away} ${match.away.display} – ${p.display} ${p.number}`)}</title>
-<defs><style>${fontFaces()}</style><clipPath id="art"><rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}"/></clipPath></defs>
+<defs><style>${fontFaces(theme)}</style><clipPath id="art"><rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}"/></clipPath></defs>
 ${out.join('\n')}
 </svg>`;
   return { svg, W, H, bleed };

@@ -2,11 +2,23 @@
   "slug": "2025-04-21-az-go-ahead-eagles-deijl",
   "theme": "go-ahead-eagles-purple",
   "match": {
-    "home": { "name": "AZ", "display": "AZ" },
-    "away": { "name": "Go Ahead Eagles", "display": "GA Eagles" },
-    "score": { "home": 1, "away": 1 },
+    "home": {
+      "name": "AZ",
+      "display": "AZ"
+    },
+    "away": {
+      "name": "Go Ahead Eagles",
+      "display": "GA Eagles"
+    },
+    "score": {
+      "home": 1,
+      "away": 1
+    },
     "afterExtraTime": true,
-    "penalties": { "home": 2, "away": 4 },
+    "penalties": {
+      "home": 2,
+      "away": 4
+    },
     "date": "2025-04-21",
     "stadium": "De Kuip",
     "city": "Rotterdam",
@@ -16,8 +28,21 @@
     "attendance": 42972
   },
   "goals": [
-    { "team": "home", "player": "Troy Parrott", "display": "PARROTT", "minute": 54, "type": "penalty" },
-    { "team": "away", "player": "Mats Deijl", "display": "DEIJL", "minute": 90, "stoppage": 9, "type": "penalty" }
+    {
+      "team": "home",
+      "player": "Troy Parrott",
+      "display": "PARROTT",
+      "minute": 54,
+      "type": "penalty"
+    },
+    {
+      "team": "away",
+      "player": "Mats Deijl",
+      "display": "DEIJL",
+      "minute": 90,
+      "stoppage": 9,
+      "type": "penalty"
+    }
   ],
   "featured": {
     "player": {
@@ -28,40 +53,105 @@
       "position": "Right-back",
       "started": true
     },
-    "moment": { "kind": "goal", "minute": 90, "stoppage": 9 },
+    "moment": {
+      "kind": "goal",
+      "minute": 90,
+      "stoppage": 9
+    },
     "headline": "Deijl's last-gasp penalty paves the way for Go Ahead Eagles' first KNVB Beker"
   },
   "lineups": {
     "note": "Rows are a display arrangement (attack → goalkeeper) from the published line-ups, not verified tactical positions.",
     "home": {
-      "formation": { "value": "4-3-3", "status": "estimated" },
+      "formation": {
+        "value": "4-3-3",
+        "status": "estimated"
+      },
       "rows": [
-        ["Poku", "Parrott", "Van Bommel"],
-        ["Koopmeiners", "Mijnans", "Smit"],
-        ["Møller Wolfe", "Martins Indi", "Goes", "Maikuma"],
-        ["Owusu-Oduro"]
+        [
+          "Poku",
+          "Parrott",
+          "Van Bommel"
+        ],
+        [
+          "Koopmeiners",
+          "Mijnans",
+          "Smit"
+        ],
+        [
+          "Møller Wolfe",
+          "Martins Indi",
+          "Goes",
+          "Maikuma"
+        ],
+        [
+          "Owusu-Oduro"
+        ]
       ],
-      "subs": ["Meerdink", "Sadiq", "Lahdo", "Dekker", "Buurmeester"],
+      "subs": [
+        "Meerdink",
+        "Sadiq",
+        "Lahdo",
+        "Dekker",
+        "Buurmeester"
+      ],
       "manager": "Maarten Martens"
     },
     "away": {
-      "formation": { "value": "4-3-3", "status": "estimated" },
+      "formation": {
+        "value": "4-3-3",
+        "status": "estimated"
+      },
       "rows": [
-        ["Suray", "Smit", "Antman"],
-        ["Llansana", "Edvardsen", "Linthorst"],
-        ["Adelgaard", "Kramer", "Nauber", "Deijl"],
-        ["De Busser"]
+        [
+          "Suray",
+          "Smit",
+          "Antman"
+        ],
+        [
+          "Llansana",
+          "Edvardsen",
+          "Linthorst"
+        ],
+        [
+          "Adelgaard",
+          "Kramer",
+          "Nauber",
+          "Deijl"
+        ],
+        [
+          "De Busser"
+        ]
       ],
-      "subs": ["Tengstedt", "Stokkers", "Pettersson", "Twigt"],
+      "subs": [
+        "Tengstedt",
+        "Stokkers",
+        "Pettersson",
+        "Twigt"
+      ],
       "manager": "Paul Simonis"
     }
   },
-  "display": { "showScorers": true, "showLineups": true, "showSubs": false },
-  "variants": {
-    "framed": { "display": { "showFrame": true } },
-    "frameless": { "display": { "showFrame": false } }
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false
   },
-  "brand": { "name": "FRATERNITY" },
+  "variants": {
+    "framed": {
+      "display": {
+        "showFrame": true
+      }
+    },
+    "frameless": {
+      "display": {
+        "showFrame": false
+      }
+    }
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
   "verification": {
     "confirmed": [
       "AZ 1-1 Go Ahead Eagles after extra time, Go Ahead Eagles won 4-2 on penalties – first KNVB Beker in club history (NOS, nl.wikipedia, fcupdate, Salland1)",
@@ -77,22 +167,70 @@
       "One source spells the shootout 2–4 and others 4-2 from Go Ahead's view – AZ 2, Go Ahead Eagles 4 used",
       "VI's preview had Edvardsen up front; the published line-up (Voetbalzone) is used",
       "Line-up rows are a display arrangement, not verified positions",
-      "Purple colour (#4A1C72) and gold numbering approximated from photos; the shirt's leaf pattern is not reproduced",
-      "Club crests, trophy and sponsors not reproduced (no licensed assets)"
+      "Club crests, trophy and sponsors not reproduced (no licensed assets)",
+      "Kit lettering is a club font; Squada One (OFL) + a thin gold parallel line approximates it. Purple #4A1C72 and gold #E8AB4A approximated from photos; leaf pattern not reproduced"
     ],
     "sources": [
-      { "title": "nl.wikipedia – Finale KNVB Beker 2025 (mannen)", "url": "https://nl.wikipedia.org/wiki/Finale_KNVB_Beker_2025_(mannen)", "used_for": "result, goals, attendance" },
-      { "title": "en.wikipedia – 2025 KNVB Cup final", "url": "https://en.wikipedia.org/wiki/2025_KNVB_Cup_final", "used_for": "cross-check" },
-      { "title": "NOS – Go Ahead Eagles wint eerste KNVB-beker in clubhistorie", "url": "https://nos.nl/artikel/2564498", "used_for": "result, first trophy" },
-      { "title": "fcupdate – opstellingen", "url": "https://www.fcupdate.nl/voetbalcompetities/nederland/toto-knvb-beker/programma-uitslagen/2024-2025/az-go-ahead-eagles-21-04/opstellingen", "used_for": "line-ups, substitutions" },
-      { "title": "Voetbalzone – opstellingen bekend", "url": "https://www.voetbalzone.nl/nieuws/opstellingen-toto-knvb-beker-finale-bekendjordy-clasie-niet-in-basiselftal-az-tegen-go-ahead-eagles/blt872e398b6cf518b9", "used_for": "starting XIs" },
-      { "title": "VI – Parrott benut strafschop in herkansing", "url": "https://www.vi.nl/nieuws/bekerfinale-is-los-parrott-benut-strafschop-in-herkansing", "used_for": "Parrott 54'" },
-      { "title": "The42 – Troy Parrott Dutch Cup final", "url": "https://www.the42.ie/troy-parrott-dutch-cup-final-6683921-Apr2025", "used_for": "Parrott 54'/55'" },
-      { "title": "Salland1 – Bekerfinale AZ - GAE 1-1 (2-4 ns)", "url": "https://www.salland1.nl/bekerfinale-az-gae/", "used_for": "Deijl 99', shootout" },
-      { "title": "Salland1 – Jacht op het paarse shirt", "url": "https://www.salland1.nl/de-jacht-op-het-paarse-shirt-bas-beukema-doet-er-alles-aan/", "used_for": "purple final shirt" },
-      { "title": "Go Ahead Eagles – paars bekershirt", "url": "https://www.ga-eagles.nl/limited-edition-paars-bekershirt-via-webshop-te-koop/", "used_for": "purple final shirt" },
-      { "title": "ESPN – Mats Deijl", "url": "https://www.espn.com/soccer/player?id=218529", "used_for": "shirt number 2" },
-      { "title": "Sofascore – Mats Deijl", "url": "https://www.sofascore.com/football/player/mats-deijl/794013", "used_for": "shirt number 2" }
+      {
+        "title": "nl.wikipedia – Finale KNVB Beker 2025 (mannen)",
+        "url": "https://nl.wikipedia.org/wiki/Finale_KNVB_Beker_2025_(mannen)",
+        "used_for": "result, goals, attendance"
+      },
+      {
+        "title": "en.wikipedia – 2025 KNVB Cup final",
+        "url": "https://en.wikipedia.org/wiki/2025_KNVB_Cup_final",
+        "used_for": "cross-check"
+      },
+      {
+        "title": "NOS – Go Ahead Eagles wint eerste KNVB-beker in clubhistorie",
+        "url": "https://nos.nl/artikel/2564498",
+        "used_for": "result, first trophy"
+      },
+      {
+        "title": "fcupdate – opstellingen",
+        "url": "https://www.fcupdate.nl/voetbalcompetities/nederland/toto-knvb-beker/programma-uitslagen/2024-2025/az-go-ahead-eagles-21-04/opstellingen",
+        "used_for": "line-ups, substitutions"
+      },
+      {
+        "title": "Voetbalzone – opstellingen bekend",
+        "url": "https://www.voetbalzone.nl/nieuws/opstellingen-toto-knvb-beker-finale-bekendjordy-clasie-niet-in-basiselftal-az-tegen-go-ahead-eagles/blt872e398b6cf518b9",
+        "used_for": "starting XIs"
+      },
+      {
+        "title": "VI – Parrott benut strafschop in herkansing",
+        "url": "https://www.vi.nl/nieuws/bekerfinale-is-los-parrott-benut-strafschop-in-herkansing",
+        "used_for": "Parrott 54'"
+      },
+      {
+        "title": "The42 – Troy Parrott Dutch Cup final",
+        "url": "https://www.the42.ie/troy-parrott-dutch-cup-final-6683921-Apr2025",
+        "used_for": "Parrott 54'/55'"
+      },
+      {
+        "title": "Salland1 – Bekerfinale AZ - GAE 1-1 (2-4 ns)",
+        "url": "https://www.salland1.nl/bekerfinale-az-gae/",
+        "used_for": "Deijl 99', shootout"
+      },
+      {
+        "title": "Salland1 – Jacht op het paarse shirt",
+        "url": "https://www.salland1.nl/de-jacht-op-het-paarse-shirt-bas-beukema-doet-er-alles-aan/",
+        "used_for": "purple final shirt"
+      },
+      {
+        "title": "Go Ahead Eagles – paars bekershirt",
+        "url": "https://www.ga-eagles.nl/limited-edition-paars-bekershirt-via-webshop-te-koop/",
+        "used_for": "purple final shirt"
+      },
+      {
+        "title": "ESPN – Mats Deijl",
+        "url": "https://www.espn.com/soccer/player?id=218529",
+        "used_for": "shirt number 2"
+      },
+      {
+        "title": "Sofascore – Mats Deijl",
+        "url": "https://www.sofascore.com/football/player/mats-deijl/794013",
+        "used_for": "shirt number 2"
+      }
     ]
   }
 }

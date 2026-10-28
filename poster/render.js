@@ -61,6 +61,14 @@ function fitAndCheck() {
       const ns = Math.floor(s * (max / w) * 100) / 100;
       t.setAttribute('font-size', ns);
       if (t.hasAttribute('letter-spacing')) t.setAttribute('letter-spacing', (parseFloat(t.getAttribute('letter-spacing')) * ns / s).toFixed(2));
+      // Layered hero text (line + gap copies) shrinks together with its main layer.
+      if (t.parentNode.dataset && t.parentNode.dataset.sync) {
+        for (const sib of t.parentNode.querySelectorAll('text')) {
+          if (sib === t) continue;
+          sib.setAttribute('font-size', ns);
+          if (t.hasAttribute('letter-spacing')) sib.setAttribute('letter-spacing', t.getAttribute('letter-spacing'));
+        }
+      }
       fitted.push(`"${t.textContent}" ${s}→${ns}`);
     }
   }
@@ -100,9 +108,10 @@ function fitAndCheck() {
       }
     }
   }
-  for (const t of svg.querySelectorAll('[data-maxw],[data-qa]')) {
+  for (const t of svg.querySelectorAll('[data-maxw],[data-qa],[data-sync]')) {
     t.removeAttribute('data-maxw');
     t.removeAttribute('data-qa');
+    t.removeAttribute('data-sync');
   }
   return { fitted, errors, svg: svg.outerHTML };
 }
@@ -162,7 +171,12 @@ async function renderOne(args, data, theme) {
     const page = await browser.newPage({ viewport: { width: fullW, height: fullH } });
     await page.setContent(html);
     await page.evaluate(() => document.fonts.ready);
-    const fontsOk = await page.evaluate(() => document.fonts.check('100px "Poster Display"') && document.fonts.check('600 100px "Poster Text"'));
+    // Load every embedded face explicitly (unused faces would otherwise stay 'unloaded').
+    const fontsOk = await page.evaluate(async () => {
+      const faces = [...document.fonts];
+      await Promise.all(faces.map((f) => f.load().catch(() => null)));
+      return faces.length > 0 && faces.every((f) => f.status === 'loaded');
+    });
     const layout = await page.evaluate(fitAndCheck);
     if (!fontsOk) layout.errors.push('embedded fonts failed to load');
     fs.writeFileSync(path.join(outDir, 'poster.svg'), layout.svg);

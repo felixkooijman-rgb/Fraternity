@@ -26,10 +26,12 @@
 <text x="900" y="958" font-family="Poster Text" font-size="27" font-weight="500" text-anchor="end" fill="#FFFFFF">PIETERS 16' | PIETERS 66' | GROTENBREG 90+3'</text>
 <text x="1100" y="958" font-family="Poster Text" font-size="27" font-weight="500" text-anchor="start" fill="#FFFFFF">BROBBEY 83' | AKPOM 89'</text>
 <rect x="400" y="1003.5" width="1200" height="5" fill="#FFFFFF"></rect>
-<text id="surname" x="1000" y="1325" font-family="Poster Display" font-size="246.49" font-weight="400" text-anchor="middle" fill="#FFFFFF" letter-spacing="11.50">GROTENBREG</text>
+<g id="surname">
+<text x="1000" y="1325" font-family="Poster Display" font-size="246.49" text-anchor="middle" letter-spacing="11.50" fill="#FFFFFF">GROTENBREG</text>
+</g>
 <g id="number">
-<text x="1030" y="2320" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#7FA3C9">4</text>
-<text x="1016" y="2306" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#00305C">4</text>
+<text x="1030.0" y="2320.0" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#7FA3C9">4</text>
+<text x="1016.0" y="2306.0" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#00305C">4</text>
 <text x="1000" y="2290" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#FFFFFF">4</text>
 </g>
 <rect x="400" y="2392.5" width="1200" height="5" fill="#FFFFFF"></rect>

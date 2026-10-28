@@ -26,10 +26,12 @@
 <text x="900" y="958" font-family="Poster Text" font-size="27" font-weight="500" text-anchor="end" fill="#FFFFFF">TILLMAN 87' | TILLMAN 90' | PEPI 90+5'</text>
 <text x="1100" y="958" font-family="Poster Text" font-size="27" font-weight="500" text-anchor="start" fill="#FFFFFF">SIKAN 8' | ZUBKOV 37'</text>
 <rect x="400" y="1003.5" width="1200" height="5" fill="#111111"></rect>
-<text id="surname" x="1000" y="1325" font-family="Poster Display" font-size="300" font-weight="400" text-anchor="middle" fill="#FFFFFF" letter-spacing="14">TILLMAN</text>
+<g id="surname">
+<text x="1000" y="1325" font-family="Poster Display" font-size="300" text-anchor="middle" letter-spacing="14" fill="#FFFFFF">TILLMAN</text>
+</g>
 <g id="number">
-<text x="1030" y="2320" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#D9A11B">7</text>
-<text x="1016" y="2306" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#E1181F">7</text>
+<text x="1030.0" y="2320.0" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#D9A11B">7</text>
+<text x="1016.0" y="2306.0" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#E1181F">7</text>
 <text x="1000" y="2290" font-family="Poster Display" font-size="1080" text-anchor="middle" fill="#FFFFFF">7</text>
 </g>
 <rect x="400" y="2392.5" width="1200" height="5" fill="#111111"></rect>
