@@ -64,14 +64,27 @@ function fitAndCheck() {
       fitted.push(`"${t.textContent}" ${s}→${ns}`);
     }
   }
+  // Place the brand mark just left of the (measured) wordmark.
+  const brandText = svg.querySelector('#brand-text');
+  const brandMark = svg.querySelector('#brand-mark');
+  if (brandText && brandMark) {
+    const tb = brandText.getBBox();
+    const h = parseFloat(brandMark.dataset.h);
+    const w = parseFloat(brandMark.dataset.w);
+    const gap = parseFloat(brandMark.dataset.gap);
+    const baseline = parseFloat(brandText.getAttribute('y'));
+    brandMark.setAttribute('transform', `translate(${(tb.x - gap - w).toFixed(2)} ${(baseline - h).toFixed(2)})`);
+  }
   const [sx, sy, sw, sh] = svg.dataset.safe.split(' ').map(Number);
   const boxes = [...svg.querySelectorAll('text[data-qa]')].map((t) => ({ t: t.textContent, b: t.getBBox() }));
   const errors = [];
-  for (const { t, b } of boxes) {
-    if (b.x < sx || b.y < sy || b.x + b.width > sx + sw || b.y + b.height > sy + sh) errors.push(`"${t}" leaves the safe area`);
-  }
-  // Glyph boxes include ascender/descender space; shrink vertically so stacked lines don't false-positive.
+  // Glyph boxes include ascender/descender space; shrink vertically to the caps so
+  // stacked lines and big numerals near the edge don't false-positive.
   const tight = (b) => ({ x: b.x, y: b.y + b.height * 0.22, w: b.width, h: b.height * 0.6 });
+  for (const { t, b } of boxes) {
+    const k = tight(b);
+    if (k.x < sx || k.y < sy || k.x + k.w > sx + sw || k.y + k.h > sy + sh) errors.push(`"${t}" leaves the safe area`);
+  }
   for (let i = 0; i < boxes.length; i++) {
     for (let j = i + 1; j < boxes.length; j++) {
       const a = tight(boxes[i].b);
@@ -94,24 +107,38 @@ async function main() {
     console.error('usage: node poster/render.js matches/<slug>.json [--force] [--no-print] [--out dir]');
     process.exit(2);
   }
-  const data = JSON.parse(fs.readFileSync(args.input, 'utf8'));
-  const theme = typeof data.theme === 'string'
-    ? JSON.parse(fs.readFileSync(path.join(__dirname, 'themes', `${data.theme}.json`), 'utf8'))
-    : data.theme;
+  const base = JSON.parse(fs.readFileSync(args.input, 'utf8'));
+  const theme = typeof base.theme === 'string'
+    ? JSON.parse(fs.readFileSync(path.join(__dirname, 'themes', `${base.theme}.json`), 'utf8'))
+    : base.theme;
 
+  // "variants" renders several versions of one match (e.g. with / without line-ups)
+  // into output/<slug>-<variant>/, each with its own display settings.
+  const variants = base.variants ? Object.entries(base.variants) : [[null, {}]];
+  let failed = false;
+  for (const [name, v] of variants) {
+    const data = {
+      ...base,
+      slug: name ? `${base.slug}-${name}` : base.slug,
+      display: { ...base.display, ...(v.display || {}) },
+    };
+    delete data.variants;
+    if (name) console.log(`\n== variant ${name}`);
+    if (!(await renderOne(args, data, theme))) failed = true;
+  }
+  if (failed) process.exitCode = 1;
+}
+
+async function renderOne(args, data, theme) {
   const check = validate(data);
   check.warnings.forEach((w) => console.warn(`warn  ${w}`));
   check.errors.forEach((e) => console.error(`ERROR ${e}`));
   if (check.errors.length && !args.force) {
     console.error('Data validation failed – fix the match file (or use --force for a draft).');
-    process.exit(1);
+    return false;
   }
 
-  const logoPath = path.join(__dirname, 'assets', 'brand', 'logo.svg');
-  const brandLogo = fs.existsSync(logoPath)
-    ? fs.readFileSync(logoPath, 'utf8').replace(/<\?xml[^>]*>/, '')
-    : null;
-  const { svg, W, H, bleed } = buildSvg(data, theme, { brandLogo });
+  const { svg, W, H, bleed } = buildSvg(data, theme);
   const fullW = W + 2 * bleed;
   const fullH = H + 2 * bleed;
 
@@ -173,7 +200,7 @@ async function main() {
     layout.fitted.forEach((f) => console.log(`fit   ${f}`));
     layout.errors.forEach((e) => console.error(`LAYOUT ${e}`));
     console.log(`done  ${path.relative(ROOT, outDir)}/ (${fs.readdirSync(outDir).join(', ')})`);
-    if (layout.errors.length) process.exitCode = 1;
+    return layout.errors.length === 0;
   } finally {
     await browser.close();
   }

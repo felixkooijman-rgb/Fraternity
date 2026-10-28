@@ -1,10 +1,8 @@
 {
-  "generated": "2026-10-28T13:38:49.749Z",
+  "generated": "2026-10-28T13:42:29.371Z",
   "data": {
     "errors": [],
     "warnings": [
-      "lineups.home formation 4-1-4-1 is estimated; it is not printed as fact",
-      "lineups.away formation 4-3-3 is estimated; it is not printed as fact",
       "MANUAL CHECK: Schrijver's goal minute 45+2' comes from one line-up source; other reports only say 'just before half-time'",
       "MANUAL CHECK: Shootout score: majority of sources 6-5, one source 5-4 – 6-5 used",
       "MANUAL CHECK: ESPN lists Maneschijn and Lbenay in the Excelsior '31 XI instead of Schmidt and Wesselink – the other sources were followed",
@@ -16,10 +14,8 @@
   },
   "layout": {
     "fitted": [
-      "\"DERDE DIVISIE SIDE EXCELSIOR ’31 KNOCK EREDIVISIE CLUB ADO OUT ON PENALTIES\" 34→33.26",
       "\"EXCELSIOR ’31\" 112→85.1",
-      "\"ADO DEN HAAG\" 112→80.14",
-      "\"EXCELSIOR\" 300→294.14"
+      "\"ADO DEN HAAG\" 112→80.14"
     ],
     "errors": []
   },

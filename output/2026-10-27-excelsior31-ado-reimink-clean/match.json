@@ -1,5 +1,5 @@
 {
-  "slug": "2026-10-27-excelsior31-ado",
+  "slug": "2026-10-27-excelsior31-ado-reimink-clean",
   "theme": "excelsior31",
   "match": {
     "home": {
@@ -56,16 +56,18 @@
     ]
   },
   "featured": {
-    "club": {
-      "name": "Excelsior '31",
-      "display": "EXCELSIOR",
-      "mark": "’31",
-      "team": "home"
+    "player": {
+      "full_name": "Kevin Reimink",
+      "display": "REIMINK",
+      "number": 1,
+      "team": "home",
+      "position": "Goalkeeper",
+      "started": true
     },
     "moment": {
       "kind": "shootout"
     },
-    "headline": "Derde Divisie side Excelsior ’31 knock Eredivisie club ADO out on penalties"
+    "headline": "Reimink saves twice as Excelsior ’31 knock ADO out on penalties"
   },
   "lineups": {
     "note": "Rows are a display arrangement (attack → goalkeeper) following the published line-up order, not verified tactical positions.",
@@ -144,7 +146,7 @@
   },
   "display": {
     "showScorers": true,
-    "showLineups": true,
+    "showLineups": false,
     "showSubs": false
   },
   "brand": {
@@ -156,6 +158,7 @@
       "Tuesday 27.10.2026, Sportpark De Koerbelt, Rijssen, KNVB Beker first round (Oost, NL Times, fcupdate)",
       "Goals: Schrijver before half-time (header from a corner), Thomas 57' (assist Žamburek) (NOS, Omroep West, fcupdate)",
       "Kevin Reimink started in goal and saved two penalties (Van Mieghem, Kilo) (Voetbalprimeur, NL Times)",
+      "Reimink wears #1 for Excelsior '31 (club squad page, club player profile, voetbal.com, Flashscore)",
       "Excelsior '31 XI: Reimink, De Wilde, Schrijver, De Jong, Schmidt, Leeflang, Wesselink, Ter Haar, Leemhuis, Holsink, Seppenwoolde (Omroep West/Haaglanden Voetbal, ADO match report)",
       "ADO XI: Thiede, Raterink, Wilhelm, Hokke, Sylla, Jiménez, Žamburek, De Bruin, Thomas, Pozo, Peupion (Omroep West live blog)",
       "Excelsior '31 home kit: red shirt, white shorts, red socks (excelsior31.nl, nl.wikipedia)",
@@ -225,6 +228,16 @@
         "title": "fcupdate – Excelsior '31 zorgt voor enorme bekerstunt",
         "url": "https://www.fcupdate.nl/voetbalnieuws/2026/10/excelsior-31-zorgt-enorme-bekerstunt-knikkert",
         "used_for": "date, venue, goals"
+      },
+      {
+        "title": "Excelsior'31 – Kevin Reimink (selectie)",
+        "url": "https://www.excelsior31.nl/vereniging/teams/veld-zaterdag/senioren-1/selectie/keeper-kevin-reimink",
+        "used_for": "shirt number 1"
+      },
+      {
+        "title": "voetbal.com – Excelsior '31 selectie",
+        "url": "https://www.voetbal.com/teams/te575/excelsior-31/",
+        "used_for": "shirt number 1 (2026/27)"
       },
       {
         "title": "Excelsior'31 – algemene informatie",

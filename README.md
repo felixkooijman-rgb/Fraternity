@@ -19,4 +19,4 @@ Output in `output/<slug>/`: `poster.svg` (editable master), `print.pdf` (vector,
 
 Rendering stops on data errors (score ≠ goals, featured goal missing, player not in squad, no sources, …) and exits non-zero on layout errors (overlaps, text outside the safe area). Items in `verification.needs_manual_check` are printed as warnings and listed in `sources.md`.
 
-Fonts: Anton and Oswald (SIL Open Font License, see `poster/fonts/`). Put the official brand logo at `poster/assets/brand/logo.svg` to replace the text wordmark.
+Fonts: Anton and Oswald (SIL Open Font License, see `poster/fonts/`). The Fraternity mark (`poster/assets/brand/fraternity-mark.svg`, redrawn from the reference) sits left of the wordmark; replace it with the official file under the same name. Use `"variants"` in a match file to render e.g. a version with and without line-ups.

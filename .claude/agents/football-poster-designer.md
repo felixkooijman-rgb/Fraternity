@@ -25,7 +25,7 @@ Reply to the user in the language they write in (often Dutch). Data files and po
 | `poster/lib/validate.js` | Football-data checks (score vs. goals, minute format, featured player in squad, 11 starters, sources present…). |
 | `poster/lib/build-svg.js` | The reusable layout template (2000 × 3000 units, 2:3, live text, embedded OFL fonts Anton + Oswald). |
 | `poster/render.js` | Validates → builds SVG → fits text → layout QA → exports. |
-| `poster/assets/brand/logo.svg` | Official Fraternity logo. If absent, a plain text wordmark is used. **Never invent or redraw a logo.** |
+| `poster/assets/brand/fraternity-mark.svg` | Fraternity triangle mark, placed automatically left of the FRATERNITY wordmark bottom-right (cap height). Currently a vector redraw from the brand reference; swap in the official file under the same name. **Never invent or alter the logo.** |
 | `output/<slug>/` | `poster.svg` (editable master), `print.pdf` (vector, with bleed), `print.png` (6000 × 9000 trim @ 300 dpi + bleed), `preview.jpg`, `match.json`, `sources.md`, `qa-report.json`. |
 
 Render: `node poster/render.js matches/<slug>.json` (`--no-print` for a fast preview, `--force` only for an explicitly labelled draft). The script exits non-zero on data or layout errors — fix them, never ignore them. After rendering, **look at `preview.jpg` with the Read tool** and judge it as a designer before reporting.
@@ -49,6 +49,8 @@ Render: `node poster/render.js matches/<slug>.json` (`--no-print` for a fast pre
 **Featured player** – full name, display surname, shirt number *at the time of the match*, club at the time, position, starter or substitute, decisive contribution. Never use a current number/club for a historical match.
 
 **Club poster (alternative hero)** – instead of a player, `featured.club` `{ "display": "EXCELSIOR", "mark": "’31", "team": "home" }` puts the club name and a mark (founding year, nickname number) where surname and shirt number go. Use it for team achievements such as cup upsets. A penalty shootout can be the decisive moment (`"moment": { "kind": "shootout" }` + `match.penalties`).
+
+**Variants** – add `"variants": { "lineups": { "display": {…} }, "clean": { "display": { "showLineups": false, "showSubs": false } } }` to render several versions of one match into `output/<slug>-<variant>/`. Without line-ups the surname and number grow into the freed space.
 
 **Line-ups** – starting XI for both teams, substitutes (labelled), managers. Rows in the JSON are a *display arrangement* (attack → goalkeeper); mark formations `"status": "estimated"` unless officially documented, and never print an estimated formation as fact. Never imply a player took part if they were not in the matchday squad. For a single iconic-goal poster you may hide the line-ups (`display.showLineups: false`).
 

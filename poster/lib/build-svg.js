@@ -76,6 +76,17 @@ function fragment(rand, xl, xr, yTop, yBottom, slant) {
   return `${d} Z`;
 }
 
+// Brand mark from poster/assets/brand/fraternity-mark.svg (inner markup + viewBox).
+function brandMark() {
+  const file = path.join(__dirname, '..', 'assets', 'brand', 'fraternity-mark.svg');
+  if (!fs.existsSync(file)) return null;
+  const src = fs.readFileSync(file, 'utf8');
+  const viewBox = (src.match(/viewBox="([^"]+)"/) || [])[1];
+  const body = src.replace(/<\?xml[^>]*>/, '').replace(/<!--[\s\S]*?-->/g, '').replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
+  const [, , vw, vh] = viewBox.split(/[\s,]+/).map(Number);
+  return { viewBox, body, ratio: vw / vh };
+}
+
 function text(x, y, str, { size, family = 'Poster Text', weight = 600, anchor = 'middle', fill, ls = 0, maxw, outline, qa = true, id } = {}) {
   const attrs = [
     id ? `id="${id}"` : '',
@@ -101,7 +112,6 @@ function formatDate(iso) {
 
 function buildSvg(data, theme, opts = {}) {
   const bleed = opts.bleed ?? 12; // ≈3 mm when the trim is 50.8 cm wide
-  const brandLogo = opts.brandLogo || null; // SVG markup of the official logo, if provided
   const c = theme.colors;
   const rand = rng(data.slug || 'poster');
   const F = 36; // frame width
@@ -172,17 +182,22 @@ function buildSvg(data, theme, opts = {}) {
   const p = featured.club
     ? { display: featured.club.display, number: featured.club.mark }
     : featured.player;
-  out.push(text(CX, 1325, upper(p.display), { size: 300, family: 'Poster Display', weight: 400, fill: c.text, ls: 14, maxw: 1250, id: 'surname' }));
+  // Without line-ups the hero grows into the freed bottom section.
+  const compact = display.showLineups === false && display.showSubs === false;
+  const hero = compact
+    ? { nameY: 1345, nameSize: 330, numSize: 1460, numY: 2665 }
+    : { nameY: 1325, nameSize: 300, numSize: 1080, numY: 2290 };
+  out.push(text(CX, hero.nameY, upper(p.display), { size: hero.nameSize, family: 'Poster Display', weight: 400, fill: c.text, ls: 14, maxw: 1250, id: 'surname' }));
   const num = String(p.number);
-  const numSize = 1080;
-  const numY = 2290;
+  const { numSize, numY } = hero;
+  const off = numSize / 1080; // keep the accent offset proportional to the number
   const numAttrs = `font-family="Poster Display" font-size="${numSize}" text-anchor="middle"`;
   out.push(`<g id="number">`);
-  out.push(`<text x="${CX + 30}" y="${numY + 30}" ${numAttrs} fill="${c.accent}">${esc(num)}</text>`);
-  out.push(`<text x="${CX + 16}" y="${numY + 16}" ${numAttrs} fill="${c.numberGap}">${esc(num)}</text>`);
+  out.push(`<text x="${CX + 30 * off}" y="${numY + 30 * off}" ${numAttrs} fill="${c.accent}">${esc(num)}</text>`);
+  out.push(`<text x="${CX + 16 * off}" y="${numY + 16 * off}" ${numAttrs} fill="${c.numberGap}">${esc(num)}</text>`);
   out.push(`<text x="${CX}" y="${numY}" ${numAttrs} fill="${c.text}" data-qa="1" data-maxw="1250">${esc(num)}</text>`);
   out.push(`</g>`);
-  out.push(rule(2395, c.rule));
+  if (!compact) out.push(rule(2395, c.rule));
 
   // ---------- line-ups ----------
   const outline = { color: c.nameOutline, width: 7 };
@@ -204,7 +219,7 @@ function buildSvg(data, theme, opts = {}) {
       });
     }
   }
-  if (lineups && (display.showLineups !== false || display.showSubs !== false)) {
+  if (lineups && !compact) {
     out.push(`<rect x="${CX - 2.5}" y="2425" width="5" height="${H - F - 40 - 2425}" fill="${c.rule}"/>`);
   }
   if (lineups && display.showSubs !== false) {
@@ -224,13 +239,17 @@ function buildSvg(data, theme, opts = {}) {
     }
   }
 
-  // ---------- brand ----------
-  const brandX = ax(0.906);
-  const brandY = H - F - 42;
-  if (brandLogo) {
-    out.push(`<g transform="translate(${brandX - 110} ${brandY - 34})">${brandLogo}</g>`);
-  } else {
-    out.push(text(brandX, brandY, upper(data.brand?.name || 'FRATERNITY'), { size: 30, weight: 700, fill: c.brand, ls: 1.5, maxw: 210 }));
+  // ---------- brand: mark + wordmark, bottom right ----------
+  // The renderer moves #brand-mark next to the measured wordmark.
+  const brandSize = 32;
+  const brandEnd = art.x + art.w - 44;
+  const brandY = H - F - 40;
+  out.push(text(brandEnd, brandY, upper(data.brand?.name || 'FRATERNITY'), { size: brandSize, weight: 700, fill: c.brand, ls: 1.5, anchor: 'end', maxw: 230, id: 'brand-text' }));
+  const mark = brandMark();
+  if (mark) {
+    const h = brandSize * 0.82; // ≈ Oswald cap height
+    const w = h * mark.ratio;
+    out.push(`<g id="brand-mark" data-h="${h}" data-w="${w}" data-gap="${brandSize * 0.3}" transform="translate(${brandEnd - 230} ${brandY - h})"><svg width="${w}" height="${h}" viewBox="${mark.viewBox}" fill="${c.brand}">${mark.body}</svg></g>`);
   }
 
   const safe = { x: art.x + 20, y: art.y + 20, w: art.w - 40, h: art.h - 40 };
