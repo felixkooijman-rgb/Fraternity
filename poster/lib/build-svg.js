@@ -117,8 +117,9 @@ function buildSvg(data, theme, opts = {}) {
   out.push(`<rect x="${art.x}" y="${art.y}" width="${art.w}" height="${art.h}" fill="${c.background}"/>`);
   const sp = theme.stripes || {};
   if (sp.side) {
-    out.push(`<path d="${stripe(rand, ax(0.043), ax(0.146), art.y - 20, art.y + art.h + 20)}" fill="${c.stripe}"/>`);
-    out.push(`<path d="${stripe(rand, ax(0.854), ax(0.958), art.y - 20, art.y + art.h + 20)}" fill="${c.stripe}"/>`);
+    const side = c.sideStripe || c.stripe;
+    out.push(`<path d="${stripe(rand, ax(0.043), ax(0.146), art.y - 20, art.y + art.h + 20)}" fill="${side}"/>`);
+    out.push(`<path d="${stripe(rand, ax(0.854), ax(0.958), art.y - 20, art.y + art.h + 20)}" fill="${side}"/>`);
   }
   if (sp.collar) {
     out.push(`<path d="${fragment(rand, ax(0.33), ax(0.39), art.y - 10, ay(0.042), 0)}" fill="${c.stripe}" transform="rotate(-3 ${ax(0.36)} ${ay(0.02)})"/>`);
@@ -141,7 +142,11 @@ function buildSvg(data, theme, opts = {}) {
   out.push(rule(476, c.rule));
 
   // ---------- decisive minute ----------
-  if (featured.moment) {
+  if (featured.moment && featured.moment.kind === 'shootout') {
+    const pens = match.penalties;
+    out.push(text(CX, 548, 'PENALTY SHOOTOUT', { size: 38, weight: 600, fill: c.text, ls: 3, maxw: 900 }));
+    out.push(text(CX, 708, `${pens.home}:${pens.away}`, { size: 150, weight: 700, fill: c.text, maxw: 900 }));
+  } else if (featured.moment) {
     out.push(text(CX, 680, formatMinute(featured.moment), { size: 168, weight: 700, fill: c.text, maxw: 900 }));
   }
   out.push(rule(746, c.rule));
@@ -180,7 +185,10 @@ function buildSvg(data, theme, opts = {}) {
   const outline = { color: c.nameOutline, width: 7 };
   if (lineups && display.showLineups !== false) {
     const rowY = [2560, 2632, 2704, 2776];
-    const zones = { home: [ax(0.03), ax(0.405)], away: [ax(0.595), ax(0.97)] };
+    // Without the subs columns the line-ups get the full width either side of the divider.
+    const zones = display.showSubs !== false
+      ? { home: [ax(0.03), ax(0.405)], away: [ax(0.595), ax(0.97)] }
+      : { home: [ax(0.03), ax(0.48)], away: [ax(0.52), ax(0.97)] };
     for (const side of ['home', 'away']) {
       const rows = lineups[side].rows || [];
       const [z0, z1] = zones[side];
@@ -193,8 +201,10 @@ function buildSvg(data, theme, opts = {}) {
       });
     }
   }
-  if (lineups && display.showSubs !== false) {
+  if (lineups && (display.showLineups !== false || display.showSubs !== false)) {
     out.push(`<rect x="${CX - 2.5}" y="2425" width="5" height="${H - F - 40 - 2425}" fill="${c.rule}"/>`);
+  }
+  if (lineups && display.showSubs !== false) {
     const cols = { home: CX - 105, away: CX + 105 };
     const bottom = H - F - 52;
     for (const side of ['home', 'away']) {

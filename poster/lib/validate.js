@@ -54,6 +54,12 @@ function validate(data) {
     if (!Number.isInteger(p.number) || p.number < 1 || p.number > 99) errors.push(`featured.player.number must be 1-99, got ${p.number}`);
     if (!p.display) errors.push('featured.player.display is missing');
     const mom = featured.moment;
+    if (mom && mom.kind === 'shootout') {
+      const pen = match.penalties;
+      if (!pen || !Number.isInteger(pen.home) || !Number.isInteger(pen.away)) errors.push('shootout moment needs match.penalties { home, away }');
+      else if (pen.home === pen.away) errors.push('a penalty shootout cannot end level');
+      if (match.score.home !== match.score.away) errors.push('a shootout needs a level score after play');
+    }
     if (mom && mom.kind === 'goal') {
       const hit = goals.find((g) => g.display === p.display && g.team === p.team && g.minute === mom.minute && (g.stoppage || 0) === (mom.stoppage || 0));
       if (!hit) errors.push(`featured moment ${formatMinute(mom)} is not a goal by ${p.display} in the goal list`);
