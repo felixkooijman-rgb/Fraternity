@@ -245,11 +245,14 @@ function buildSvg(data, theme, opts = {}) {
   }
 
   // ---------- brand: mark + wordmark, bottom right ----------
-  // The renderer moves #brand-mark next to the measured wordmark.
-  const brandSize = 32;
+  // The renderer moves #brand-mark next to the measured wordmark. With side stripes the
+  // whole lock-up is centred on the right stripe so it never straddles two colours.
+  const onStripe = !!(theme.stripes || {}).side;
+  const brandSize = onStripe ? 28 : 32;
   const brandEnd = art.x + art.w - 44;
   const brandY = H - F - 40;
   out.push(text(brandEnd, brandY, upper(data.brand?.name || 'FRATERNITY'), { size: brandSize, weight: 700, fill: c.brand, ls: 1.5, anchor: 'end', maxw: 230, id: 'brand-text' }));
+  if (onStripe) out[out.length - 1] = out[out.length - 1].replace('<text ', `<text data-cx="${ax(0.906)}" `);
   const mark = brandMark();
   if (mark) {
     const h = brandSize * 0.82; // ≈ Oswald cap height

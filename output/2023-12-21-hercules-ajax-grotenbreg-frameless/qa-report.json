@@ -1,0 +1,37 @@
+{
+  "generated": "2026-10-28T14:00:02.147Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation 4-2-3-1 is estimated; it is not printed as fact",
+      "lineups.away formation 4-3-3 is estimated; it is not printed as fact",
+      "MANUAL CHECK: Pieters' first goal: 16' (ESPN) vs 15' (afc-ajax.info) vs 17' (Ajax Showtime) – 16' used",
+      "MANUAL CHECK: Grotenbreg #4: two sources (fcupdate, ESPN), not confirmed by Hercules itself",
+      "MANUAL CHECK: Hercules sub spelled 'Streng' (Voetbal.com) and 'Steng' (ESPN) – not printed",
+      "MANUAL CHECK: Ajax substitution minutes differ between sources (half-time vs ~67') – not printed",
+      "MANUAL CHECK: Line-up rows are a display arrangement, not verified positions",
+      "MANUAL CHECK: Kit actually worn at Galgenwaard (stripe width, collar) not verified against match photos – standard blue/white stripes used",
+      "MANUAL CHECK: Hercules/Ajax crests and sponsors not reproduced (no licensed assets)",
+      "MANUAL CHECK: Mats Grotenbreg passed away on 25 June 2026 – consider consulting USV Hercules / his family before selling this poster"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"SUBSTITUTE GROTENBREG STRIKES IN STOPPAGE TIME AS AMATEURS HERCULES KNOCK OUT AJAX\" 34→28.67",
+      "\"GROTENBREG\" 300→246.49"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

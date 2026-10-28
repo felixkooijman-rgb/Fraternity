@@ -68,10 +68,16 @@ function fitAndCheck() {
   const brandText = svg.querySelector('#brand-text');
   const brandMark = svg.querySelector('#brand-mark');
   if (brandText && brandMark) {
-    const tb = brandText.getBBox();
     const h = parseFloat(brandMark.dataset.h);
     const w = parseFloat(brandMark.dataset.w);
     const gap = parseFloat(brandMark.dataset.gap);
+    if (brandText.dataset.cx) {
+      // Centre mark + wordmark as one unit on the given x.
+      const total = w + gap + brandText.getBBox().width;
+      brandText.setAttribute('x', (parseFloat(brandText.dataset.cx) + total / 2).toFixed(2));
+      brandText.removeAttribute('data-cx');
+    }
+    const tb = brandText.getBBox();
     const baseline = parseFloat(brandText.getAttribute('y'));
     brandMark.setAttribute('transform', `translate(${(tb.x - gap - w).toFixed(2)} ${(baseline - h).toFixed(2)})`);
   }

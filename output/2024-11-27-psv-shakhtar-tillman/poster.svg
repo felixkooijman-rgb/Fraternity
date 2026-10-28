@@ -81,8 +81,8 @@
 <text x="1105" y="2532" font-family="Poster Text" font-size="25" font-weight="500" text-anchor="middle" fill="#FFFFFF">GHRAM</text>
 <text x="1105" y="2499" font-family="Poster Text" font-size="25" font-weight="500" text-anchor="middle" fill="#FFFFFF">FESYUN</text>
 <text x="1105" y="2466" font-family="Poster Text" font-size="28" font-weight="600" text-anchor="middle" fill="#FFFFFF">SUBS</text>
-<text id="brand-text" x="1920" y="2924" font-family="Poster Text" font-size="32" font-weight="700" text-anchor="end" fill="#111111" letter-spacing="1.5">FRATERNITY</text>
-<g id="brand-mark" data-h="26.24" data-w="30.511627906976745" data-gap="9.6" transform="translate(1710.26 2897.76)"><svg width="30.511627906976745" height="26.24" viewBox="0 0 100 86" fill="#111111">
+<text id="brand-text" x="1875.47" y="2924" font-family="Poster Text" font-size="28" font-weight="700" text-anchor="end" fill="#111111" letter-spacing="1.5">FRATERNITY</text>
+<g id="brand-mark" data-h="22.959999999999997" data-w="26.69767441860465" data-gap="8.4" transform="translate(1690.08 2901.04)"><svg width="26.69767441860465" height="22.959999999999997" viewBox="0 0 100 86" fill="#111111">
   
   <path fill-rule="evenodd" d="M0 86 L50 0 L100 86 Z M36.5 74 L50 50.5 L63.5 74 Z"></path>
 </svg></g>

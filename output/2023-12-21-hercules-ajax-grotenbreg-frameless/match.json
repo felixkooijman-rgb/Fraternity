@@ -1,0 +1,250 @@
+{
+  "slug": "2023-12-21-hercules-ajax-grotenbreg-frameless",
+  "theme": "hercules",
+  "match": {
+    "home": {
+      "name": "USV Hercules",
+      "display": "Hercules"
+    },
+    "away": {
+      "name": "Ajax",
+      "display": "Ajax"
+    },
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "date": "2023-12-21",
+    "kickoff": "18:45 CET",
+    "stadium": "Stadion Galgenwaard",
+    "city": "Utrecht",
+    "country": "Netherlands",
+    "competition": "KNVB Beker",
+    "phase": "Second Round",
+    "attendance": 5400
+  },
+  "goals": [
+    {
+      "team": "home",
+      "player": "Tim Pieters",
+      "display": "PIETERS",
+      "minute": 16,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Tim Pieters",
+      "display": "PIETERS",
+      "minute": 66,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Brian Brobbey",
+      "display": "BROBBEY",
+      "minute": 83,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Chuba Akpom",
+      "display": "AKPOM",
+      "minute": 89,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Mats Grotenbreg",
+      "display": "GROTENBREG",
+      "minute": 90,
+      "stoppage": 3,
+      "type": "regular"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Mats Grotenbreg",
+      "display": "GROTENBREG",
+      "number": 4,
+      "team": "home",
+      "position": "Defender",
+      "started": false
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 90,
+      "stoppage": 3
+    },
+    "headline": "Substitute Grotenbreg strikes in stoppage time as amateurs Hercules knock out Ajax"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper) from the published line-up order, not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "4-2-3-1",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Paulina"
+        ],
+        [
+          "Lahri",
+          "Vermeulen",
+          "Pieters"
+        ],
+        [
+          "Bijl",
+          "Van Hussen"
+        ],
+        [
+          "Carmelia",
+          "Beck",
+          "Zwart",
+          "Fonville"
+        ],
+        [
+          "Vonk"
+        ]
+      ],
+      "subs": [
+        "Grotenbreg",
+        "Nsingi",
+        "Fichtinger",
+        "Streng"
+      ],
+      "manager": "René van der Kooij"
+    },
+    "away": {
+      "formation": {
+        "value": "4-3-3",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Van Axel Dongen",
+          "Akpom",
+          "Forbs"
+        ],
+        [
+          "Hlynsson",
+          "Taylor",
+          "Mikautadze"
+        ],
+        [
+          "Ávila",
+          "Hato",
+          "Šutalo",
+          "Gooijer"
+        ],
+        [
+          "Ramaj"
+        ]
+      ],
+      "subs": [
+        "Brobbey",
+        "Tahirović",
+        "Martha",
+        "Gaaei"
+      ],
+      "manager": "Michael Valkanis"
+    }
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false,
+    "showFrame": false
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "verification": {
+    "confirmed": [
+      "USV Hercules 3-2 Ajax, 21.12.2023, Stadion Galgenwaard (Utrecht), KNVB Beker second round (ESPN, NOS, RTV Utrecht, Sportsmole)",
+      "Goals: Pieters 16' and 66', Brobbey 83', Akpom 89', Grotenbreg 90+3' (ESPN, Voetbal.com, fcupdate)",
+      "Grotenbreg came on as a substitute (for Lahri, ~85') and scored the winner in stoppage time (ESPN, Voetbal.com, Sportsmole)",
+      "Grotenbreg #4 (fcupdate line-ups, ESPN player profile 2023-24 KNVB Beker)",
+      "Hercules XI: Vonk, Carmelia, Beck, Zwart, Fonville, Bijl, Van Hussen, Lahri, Vermeulen, Pieters, Paulina (RTV Utrecht, Ajax Showtime)",
+      "Ajax XI: Ramaj, Gooijer, Šutalo, Hato, Ávila, Hlynsson, Taylor, Mikautadze, Van Axel Dongen, Akpom, Forbs (ESPN, Ajax Showtime)",
+      "Hercules colours: blue/white vertically striped shirt, black shorts, black socks (usvhercules.nl history, voetbalarchieven.nl)"
+    ],
+    "needs_manual_check": [
+      "Pieters' first goal: 16' (ESPN) vs 15' (afc-ajax.info) vs 17' (Ajax Showtime) – 16' used",
+      "Grotenbreg #4: two sources (fcupdate, ESPN), not confirmed by Hercules itself",
+      "Hercules sub spelled 'Streng' (Voetbal.com) and 'Steng' (ESPN) – not printed",
+      "Ajax substitution minutes differ between sources (half-time vs ~67') – not printed",
+      "Line-up rows are a display arrangement, not verified positions",
+      "Kit actually worn at Galgenwaard (stripe width, collar) not verified against match photos – standard blue/white stripes used",
+      "Hercules/Ajax crests and sponsors not reproduced (no licensed assets)",
+      "Mats Grotenbreg passed away on 25 June 2026 – consider consulting USV Hercules / his family before selling this poster"
+    ],
+    "sources": [
+      {
+        "title": "ESPN – USV Hercules 3-2 Ajax line-ups",
+        "url": "https://www.espn.com/soccer/lineups/_/gameId/689950",
+        "used_for": "line-ups, attendance"
+      },
+      {
+        "title": "ESPN NL – verslag",
+        "url": "https://www.espn.nl/voetbal/verslag/_/wedstrijdId/689950",
+        "used_for": "goal minutes, substitutions"
+      },
+      {
+        "title": "RTV Utrecht – Wat een sensatie",
+        "url": "https://www.rtvutrecht.nl/sport/3674898/wat-een-sensatie-amateurs-hercules-stunten-in-de-beker-met-3-2-zege-op-ajax",
+        "used_for": "Hercules XI, venue"
+      },
+      {
+        "title": "fcupdate – opstellingen",
+        "url": "https://www.fcupdate.nl/voetbalcompetities/nederland/toto-knvb-beker/programma-uitslagen/2023-2024/usv-hercules-ajax-21-12/opstellingen",
+        "used_for": "shirt number 4, substitutions"
+      },
+      {
+        "title": "Voetbal.com – liveticker",
+        "url": "https://www.voetbal.com/wedstrijdverslag/knvb-beker-2023-2024-2-runde-usv-hercules-afc-ajax/liveticker/",
+        "used_for": "goal minutes, substitutions"
+      },
+      {
+        "title": "VI – match page",
+        "url": "https://www.vi.nl/wedstrijden/2023-12-21/usv-hercules-vs-ajax",
+        "used_for": "coaches"
+      },
+      {
+        "title": "Ajax Showtime – match report",
+        "url": "https://www.ajaxshowtime.com/hoofdnieuws/dramatisch-ajax-uitgeschakeld-in-beker-na-blamage-tegen-usv-hercules",
+        "used_for": "line-ups, minutes cross-check"
+      },
+      {
+        "title": "afc-ajax.info – Hercules - Ajax",
+        "url": "https://www.afc-ajax.info/nl/wedstrijd/2023-12-21-Hercules-Ajax",
+        "used_for": "minutes cross-check"
+      },
+      {
+        "title": "NOS – Blamage voor Ajax",
+        "url": "https://nos.nl/artikel/2502455-blamage-voor-ajax-nederlaag-tegen-amateurs-hercules-in-bekertoernooi",
+        "used_for": "result, narrative"
+      },
+      {
+        "title": "Sportsmole – result",
+        "url": "https://www.sportsmole.co.uk/football/usv-hercules/knvb-beker/result/ajax-dumped-out-of-knvb-beker-by-fourth-tier-amateur-side_531928.html",
+        "used_for": "result, fourth tier"
+      },
+      {
+        "title": "USV Hercules – Geschiedenis",
+        "url": "https://www.usvhercules.nl/algemeen/geschiedenis/",
+        "used_for": "club colours"
+      },
+      {
+        "title": "Voetbalarchieven – Hercules (Utrecht)",
+        "url": "https://www.voetbalarchieven.nl/clubs/hercules-utrecht/",
+        "used_for": "kit description"
+      },
+      {
+        "title": "ESPN NL – Mats Grotenbreg",
+        "url": "https://www.espn.nl/voetbal/speler/_/id/260803/mats-grotenbreg",
+        "used_for": "shirt number, position"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "hercules",
+  "label": "USV Hercules Utrecht – blue/white vertically striped shirt, black shorts",
+  "colors": {
+    "background": "#1C4FA1",
+    "stripe": "#FFFFFF",
+    "text": "#FFFFFF",
+    "rule": "#111111",
+    "accent": "#111111",
+    "numberGap": "#1C4FA1",
+    "nameOutline": "#1C4FA1",
+    "frame": "#161616",
+    "brand": "#111111"
+  },
+  "stripes": {
+    "side": true,
+    "collar": true,
+    "lowerShirt": true
+  }
+}
