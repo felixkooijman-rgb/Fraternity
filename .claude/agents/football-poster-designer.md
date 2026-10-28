@@ -50,7 +50,7 @@ Render: `node poster/render.js matches/<slug>.json` (`--no-print` for a fast pre
 
 **Club poster (alternative hero)** – instead of a player, `featured.club` `{ "display": "EXCELSIOR", "mark": "’31", "team": "home" }` puts the club name and a mark (founding year, nickname number) where surname and shirt number go. Use it for team achievements such as cup upsets. A penalty shootout can be the decisive moment (`"moment": { "kind": "shootout" }` + `match.penalties`).
 
-**Variants** – add `"variants": { "lineups": { "display": {…} }, "clean": { "display": { "showLineups": false, "showSubs": false } } }` to render several versions of one match into `output/<slug>-<variant>/`. Without line-ups the surname and number grow into the freed space.
+**Variants** – add `"variants": { "lineups": { "display": {…} }, "clean": { "display": { "showLineups": false, "showSubs": false } } }` to render several versions of one match into `output/<slug>-<variant>/`. Without line-ups the surname and number grow into the freed space. `"showFrame": false` drops the dark outer frame ("lijst"): the artwork then runs to the trim and into the bleed. Default delivery for a poster is both a framed and a frameless variant.
 
 **Line-ups** – starting XI for both teams, substitutes (labelled), managers. Rows in the JSON are a *display arrangement* (attack → goalkeeper); mark formations `"status": "estimated"` unless officially documented, and never print an estimated formation as fact. Never imply a player took part if they were not in the matchday squad. For a single iconic-goal poster you may hide the line-ups (`display.showLineups: false`).
 

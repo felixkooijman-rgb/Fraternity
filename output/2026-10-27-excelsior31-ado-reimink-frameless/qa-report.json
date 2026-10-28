@@ -1,8 +1,10 @@
 {
-  "generated": "2026-10-28T13:42:29.371Z",
+  "generated": "2026-10-28T13:48:20.313Z",
   "data": {
     "errors": [],
     "warnings": [
+      "lineups.home formation 4-1-4-1 is estimated; it is not printed as fact",
+      "lineups.away formation 4-3-3 is estimated; it is not printed as fact",
       "MANUAL CHECK: Schrijver's goal minute 45+2' comes from one line-up source; other reports only say 'just before half-time'",
       "MANUAL CHECK: Shootout score: majority of sources 6-5, one source 5-4 – 6-5 used",
       "MANUAL CHECK: ESPN lists Maneschijn and Lbenay in the Excelsior '31 XI instead of Schmidt and Wesselink – the other sources were followed",

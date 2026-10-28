@@ -252,16 +252,14 @@
     ]
   },
   "variants": {
-    "lineups": {
+    "framed": {
       "display": {
-        "showLineups": true,
-        "showSubs": false
+        "showFrame": true
       }
     },
-    "clean": {
+    "frameless": {
       "display": {
-        "showLineups": false,
-        "showSubs": false
+        "showFrame": false
       }
     }
   }

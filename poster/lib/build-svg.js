@@ -114,30 +114,35 @@ function buildSvg(data, theme, opts = {}) {
   const bleed = opts.bleed ?? 12; // ≈3 mm when the trim is 50.8 cm wide
   const c = theme.colors;
   const rand = rng(data.slug || 'poster');
-  const F = 36; // frame width
+  const F = 36; // frame width; the layout keeps this inset even without a frame
   const art = { x: F, y: F, w: W - 2 * F, h: H - 2 * F };
+  const framed = (data.display || {}).showFrame !== false;
+  // Frameless: the artwork runs to the trim and into the bleed.
+  const paint = framed ? art : { x: -bleed, y: -bleed, w: W + 2 * bleed, h: H + 2 * bleed };
+  const top = paint.y - 20;
+  const bottom = paint.y + paint.h + 20;
   const ax = (r) => art.x + r * art.w;
   const ay = (r) => art.y + r * art.h;
   const { match, goals = [], featured, lineups, display = {} } = data;
   const out = [];
 
   // ---------- background + shirt graphics (clipped to the art area) ----------
-  out.push(`<rect x="${-bleed}" y="${-bleed}" width="${W + 2 * bleed}" height="${H + 2 * bleed}" fill="${c.frame}"/>`);
+  out.push(`<rect x="${-bleed}" y="${-bleed}" width="${W + 2 * bleed}" height="${H + 2 * bleed}" fill="${framed ? c.frame : c.background}"/>`);
   out.push(`<g clip-path="url(#art)">`);
-  out.push(`<rect x="${art.x}" y="${art.y}" width="${art.w}" height="${art.h}" fill="${c.background}"/>`);
+  out.push(`<rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}" fill="${c.background}"/>`);
   const sp = theme.stripes || {};
   if (sp.side) {
     const side = c.sideStripe || c.stripe;
-    out.push(`<path d="${stripe(rand, ax(0.043), ax(0.146), art.y - 20, art.y + art.h + 20)}" fill="${side}"/>`);
-    out.push(`<path d="${stripe(rand, ax(0.854), ax(0.958), art.y - 20, art.y + art.h + 20)}" fill="${side}"/>`);
+    out.push(`<path d="${stripe(rand, ax(0.043), ax(0.146), top, bottom)}" fill="${side}"/>`);
+    out.push(`<path d="${stripe(rand, ax(0.854), ax(0.958), top, bottom)}" fill="${side}"/>`);
   }
   if (sp.collar) {
-    out.push(`<path d="${fragment(rand, ax(0.33), ax(0.39), art.y - 10, ay(0.042), 0)}" fill="${c.stripe}" transform="rotate(-3 ${ax(0.36)} ${ay(0.02)})"/>`);
-    out.push(`<path d="${fragment(rand, ax(0.61), ax(0.665), art.y - 10, ay(0.036), 0)}" fill="${c.stripe}" transform="rotate(4 ${ax(0.64)} ${ay(0.02)})"/>`);
+    out.push(`<path d="${fragment(rand, ax(0.33), ax(0.39), top, ay(0.042), 0)}" fill="${c.stripe}" transform="rotate(-3 ${ax(0.36)} ${ay(0.02)})"/>`);
+    out.push(`<path d="${fragment(rand, ax(0.61), ax(0.665), top, ay(0.036), 0)}" fill="${c.stripe}" transform="rotate(4 ${ax(0.64)} ${ay(0.02)})"/>`);
   }
   if (sp.lowerShirt) {
-    out.push(`<path d="${fragment(rand, ax(0.327), ax(0.386), ay(0.80), art.y + art.h + 20, 6)}" fill="${c.stripe}"/>`);
-    out.push(`<path d="${fragment(rand, ax(0.61), ax(0.675), ay(0.80), art.y + art.h + 20, -8)}" fill="${c.stripe}"/>`);
+    out.push(`<path d="${fragment(rand, ax(0.327), ax(0.386), ay(0.80), bottom, 6)}" fill="${c.stripe}"/>`);
+    out.push(`<path d="${fragment(rand, ax(0.61), ax(0.675), ay(0.80), bottom, -8)}" fill="${c.stripe}"/>`);
   }
   out.push(`</g>`);
 
@@ -252,10 +257,10 @@ function buildSvg(data, theme, opts = {}) {
     out.push(`<g id="brand-mark" data-h="${h}" data-w="${w}" data-gap="${brandSize * 0.3}" transform="translate(${brandEnd - 230} ${brandY - h})"><svg width="${w}" height="${h}" viewBox="${mark.viewBox}" fill="${c.brand}">${mark.body}</svg></g>`);
   }
 
-  const safe = { x: art.x + 20, y: art.y + 20, w: art.w - 40, h: art.h - 40 };
+  const safe = { x: art.x + 4, y: art.y + 4, w: art.w - 8, h: art.h - 8 }; // ≥10 mm from trim either way
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${-bleed} ${-bleed} ${W + 2 * bleed} ${H + 2 * bleed}" width="${W + 2 * bleed}" height="${H + 2 * bleed}" data-safe="${safe.x} ${safe.y} ${safe.w} ${safe.h}" data-trim="0 0 ${W} ${H}">
 <title>${esc(`${match.home.display} ${match.score.home}:${match.score.away} ${match.away.display} – ${p.display} ${p.number}`)}</title>
-<defs><style>${fontFaces()}</style><clipPath id="art"><rect x="${art.x}" y="${art.y}" width="${art.w}" height="${art.h}"/></clipPath></defs>
+<defs><style>${fontFaces()}</style><clipPath id="art"><rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}"/></clipPath></defs>
 ${out.join('\n')}
 </svg>`;
   return { svg, W, H, bleed };

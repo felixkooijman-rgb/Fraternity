@@ -1,5 +1,5 @@
 {
-  "slug": "2026-10-27-excelsior31-ado-reimink-clean",
+  "slug": "2026-10-27-excelsior31-ado-reimink-framed",
   "theme": "excelsior31",
   "match": {
     "home": {
@@ -146,8 +146,9 @@
   },
   "display": {
     "showScorers": true,
-    "showLineups": false,
-    "showSubs": false
+    "showLineups": true,
+    "showSubs": false,
+    "showFrame": true
   },
   "brand": {
     "name": "FRATERNITY"

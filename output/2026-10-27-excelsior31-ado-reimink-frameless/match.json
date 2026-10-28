@@ -1,5 +1,5 @@
 {
-  "slug": "2026-10-27-excelsior31-ado-reimink-lineups",
+  "slug": "2026-10-27-excelsior31-ado-reimink-frameless",
   "theme": "excelsior31",
   "match": {
     "home": {
@@ -147,7 +147,8 @@
   "display": {
     "showScorers": true,
     "showLineups": true,
-    "showSubs": false
+    "showSubs": false,
+    "showFrame": false
   },
   "brand": {
     "name": "FRATERNITY"
