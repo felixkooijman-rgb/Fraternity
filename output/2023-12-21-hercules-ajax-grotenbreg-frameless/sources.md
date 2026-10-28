@@ -12,8 +12,8 @@
 - [afc-ajax.info – Hercules - Ajax](https://www.afc-ajax.info/nl/wedstrijd/2023-12-21-Hercules-Ajax) — minutes cross-check
 - [NOS – Blamage voor Ajax](https://nos.nl/artikel/2502455-blamage-voor-ajax-nederlaag-tegen-amateurs-hercules-in-bekertoernooi) — result, narrative
 - [Sportsmole – result](https://www.sportsmole.co.uk/football/usv-hercules/knvb-beker/result/ajax-dumped-out-of-knvb-beker-by-fourth-tier-amateur-side_531928.html) — result, fourth tier
-- [USV Hercules – Geschiedenis](https://www.usvhercules.nl/algemeen/geschiedenis/) — club colours (historical; superseded by match photo)
-- [Voetbalarchieven – Hercules (Utrecht)](https://www.voetbalarchieven.nl/clubs/hercules-utrecht/) — kit description (historical; superseded by match photo)
+- [USV Hercules – Geschiedenis](https://www.usvhercules.nl/algemeen/geschiedenis/) — club colours
+- [Voetbalarchieven – Hercules (Utrecht)](https://www.voetbalarchieven.nl/clubs/hercules-utrecht/) — kit description
 - [ESPN NL – Mats Grotenbreg](https://www.espn.nl/voetbal/speler/_/id/260803/mats-grotenbreg) — shirt number, position
 
 ## Confirmed
@@ -24,7 +24,7 @@
 - Grotenbreg #4 (fcupdate line-ups, ESPN player profile 2023-24 KNVB Beker)
 - Hercules XI: Vonk, Carmelia, Beck, Zwart, Fonville, Bijl, Van Hussen, Lahri, Vermeulen, Pieters, Paulina (RTV Utrecht, Ajax Showtime)
 - Ajax XI: Ramaj, Gooijer, Šutalo, Hato, Ávila, Hlynsson, Taylor, Mikautadze, Van Axel Dongen, Akpom, Forbs (ESPN, Ajax Showtime)
-- Hercules kit worn vs Ajax: black/white vertically striped shirt, black shorts (match photo supplied by the brand)
+- Hercules kit: navy (#00305C) / white vertically striped shirt – official kit design supplied by the brand; match photo shows the same stripes (navy reads near-black under floodlights), black shorts
 
 ## Needs manual confirmation
 
@@ -35,4 +35,4 @@
 - [ ] Line-up rows are a display arrangement, not verified positions
 - [ ] Hercules/Ajax crests and sponsors not reproduced (no licensed assets)
 - [ ] Mats Grotenbreg passed away on 25 June 2026 – consider consulting USV Hercules / his family before selling this poster
-- [ ] Club history pages describe blue/white as the founding colours; the 2023 match photo shows black/white stripes – black/white used
+- [ ] Kit design supplied is assumed to be the 2023-24 shirt worn against Ajax – confirm the season

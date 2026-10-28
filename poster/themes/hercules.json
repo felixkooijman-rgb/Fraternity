@@ -1,16 +1,16 @@
 {
   "id": "hercules",
-  "label": "USV Hercules Utrecht – black/white vertically striped shirt, black shorts (2023-24, per match photo)",
+  "label": "USV Hercules Utrecht – navy/white vertically striped shirt (colour sampled from the official kit design, #00305C)",
   "colors": {
-    "background": "#121212",
+    "background": "#00305C",
     "stripe": "#FFFFFF",
     "text": "#FFFFFF",
     "rule": "#FFFFFF",
-    "accent": "#8C8C8C",
-    "numberGap": "#121212",
-    "nameOutline": "#121212",
-    "frame": "#2A2A2A",
-    "brand": "#121212"
+    "accent": "#7FA3C9",
+    "numberGap": "#00305C",
+    "nameOutline": "#00305C",
+    "frame": "#161616",
+    "brand": "#00305C"
   },
   "stripes": {
     "side": true,
