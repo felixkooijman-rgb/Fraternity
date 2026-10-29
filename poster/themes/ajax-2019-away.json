@@ -11,13 +11,16 @@
     "numberGap": "#111111",
     "nameOutline": "#111111",
     "frame": "#2A2A2A",
-    "brand": "#FFFFFF"
+    "brand": "#FFFFFF",
+    "textOutline": "#111111"
   },
   "hero": {
     "fill": "#C9A14A",
     "line": "#FFFFFF",
     "gap": "#111111",
-    "nameLine": false
+    "nameLine": false,
+    "stroke": "#111111",
+    "strokeWidth": 0.02
   },
   "shirt": {
     "base": "#111111",
@@ -27,8 +30,8 @@
         "color": "#FFFFFF",
         "x0": 0,
         "x1": 1,
-        "y0": 0.205,
-        "y1": 0.222
+        "y0": 0.249,
+        "y1": 0.259
       },
       {
         "type": "rect",

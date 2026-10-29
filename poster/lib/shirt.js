@@ -14,7 +14,7 @@
 //   { type: 'rect', color, x0, x1, y0, y1 }                     blocks: bands, yokes, shoulders
 //   { type: 'pattern', kind, color, opacity = 1, scale = 1 }    chevron | diamond | diagonal | leaf | crest
 //   { type: 'gradient', from, to }                              vertical colour fade
-// Edges are "torn" like the brand reference so the shirt reads as a graphic, not a photo.
+// Edges are clean seams by default; `torn: true` gives the ripped-paper edges of the PSV reference.
 
 function tornLine(rand, from, to, axis, jitter = 9) {
   // axis 'v': vertical line at x=from[0] from y=from[1] to y=to[1]; 'h': horizontal.
@@ -38,12 +38,16 @@ function poly(pts) {
 }
 
 // Rectangle with torn edges (any side can be kept straight when it runs off the art).
+// jitter 0 gives clean seams (default, like the shirt-front reference); >0 gives torn edges.
+let JITTER = 0;
+
 function tornRect(rand, x0, y0, x1, y1) {
+  if (!JITTER) return poly([[x0, y0], [x1, y0], [x1, y1], [x0, y1]]);
   return poly([
-    ...tornLine(rand, [x0, y0], [x1, y0], 'h'),
-    ...tornLine(rand, [x1, y0], [x1, y1], 'v'),
-    ...tornLine(rand, [x1, y1], [x0, y1], 'h'),
-    ...tornLine(rand, [x0, y1], [x0, y0], 'v'),
+    ...tornLine(rand, [x0, y0], [x1, y0], 'h', JITTER),
+    ...tornLine(rand, [x1, y0], [x1, y1], 'v', JITTER),
+    ...tornLine(rand, [x1, y1], [x0, y1], 'h', JITTER),
+    ...tornLine(rand, [x0, y1], [x0, y0], 'v', JITTER),
   ]);
 }
 
@@ -60,6 +64,7 @@ const PATTERNS = {
 
 function drawShirt(spec, { rand, art, paint, ax, ay, defs }) {
   const out = [];
+  JITTER = spec.torn ? 9 : 0;
   const X0 = paint.x - 30;
   const X1 = paint.x + paint.w + 30;
   const Y0 = paint.y - 30;
@@ -110,8 +115,9 @@ function drawShirt(spec, { rand, art, paint, ax, ay, defs }) {
   });
 
   // Plain field for the typography (like the number panel on the reference poster).
+  // Only when the theme asks for it: by default the shirt runs behind all text (brand style).
   const pn = { x0: 0.146, x1: 0.854, y0: 0.045, y1: 0.815, ...(spec.panel || {}) };
-  if (pn.color !== 'none') {
+  if (spec.panel && pn.color !== 'none') {
     const fill = pn.color || (gradientId ? `url(#${gradientId})` : spec.base);
     out.push(`<path d="${tornRect(rand, ax(pn.x0), ay(pn.y0), ax(pn.x1), ay(pn.y1))}" fill="${fill}"/>`);
   }

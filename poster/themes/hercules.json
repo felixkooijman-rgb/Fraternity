@@ -10,7 +10,8 @@
     "numberGap": "#00305C",
     "nameOutline": "#00305C",
     "frame": "#161616",
-    "brand": "#00305C"
+    "brand": "#FFFFFF",
+    "textOutline": "#00305C"
   },
   "shirt": {
     "base": "#FFFFFF",
@@ -23,13 +24,16 @@
         "phase": 0.25
       }
     ],
-    "panel": {
-      "color": "#00305C"
-    },
     "collar": {
       "type": "polo",
       "color": "#00305C",
       "width": 0.07
     }
+  },
+  "hero": {
+    "fill": "#FFFFFF",
+    "stroke": "#00305C",
+    "strokeWidth": 0.03,
+    "numberLine": false
   }
 }

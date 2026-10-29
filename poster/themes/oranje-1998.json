@@ -9,9 +9,10 @@
     "rule": "#111111",
     "accent": "#111111",
     "numberGap": "#F47A20",
-    "nameOutline": "#DB6612",
+    "nameOutline": "#B9520C",
     "frame": "#161616",
-    "brand": "#FFFFFF"
+    "brand": "#FFFFFF",
+    "textOutline": "#B9520C"
   },
   "shirt": {
     "base": "#F47A20",

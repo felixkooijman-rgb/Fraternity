@@ -4,13 +4,14 @@
   "colors": {
     "background": "#D5001C",
     "stripe": "#FFFFFF",
-    "text": "#FFFFFF",
+    "text": "#111111",
     "rule": "#111111",
     "accent": "#111111",
     "numberGap": "#D5001C",
-    "nameOutline": "#D5001C",
+    "nameOutline": "#FFFFFF",
     "frame": "#161616",
-    "brand": "#111111"
+    "brand": "#111111",
+    "textOutline": "#FFFFFF"
   },
   "shirt": {
     "base": "#FFFFFF",
@@ -20,14 +21,16 @@
         "color": "#D5001C",
         "side": "left"
       }
-    ],
-    "panel": {
-      "color": "#D5001C"
-    }
+    ]
   },
   "hero": {
     "font": "Staatliches-Regular.ttf",
     "nameLetterSpacing": 8,
-    "sizeScale": 1.05
+    "sizeScale": 1.05,
+    "fill": "#111111",
+    "stroke": "#FFFFFF",
+    "strokeWidth": 0.014,
+    "numberLine": false,
+    "nameLine": false
   }
 }

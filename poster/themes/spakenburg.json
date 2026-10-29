@@ -11,7 +11,8 @@
     "numberGap": "#0E1319",
     "nameOutline": "#0E1319",
     "frame": "#2A2A2A",
-    "brand": "#FFFFFF"
+    "brand": "#FFFFFF",
+    "textOutline": "#0E1319"
   },
   "shirt": {
     "base": "#0E1319"

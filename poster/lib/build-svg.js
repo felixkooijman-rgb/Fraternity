@@ -41,13 +41,19 @@ function heroText(x, y, str, size, style, { ls = 0, maxw, line = true, id } = {}
   const attrs = `font-family="${style.family}" font-size="${size}"${style.weight ? ` font-weight="${style.weight}"` : ''} text-anchor="middle"${ls ? ` letter-spacing="${ls}"` : ''}`;
   const [dx, dy] = style.direction;
   const parts = [`<g${id ? ` id="${id}"` : ''} data-sync="1">`];
-  if (line) {
+  if (line && style.flowing) {
+    // Over a patterned shirt a solid "gap" copy would show as a blob, so the parallel
+    // line is drawn as the outline of an offset copy instead.
+    const lo = size * style.lineOffset;
+    parts.push(`<text x="${(x + dx * lo).toFixed(1)}" y="${(y + dy * lo).toFixed(1)}" ${attrs} fill="none" stroke="${style.line}" stroke-width="${(size * 0.012).toFixed(1)}">${esc(str)}</text>`);
+  } else if (line) {
     const lo = size * style.lineOffset;
     const go = size * style.gapOffset;
     parts.push(`<text x="${(x + dx * lo).toFixed(1)}" y="${(y + dy * lo).toFixed(1)}" ${attrs} fill="${style.line}">${esc(str)}</text>`);
     parts.push(`<text x="${(x + dx * go).toFixed(1)}" y="${(y + dy * go).toFixed(1)}" ${attrs} fill="${style.gap}">${esc(str)}</text>`);
   }
-  parts.push(`<text x="${x}" y="${y}" ${attrs} fill="${style.fill}" data-qa="1"${maxw ? ` data-maxw="${maxw}"` : ''}>${esc(str)}</text>`);
+  const stroke = style.stroke ? ` stroke="${style.stroke}" stroke-width="${(size * style.strokeWidth).toFixed(1)}" stroke-linejoin="round" paint-order="stroke"` : '';
+  parts.push(`<text x="${x}" y="${y}" ${attrs} fill="${style.fill}"${stroke} data-qa="1"${maxw ? ` data-maxw="${maxw}"` : ''}>${esc(str)}</text>`);
   parts.push('</g>');
   return parts.join('\n');
 }
@@ -108,7 +114,13 @@ function brandMark() {
   return { viewBox, body, ratio: vw / vh };
 }
 
+// Contrast outline for all poster text when the shirt design runs behind it (set per build).
+let defaultOutline = null;
+
 function text(x, y, str, { size, family = 'Poster Text', weight = 600, anchor = 'middle', fill, ls = 0, maxw, outline, qa = true, id } = {}) {
+  if (outline === undefined && defaultOutline) {
+    outline = { color: defaultOutline, width: Math.max(4, Math.min(12, size * 0.09)).toFixed(1) };
+  }
   const attrs = [
     id ? `id="${id}"` : '',
     `x="${x}"`, `y="${y}"`,
@@ -123,7 +135,8 @@ function text(x, y, str, { size, family = 'Poster Text', weight = 600, anchor = 
 }
 
 function rule(y, color, x0 = 400, x1 = 1600) {
-  return `<rect x="${x0}" y="${y - 2.5}" width="${x1 - x0}" height="5" fill="${color}"/>`;
+  const stroke = defaultOutline ? ` stroke="${defaultOutline}" stroke-width="3"` : '';
+  return `<rect x="${x0}" y="${y - 2.5}" width="${x1 - x0}" height="5" fill="${color}"${stroke}/>`;
 }
 
 function formatDate(iso) {
@@ -151,6 +164,9 @@ function buildSvg(data, theme, opts = {}) {
   out.push(`<rect x="${-bleed}" y="${-bleed}" width="${W + 2 * bleed}" height="${H + 2 * bleed}" fill="${framed ? c.frame : c.background}"/>`);
   out.push(`<g clip-path="url(#art)">`);
   const defs = [];
+  // A shirt without a text panel runs behind everything: text gets a contrast outline.
+  const flowing = !!(theme.shirt && !theme.shirt.panel);
+  defaultOutline = flowing ? c.textOutline || null : null;
   // theme.shirt draws the front of the match shirt; older themes use the simple stripe set.
   if (theme.shirt) out.push(drawShirt(theme.shirt, { rand, art, paint, ax, ay, defs }));
   else out.push(`<rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}" fill="${c.background}"/>`);
@@ -225,6 +241,9 @@ function buildSvg(data, theme, opts = {}) {
   const style = {
     family: th.font ? 'Poster Hero' : 'Poster Display',
     weight: th.weight,
+    flowing,
+    stroke: th.stroke || (flowing ? c.textOutline : null),
+    strokeWidth: th.strokeWidth ?? 0.012,
     fill: th.fill || c.text,
     line: th.line || c.accent,
     gap: th.gap || c.numberGap,
@@ -236,7 +255,7 @@ function buildSvg(data, theme, opts = {}) {
   out.push(heroText(CX, hero.nameY, upper(p.display), hero.nameSize * scale, style,
     { ls: th.nameLetterSpacing ?? 14, maxw: 1250, line: !!th.nameLine, id: 'surname' }));
   out.push(heroText(CX, hero.numY, String(p.number), hero.numSize * (th.numberScale || scale), style,
-    { maxw: 1250, id: 'number' }));
+    { maxw: 1250, id: 'number', line: th.numberLine !== false }));
   if (!compact) out.push(rule(2395, c.rule));
 
   // ---------- line-ups ----------

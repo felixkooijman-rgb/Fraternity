@@ -9,9 +9,10 @@
     "rule": "#F47A20",
     "accent": "#FFFFFF",
     "numberGap": "#2E4AAE",
-    "nameOutline": "#2A3A92",
+    "nameOutline": "#1B2A6B",
     "frame": "#161616",
-    "brand": "#FFFFFF"
+    "brand": "#FFFFFF",
+    "textOutline": "#1B2A6B"
   },
   "hero": {
     "font": "Oxanium-Variable.ttf",
@@ -22,7 +23,9 @@
     "nameLine": false,
     "nameLetterSpacing": 6,
     "sizeScale": 1.0,
-    "numberScale": 1.28
+    "numberScale": 1.28,
+    "stroke": "#1B2A6B",
+    "strokeWidth": 0.02
   },
   "shirt": {
     "base": "#2350B5",

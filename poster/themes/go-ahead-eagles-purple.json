@@ -9,9 +9,10 @@
     "rule": "#E8AB4A",
     "accent": "#E8AB4A",
     "numberGap": "#4A1C72",
-    "nameOutline": "#4A1C72",
+    "nameOutline": "#3A1460",
     "frame": "#161616",
-    "brand": "#FFFFFF"
+    "brand": "#FFFFFF",
+    "textOutline": "#3A1460"
   },
   "hero": {
     "font": "SquadaOne-Regular.ttf",
