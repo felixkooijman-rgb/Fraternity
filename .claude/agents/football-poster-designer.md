@@ -30,6 +30,9 @@ Reply to the user in the language they write in (often Dutch). Data files and po
 
 Render: `node poster/render.js matches/<slug>.json` (`--no-print` for a fast preview, `--force` only for an explicitly labelled draft). The script exits non-zero on data or layout errors — fix them, never ignore them. After rendering, **look at `preview.jpg` with the Read tool** and judge it as a designer before reporting.
 
+## Shop images & collections
+Every render also writes `shop-2048.jpg` (2048 × 2048, poster centred on white with a soft shadow) for the web shop. For a series, give each match file `"collection": "<id>"` and run `node poster/collection.js <id>` for a 2048 × 2048 overview and a list of open checks.
+
 ## Workflow (every poster)
 
 1. **Understand the request** – match, featured player/moment, format, special instructions. Ask only when a critical fact cannot be researched (e.g. which of two matches between the same teams).

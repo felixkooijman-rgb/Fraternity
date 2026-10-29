@@ -1,0 +1,35 @@
+{
+  "generated": "2026-10-29T18:43:14.614Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation  is estimated; it is not printed as fact",
+      "lineups.away formation  is estimated; it is not printed as fact",
+      "MANUAL CHECK: Van Basten 54' (UEFA highlights) vs 52' (other UEFA article) – 54' used",
+      "MANUAL CHECK: Home/away order: the USSR were the nominal home side on the official match sheet – verify; poster lists USSR first",
+      "MANUAL CHECK: Orange 1988 shirt simplified (sleeve pattern not reproduced); 1988 number lettering not verified",
+      "MANUAL CHECK: Line-up rows are a display arrangement (USSR positions estimated)",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"NEDERLAND\" 112→102.47",
+      "\"VAN BASTEN\" 300→257",
+      "\"MIKHAILICHENKO\" 30→28.08"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "slug": "2019-03-05-real-madrid-ajax-tadic-frameless",
+  "theme": "ajax-2019-away",
+  "match": {
+    "home": {
+      "name": "Real Madrid",
+      "display": "Real Madrid"
+    },
+    "away": {
+      "name": "Ajax",
+      "display": "Ajax"
+    },
+    "score": {
+      "home": 1,
+      "away": 4
+    },
+    "date": "2019-03-05",
+    "stadium": "Santiago Bernabéu",
+    "city": "Madrid",
+    "country": "Spain",
+    "competition": "Champions League",
+    "phase": "Round of 16"
+  },
+  "goals": [
+    {
+      "team": "away",
+      "player": "Hakim Ziyech",
+      "display": "ZIYECH",
+      "minute": 7,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "David Neres",
+      "display": "NERES",
+      "minute": 18,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Dušan Tadić",
+      "display": "TADIĆ",
+      "minute": 62,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Marco Asensio",
+      "display": "ASENSIO",
+      "minute": 70,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Lasse Schöne",
+      "display": "SCHÖNE",
+      "minute": 72,
+      "type": "free_kick"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Dušan Tadić",
+      "display": "TADIĆ",
+      "number": 10,
+      "team": "away",
+      "position": "Forward",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 62
+    },
+    "headline": "Tadić inspires Ajax to dethrone the three-time champions at the Bernabéu"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Vinícius",
+          "Benzema",
+          "Vázquez"
+        ],
+        [
+          "Kroos",
+          "Casemiro",
+          "Modrić"
+        ],
+        [
+          "Reguilón",
+          "Varane",
+          "Nacho",
+          "Carvajal"
+        ],
+        [
+          "Courtois"
+        ]
+      ],
+      "subs": [
+        "Asensio",
+        "Bale"
+      ],
+      "manager": null
+    },
+    "away": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Neres",
+          "Tadić",
+          "Ziyech"
+        ],
+        [
+          "De Jong",
+          "Schöne",
+          "Van de Beek"
+        ],
+        [
+          "Tagliafico",
+          "Blind",
+          "De Ligt",
+          "Mazraoui"
+        ],
+        [
+          "Onana"
+        ]
+      ],
+      "subs": [
+        "Veltman",
+        "De Wit",
+        "Dolberg"
+      ],
+      "manager": null
+    }
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false,
+    "showFrame": false
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Real Madrid 1-4 Ajax, 05.03.2019, Santiago Bernabéu, Champions League round of 16 second leg; Ajax through 5-3 on aggregate (ESPN, Goal, UEFA)",
+      "Goals: Ziyech 7', Neres 18', Tadić 62', Asensio 70', Schöne 72' (ESPN, Sportsmole, Footballcritic)",
+      "Tadić #10 (ESPN, shirt listings)",
+      "Starting XIs (ESPN, 11v11/Soccerway)"
+    ],
+    "needs_manual_check": [
+      "Ajax kit: black/gold 2018-19 away shirt per several retailer listings tied to this match – confirm with a match photo",
+      "Schöne's goal type (free kick) per match reports – shown without label",
+      "adidas 2018-19 lettering approximated with the default lettering in gold",
+      "Line-up rows are a display arrangement",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ],
+    "sources": [
+      {
+        "title": "ESPN – Real Madrid 1-4 Ajax",
+        "url": "https://www.espn.com/soccer/match/_/gameId/530625/ajax-amsterdam-real-madrid",
+        "used_for": "result, goals, line-ups"
+      },
+      {
+        "title": "Goal – historic humiliation",
+        "url": "https://www.goal.com/en/news/historic-humiliation-madrid-horror-show-sees-ajax-dump-out-european-champions/8mihx3iuohib1dthqpcvg6iyy",
+        "used_for": "result"
+      },
+      {
+        "title": "Footballcritic – line-ups",
+        "url": "https://www.footballcritic.com/uefa-champions-league-real-madrid-cf-afc-ajax/lineups/1493650",
+        "used_for": "goals, line-ups"
+      },
+      {
+        "title": "11v11 – Real Madrid v Ajax",
+        "url": "https://www.11v11.com/matches/real-madrid-v-ajax-05-march-2019-361239/",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "Football Fashion – Ajax 2018/19 away kit",
+        "url": "https://footballfashion.org/wordpress/2018/04/28/afc-ajax-201819-adidas-away-kit/amp/",
+        "used_for": "kit colours"
+      }
+    ]
+  }
+}

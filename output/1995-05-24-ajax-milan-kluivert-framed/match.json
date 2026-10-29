@@ -1,0 +1,100 @@
+{
+  "slug": "1995-05-24-ajax-milan-kluivert-framed",
+  "theme": "ajax-1995-away",
+  "match": {
+    "home": {
+      "name": "Ajax",
+      "display": "Ajax"
+    },
+    "away": {
+      "name": "AC Milan",
+      "display": "Milan"
+    },
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "date": "1995-05-24",
+    "stadium": "Ernst-Happel-Stadion",
+    "city": "Vienna",
+    "country": "Austria",
+    "competition": "Champions League",
+    "phase": "Final"
+  },
+  "goals": [
+    {
+      "team": "home",
+      "player": "Patrick Kluivert",
+      "display": "KLUIVERT",
+      "minute": 85,
+      "type": "regular"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Patrick Kluivert",
+      "display": "KLUIVERT",
+      "number": 15,
+      "team": "home",
+      "position": "Forward",
+      "started": false
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 85
+    },
+    "headline": "Eighteen-year-old substitute Kluivert wins the Champions League for Ajax"
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": false,
+    "showSubs": false,
+    "showFrame": true
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Ajax 1-0 AC Milan, 24.05.1995, Ernst-Happel-Stadion Vienna, Champions League final (UEFA, Wikipedia)",
+      "Kluivert came on as a substitute (~69'-70') and scored at 85' (UEFA, BeSoccer, fandom)",
+      "Kluivert #15 in the final (BeSoccer line-up, IMDb match listing)",
+      "Ajax wore the navy Umbro away kit as nominal home side; Milan in white (sartorial.soccer, Wikipedia)"
+    ],
+    "needs_manual_check": [
+      "Goal minute 85' vs 84' in one source – 85' used",
+      "Milan XI not fully verified – line-ups not printed on this poster",
+      "Kluivert #15 from two match listings, not an official UEFA sheet",
+      "Umbro number lettering not verified – default lettering",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ],
+    "sources": [
+      {
+        "title": "UEFA – Kluivert strikes as Ajax force changing of the guard",
+        "url": "https://www.uefa.com/uefachampionsleague/news/0131-0ea969a88ada-9aa85bac6453-1000--kluivert-strikes-as-ajax-force-changing-of-the-guard/",
+        "used_for": "result, goal"
+      },
+      {
+        "title": "en.wikipedia – 1995 UEFA Champions League final",
+        "url": "https://en.wikipedia.org/wiki/1995_UEFA_Champions_League_final",
+        "used_for": "result, kit"
+      },
+      {
+        "title": "BeSoccer – Ajax vs Milan line-ups",
+        "url": "https://www.besoccer.com/match/ajax/milan/199512749/lineups",
+        "used_for": "shirt numbers, substitutions"
+      },
+      {
+        "title": "football.fandom – 1995 UEFA Champions League Final",
+        "url": "https://football.fandom.com/wiki/1995_UEFA_Champions_League_Final",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "sartorial.soccer – Ajax v Milan 1995 kits",
+        "url": "https://sartorial.soccer/2021/05/04/ajax-milan-1995/",
+        "used_for": "kits"
+      }
+    ]
+  }
+}

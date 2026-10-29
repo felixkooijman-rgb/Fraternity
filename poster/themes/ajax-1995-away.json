@@ -1,0 +1,6 @@
+{
+  "id": "ajax-1995-away",
+  "label": "Ajax – navy Umbro away shirt worn in the 1995 Champions League final",
+  "colors": { "background": "#14224A", "stripe": "#FFFFFF", "sideStripe": "#1B2D5E", "text": "#FFFFFF", "rule": "#D2122E", "accent": "#D2122E", "numberGap": "#14224A", "nameOutline": "#14224A", "frame": "#161616", "brand": "#FFFFFF" },
+  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+}

@@ -1,0 +1,6 @@
+{
+  "id": "oranje-1998",
+  "label": "Netherlands – orange home shirt, World Cup 1998 (simplified; tonal side bands are a graphic device)",
+  "colors": { "background": "#F47A20", "stripe": "#FFFFFF", "sideStripe": "#DB6612", "text": "#FFFFFF", "rule": "#13294B", "accent": "#13294B", "numberGap": "#F47A20", "nameOutline": "#DB6612", "frame": "#161616", "brand": "#FFFFFF" },
+  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+}

@@ -1,0 +1,186 @@
+{
+  "slug": "1970-05-06-feyenoord-celtic-kindvall-framed",
+  "theme": "feyenoord",
+  "match": {
+    "home": {
+      "name": "Feyenoord",
+      "display": "Feyenoord"
+    },
+    "away": {
+      "name": "Celtic",
+      "display": "Celtic"
+    },
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "afterExtraTime": true,
+    "date": "1970-05-06",
+    "stadium": "San Siro",
+    "city": "Milan",
+    "country": "Italy",
+    "competition": "European Cup",
+    "phase": "Final",
+    "attendance": 53187
+  },
+  "goals": [
+    {
+      "team": "away",
+      "player": "Tommy Gemmell",
+      "display": "GEMMELL",
+      "minute": 30,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Rinus Israël",
+      "display": "ISRAËL",
+      "minute": 32,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Ove Kindvall",
+      "display": "KINDVALL",
+      "minute": 117,
+      "type": "regular"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Ove Kindvall",
+      "display": "KINDVALL",
+      "number": 9,
+      "team": "home",
+      "position": "Forward",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 117
+    },
+    "headline": "Kindvall's extra-time lob makes Feyenoord the first Dutch champions of Europe"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Wery",
+          "Kindvall",
+          "Moulijn"
+        ],
+        [
+          "Jansen",
+          "Hasil",
+          "Van Hanegem"
+        ],
+        [
+          "Van Duivenbode",
+          "Laseroms",
+          "Israël",
+          "Romeijn"
+        ],
+        [
+          "Pieters Graafland"
+        ]
+      ],
+      "subs": [
+        "Haak"
+      ],
+      "manager": null
+    },
+    "away": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Johnstone",
+          "Wallace",
+          "Lennox",
+          "Hughes"
+        ],
+        [
+          "Murdoch",
+          "Auld"
+        ],
+        [
+          "Gemmell",
+          "McNeill",
+          "Brogan",
+          "Hay"
+        ],
+        [
+          "Williams"
+        ]
+      ],
+      "subs": [
+        "Connelly"
+      ],
+      "manager": null
+    }
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false,
+    "showFrame": true
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Feyenoord 2-1 Celtic after extra time, 06.05.1970, San Siro, Milan, European Cup final – first Dutch European Cup (Wikipedia, The Blizzard, Celtic Wiki)",
+      "Goals: Gemmell 30', Israël 32', Kindvall 117' (simple.wikipedia, NamuWiki, Grokipedia)",
+      "Kindvall #9; Feyenoord XI numbers 1-11 (simple.wikipedia, Wikidata, Sporcle)",
+      "Starting XIs (Celtic Wiki, simple.wikipedia); attendance 53,187"
+    ],
+    "needs_manual_check": [
+      "Gemmell 30' vs 31' (Celtic Wiki) – 30' used",
+      "Feyenoord kit worn in the final not verified (Le Coq Sportif per an auction listing) – club colours red/white used",
+      "Line-up rows are a display arrangement",
+      "Shirt lettering of 1970 not verified – default block lettering",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ],
+    "sources": [
+      {
+        "title": "en.wikipedia – 1970 European Cup final",
+        "url": "https://en.wikipedia.org/wiki/1970_European_Cup_final",
+        "used_for": "result, line-ups"
+      },
+      {
+        "title": "simple.wikipedia – 1970 European Cup final",
+        "url": "https://simple.wikipedia.org/wiki/1970_European_Cup_final",
+        "used_for": "goal minutes, shirt numbers"
+      },
+      {
+        "title": "The Celtic Wiki – Celtic 1-2 Feyenoord",
+        "url": "https://www.thecelticwiki.com/1970-05-06-celtic-1-2-feyenoord-european-cup/",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "The Blizzard – Feyenoord 2 Celtic 1",
+        "url": "https://theblizzard.co.uk/feyenoord-2-celtic-1/featured/",
+        "used_for": "narrative"
+      },
+      {
+        "title": "Wikidata – 1970 European Cup Final",
+        "url": "https://www.wikidata.org/wiki/Q1068946",
+        "used_for": "shirt numbers"
+      },
+      {
+        "title": "Sporcle – 1970 European Cup final facts",
+        "url": "https://www.sporcle.com/games/bratan88/1970-european-cup-final-facts",
+        "used_for": "shirt numbers"
+      }
+    ]
+  }
+}

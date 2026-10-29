@@ -1,0 +1,6 @@
+{
+  "id": "oranje-1988",
+  "label": "Netherlands – orange home shirt, EURO 1988 (simplified: no sleeve pattern; tonal side bands are a graphic device)",
+  "colors": { "background": "#F26A1B", "stripe": "#FFFFFF", "sideStripe": "#D9580F", "text": "#FFFFFF", "rule": "#1D1D1B", "accent": "#1D1D1B", "numberGap": "#F26A1B", "nameOutline": "#D9580F", "frame": "#161616", "brand": "#FFFFFF" },
+  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+}

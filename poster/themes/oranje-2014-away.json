@@ -1,0 +1,7 @@
+{
+  "id": "oranje-2014-away",
+  "label": "Netherlands – dark blue away shirt with orange numbering, World Cup 2014 (vs Spain)",
+  "colors": { "background": "#17233F", "stripe": "#FFFFFF", "sideStripe": "#1F2E52", "text": "#FFFFFF", "rule": "#F47A20", "accent": "#FFFFFF", "numberGap": "#17233F", "nameOutline": "#17233F", "frame": "#161616", "brand": "#FFFFFF" },
+  "stripes": { "side": true, "collar": false, "lowerShirt": false },
+  "hero": { "fill": "#F47A20", "line": "#FFFFFF", "gap": "#17233F", "nameLine": false }
+}

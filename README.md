@@ -15,8 +15,16 @@ npm install
 node poster/render.js matches/2024-11-27-psv-shakhtar-tillman.json
 ```
 
-Output in `output/<slug>/`: `poster.svg` (editable master), `print.pdf` (vector, 3 mm bleed), `print.png` (6000 × 9000 trim @ 300 dpi + bleed, not committed), `preview.jpg`, `match.json`, `sources.md`, `qa-report.json`.
+Output in `output/<slug>/`: `poster.svg` (editable master), `print.pdf` (vector, 3 mm bleed), `print.png` (6000 × 9000 trim @ 300 dpi + bleed, not committed), `preview.jpg`, `shop-2048.jpg` (2048 × 2048 square shop image), `match.json`, `sources.md`, `qa-report.json`.
 
 Rendering stops on data errors (score ≠ goals, featured goal missing, player not in squad, no sources, …) and exits non-zero on layout errors (overlaps, text outside the safe area). Items in `verification.needs_manual_check` are printed as warnings and listed in `sources.md`.
 
 Fonts: Anton and Oswald (SIL Open Font License, see `poster/fonts/`). The Fraternity mark (`poster/assets/brand/fraternity-mark.svg`, redrawn from the reference) sits left of the wordmark; replace it with the official file under the same name. Use `"variants"` in a match file to render e.g. a version with and without line-ups.
+
+Collections: give match files the same `"collection"` id and run
+
+```bash
+node poster/collection.js nederlandse-voetbalmomenten
+```
+
+to get `output/collections/<id>/overview-2048.jpg` (contact sheet) and a `README.md` list with every open check.

@@ -1,0 +1,6 @@
+{
+  "id": "feyenoord",
+  "label": "Feyenoord – red/white club colours with black (club identity; exact 1970 final kit not verified)",
+  "colors": { "background": "#D5001C", "stripe": "#FFFFFF", "text": "#FFFFFF", "rule": "#111111", "accent": "#111111", "numberGap": "#D5001C", "nameOutline": "#D5001C", "frame": "#161616", "brand": "#111111" },
+  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+}

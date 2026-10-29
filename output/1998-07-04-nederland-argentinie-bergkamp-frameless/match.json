@@ -1,0 +1,180 @@
+{
+  "slug": "1998-07-04-nederland-argentinie-bergkamp-frameless",
+  "theme": "oranje-1998",
+  "match": {
+    "home": {
+      "name": "Netherlands",
+      "display": "Nederland"
+    },
+    "away": {
+      "name": "Argentina",
+      "display": "Argentinië"
+    },
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "date": "1998-07-04",
+    "stadium": "Stade Vélodrome",
+    "city": "Marseille",
+    "country": "France",
+    "competition": "World Cup 1998",
+    "phase": "Quarter-Final"
+  },
+  "goals": [
+    {
+      "team": "home",
+      "player": "Patrick Kluivert",
+      "display": "KLUIVERT",
+      "minute": 12,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Claudio López",
+      "display": "LÓPEZ",
+      "minute": 17,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Dennis Bergkamp",
+      "display": "BERGKAMP",
+      "minute": 89,
+      "type": "regular"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Dennis Bergkamp",
+      "display": "BERGKAMP",
+      "number": 8,
+      "team": "home",
+      "position": "Forward",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 89
+    },
+    "headline": "Bergkamp's touch, turn and finish send Oranje into the semi-finals"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Bergkamp",
+          "Kluivert"
+        ],
+        [
+          "R. de Boer",
+          "Cocu",
+          "Davids",
+          "Jonk"
+        ],
+        [
+          "Numan",
+          "F. de Boer",
+          "Stam",
+          "Reiziger"
+        ],
+        [
+          "Van der Sar"
+        ]
+      ],
+      "subs": [
+        "Overmars"
+      ],
+      "manager": null
+    },
+    "away": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "López",
+          "Batistuta",
+          "Ortega"
+        ],
+        [
+          "Verón",
+          "Simeone",
+          "Almeyda"
+        ],
+        [
+          "Zanetti",
+          "Sensini",
+          "Chamot",
+          "Ayala"
+        ],
+        [
+          "Roa"
+        ]
+      ],
+      "subs": [
+        "Pineda",
+        "Balbo"
+      ],
+      "manager": null
+    }
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false,
+    "showFrame": false
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Netherlands 2-1 Argentina, 04.07.1998, Stade Vélodrome Marseille, World Cup quarter-final (11v11, Planet World Cup, thesoccerworldcups)",
+      "Goals: Kluivert 12', López 17', Bergkamp 89' assisted by F. de Boer (Planet World Cup, football-lineups)",
+      "Bergkamp #8 (thesoccerworldcups)",
+      "Starting XIs (thesoccerworldcups, 11v11)"
+    ],
+    "needs_manual_check": [
+      "Minutes 12'/17'/89' (Planet World Cup) vs 13'/18'/90' (ESPN) – majority used",
+      "Bergkamp's assist credited to F. de Boer in one source, R. de Boer in another – assist not printed",
+      "Orange 1998 shirt simplified; Nike 1998 number lettering not verified",
+      "Line-up rows are a display arrangement",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ],
+    "sources": [
+      {
+        "title": "11v11 – Netherlands v Argentina 1998",
+        "url": "https://www.11v11.com/matches/netherlands-v-argentina-04-july-1998-265642/",
+        "used_for": "line-ups, substitutions"
+      },
+      {
+        "title": "Planet World Cup – Argentina v Netherlands",
+        "url": "http://www.planetworldcup.com/CUPS/1998/qf_arg_v_hol.html",
+        "used_for": "goal minutes"
+      },
+      {
+        "title": "thesoccerworldcups – Netherlands 2 Argentina 1",
+        "url": "https://www.thesoccerworldcups.com/games/1998_holland_argentina.php",
+        "used_for": "line-ups, shirt numbers"
+      },
+      {
+        "title": "football-lineups – Netherlands - Argentina 1998",
+        "url": "https://m.football-lineups.com/match/40251",
+        "used_for": "goals, assists"
+      },
+      {
+        "title": "ESPN – Netherlands 2-1 Argentina",
+        "url": "https://www.espn.co.uk/football/match/_/gameId/198151/argentina-netherlands",
+        "used_for": "minutes cross-check"
+      }
+    ]
+  }
+}

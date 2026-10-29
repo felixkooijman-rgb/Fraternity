@@ -5,6 +5,7 @@
 // Produces in output/<slug>/:
 //   poster.svg       editable master (live text, embedded fonts, fitted)
 //   preview.jpg      1200×1800 web preview (trim area)
+//   shop-2048.jpg    2048×2048 square shop image (poster centred on white with a soft shadow)
 //   print.pdf        vector print file incl. bleed (fonts embedded by Chromium)
 //   print.png        6000×9000 trim (+bleed) raster at 300 dpi for 50.8×76.2 cm
 //   match.json       the verified match data used
@@ -189,6 +190,22 @@ async function renderOne(args, data, theme) {
     await preview.evaluate(() => document.fonts.ready);
     await preview.screenshot({ path: path.join(outDir, 'preview.jpg'), type: 'jpeg', quality: 88, clip: trimClip });
     await preview.close();
+
+    // Square shop image: the trimmed poster at 90 % of the canvas height, centred.
+    const SHOP = 2048;
+    const posterH = Math.round(SHOP * 0.9);
+    const posterW = Math.round(posterH * W / H);
+    const shot = await browser.newPage({ viewport: { width: fullW, height: fullH }, deviceScaleFactor: posterH / H });
+    await shot.setContent(finalHtml);
+    await shot.evaluate(() => document.fonts.ready);
+    const png = await shot.screenshot({ type: 'png', clip: trimClip });
+    await shot.close();
+    const shop = await browser.newPage({ viewport: { width: SHOP, height: SHOP } });
+    await shop.setContent(`<!doctype html><html><body style="margin:0;width:${SHOP}px;height:${SHOP}px;background:#fff;display:flex;align-items:center;justify-content:center">
+      <img src="data:image/png;base64,${png.toString('base64')}" style="width:${posterW}px;height:${posterH}px;box-shadow:0 24px 48px rgba(0,0,0,.22),0 6px 14px rgba(0,0,0,.14)">
+      </body></html>`);
+    await shop.screenshot({ path: path.join(outDir, 'shop-2048.jpg'), type: 'jpeg', quality: 92 });
+    await shop.close();
 
     if (args.print) {
       await page.setContent(finalHtml);

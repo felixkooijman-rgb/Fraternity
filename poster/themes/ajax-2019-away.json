@@ -1,0 +1,7 @@
+{
+  "id": "ajax-2019-away",
+  "label": "Ajax – black adidas 2018-19 away shirt with gold accents and gold names/numbers",
+  "colors": { "background": "#111111", "stripe": "#FFFFFF", "sideStripe": "#1E1E1E", "text": "#FFFFFF", "rule": "#C9A14A", "accent": "#C9A14A", "numberGap": "#111111", "nameOutline": "#111111", "frame": "#2A2A2A", "brand": "#FFFFFF" },
+  "stripes": { "side": true, "collar": false, "lowerShirt": false },
+  "hero": { "fill": "#C9A14A", "line": "#FFFFFF", "gap": "#111111", "nameLine": false }
+}

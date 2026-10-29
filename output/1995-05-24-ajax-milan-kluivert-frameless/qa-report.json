@@ -1,0 +1,31 @@
+{
+  "generated": "2026-10-29T18:43:25.255Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "MANUAL CHECK: Goal minute 85' vs 84' in one source – 85' used",
+      "MANUAL CHECK: Milan XI not fully verified – line-ups not printed on this poster",
+      "MANUAL CHECK: Kluivert #15 from two match listings, not an official UEFA sheet",
+      "MANUAL CHECK: Umbro number lettering not verified – default lettering",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"EIGHTEEN-YEAR-OLD SUBSTITUTE KLUIVERT WINS THE CHAMPIONS LEAGUE FOR AJAX\" 34→33.06"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

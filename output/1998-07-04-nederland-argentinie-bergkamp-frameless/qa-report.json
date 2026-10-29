@@ -1,0 +1,35 @@
+{
+  "generated": "2026-10-29T18:43:34.350Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation  is estimated; it is not printed as fact",
+      "lineups.away formation  is estimated; it is not printed as fact",
+      "MANUAL CHECK: Minutes 12'/17'/89' (Planet World Cup) vs 13'/18'/90' (ESPN) – majority used",
+      "MANUAL CHECK: Bergkamp's assist credited to F. de Boer in one source, R. de Boer in another – assist not printed",
+      "MANUAL CHECK: Orange 1998 shirt simplified; Nike 1998 number lettering not verified",
+      "MANUAL CHECK: Line-up rows are a display arrangement",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"NEDERLAND\" 112→102.47",
+      "\"ARGENTINIË\" 112→102.38",
+      "\"BERGKAMP\" 300→284.04"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

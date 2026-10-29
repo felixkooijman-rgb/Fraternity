@@ -1,0 +1,35 @@
+{
+  "generated": "2026-10-29T18:43:06.052Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation  is estimated; it is not printed as fact",
+      "lineups.away formation  is estimated; it is not printed as fact",
+      "MANUAL CHECK: Gemmell 30' vs 31' (Celtic Wiki) – 30' used",
+      "MANUAL CHECK: Feyenoord kit worn in the final not verified (Le Coq Sportif per an auction listing) – club colours red/white used",
+      "MANUAL CHECK: Line-up rows are a display arrangement",
+      "MANUAL CHECK: Shirt lettering of 1970 not verified – default block lettering",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"KINDVALL'S EXTRA-TIME LOB MAKES FEYENOORD THE FIRST DUTCH CHAMPIONS OF EUROPE\" 34→30.73",
+      "\"FEYENOORD\" 112→103.15",
+      "\"VAN DUIVENBODE\" 30→28.06"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

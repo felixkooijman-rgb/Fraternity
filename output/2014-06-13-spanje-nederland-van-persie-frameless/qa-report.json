@@ -1,0 +1,36 @@
+{
+  "generated": "2026-10-29T18:43:44.774Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation  is estimated; it is not printed as fact",
+      "lineups.away formation  is estimated; it is not printed as fact",
+      "MANUAL CHECK: De Vrij 65' (ESPN) vs 64' (Sky Sports) – 65' used",
+      "MANUAL CHECK: Van Persie #9 is well established but not seen on a line-up of this match in my sources",
+      "MANUAL CHECK: 2014 Nike number font approximated with the default lettering in orange",
+      "MANUAL CHECK: Line-up rows are a display arrangement (NED 5-3-2 per The Analyst)",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"NEDERLAND\" 112→102.47",
+      "\"VAN PERSIE 44' | ROBBEN 53' | DE VRIJ 65' | VAN PERSIE 72' | ROBBEN 80'\" 27→16.53",
+      "\"VAN PERSIE\" 300→272.14",
+      "\"MARTINS INDI\" 30→27.3"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

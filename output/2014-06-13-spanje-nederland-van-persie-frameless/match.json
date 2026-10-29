@@ -1,0 +1,202 @@
+{
+  "slug": "2014-06-13-spanje-nederland-van-persie-frameless",
+  "theme": "oranje-2014-away",
+  "match": {
+    "home": {
+      "name": "Spain",
+      "display": "Spanje"
+    },
+    "away": {
+      "name": "Netherlands",
+      "display": "Nederland"
+    },
+    "score": {
+      "home": 1,
+      "away": 5
+    },
+    "date": "2014-06-13",
+    "stadium": "Arena Fonte Nova",
+    "city": "Salvador",
+    "country": "Brazil",
+    "competition": "World Cup 2014",
+    "phase": "Group B"
+  },
+  "goals": [
+    {
+      "team": "home",
+      "player": "Xabi Alonso",
+      "display": "ALONSO",
+      "minute": 27,
+      "type": "penalty"
+    },
+    {
+      "team": "away",
+      "player": "Robin van Persie",
+      "display": "VAN PERSIE",
+      "minute": 44,
+      "type": "header"
+    },
+    {
+      "team": "away",
+      "player": "Arjen Robben",
+      "display": "ROBBEN",
+      "minute": 53,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Stefan de Vrij",
+      "display": "DE VRIJ",
+      "minute": 65,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Robin van Persie",
+      "display": "VAN PERSIE",
+      "minute": 72,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Arjen Robben",
+      "display": "ROBBEN",
+      "minute": 80,
+      "type": "regular"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Robin van Persie",
+      "display": "VAN PERSIE",
+      "number": 9,
+      "team": "away",
+      "position": "Forward",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 44
+    },
+    "headline": "Van Persie's flying header sparks a 5-1 rout of the world champions"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Silva",
+          "Diego Costa",
+          "Iniesta"
+        ],
+        [
+          "Xavi",
+          "Busquets",
+          "Alonso"
+        ],
+        [
+          "Alba",
+          "Ramos",
+          "Piqué",
+          "Azpilicueta"
+        ],
+        [
+          "Casillas"
+        ]
+      ],
+      "subs": [],
+      "manager": null
+    },
+    "away": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Van Persie",
+          "Robben"
+        ],
+        [
+          "Sneijder",
+          "De Guzmán",
+          "De Jong"
+        ],
+        [
+          "Blind",
+          "Martins Indi",
+          "De Vrij",
+          "Vlaar",
+          "Janmaat"
+        ],
+        [
+          "Cillessen"
+        ]
+      ],
+      "subs": [],
+      "manager": null
+    }
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false,
+    "showFrame": false
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Spain 1-5 Netherlands, 13.06.2014, Arena Fonte Nova Salvador, World Cup group B (ESPN, Sky Sports, historicalkits)",
+      "Goals: Alonso 27' (pen), Van Persie 44' & 72', Robben 53' & 80', De Vrij 65' (ESPN)",
+      "Van Persie's 44' was a diving header from a Blind pass (ESPN, MLS)",
+      "Starting XIs (Sky Sports, Footballcritic, Managing Madrid)",
+      "Netherlands wore the dark blue away kit, Spain white (historicalkits, footyheadlines, classicfootballshirts)"
+    ],
+    "needs_manual_check": [
+      "De Vrij 65' (ESPN) vs 64' (Sky Sports) – 65' used",
+      "Van Persie #9 is well established but not seen on a line-up of this match in my sources",
+      "2014 Nike number font approximated with the default lettering in orange",
+      "Line-up rows are a display arrangement (NED 5-3-2 per The Analyst)",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ],
+    "sources": [
+      {
+        "title": "ESPN – Spain 1-5 Netherlands",
+        "url": "https://www.espn.com/soccer/report?gameId=383301",
+        "used_for": "goals, minutes"
+      },
+      {
+        "title": "Sky Sports – starting line-ups",
+        "url": "https://www.skysports.com/football/spain-vs-netherlands/teams/305744",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "Footballcritic – line-ups",
+        "url": "https://www.footballcritic.com/fifa-world-cup-spain-netherlands/lineups/377846",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "Historical Football Kits – 2014 group B",
+        "url": "https://www.historicalkits.co.uk/international/tournaments/fifa-world-cup/2014/2014_group_b.html",
+        "used_for": "kits"
+      },
+      {
+        "title": "The Analyst – About that game",
+        "url": "https://theanalyst.com/articles/spain-1-5-netherlands-world-cup-2014",
+        "used_for": "formation"
+      },
+      {
+        "title": "MLS – match recap",
+        "url": "https://www.mlssoccer.com/news/spain-1-netherlands-5-2014-fifa-world-cup-group-b-match-recap",
+        "used_for": "assists"
+      }
+    ]
+  }
+}

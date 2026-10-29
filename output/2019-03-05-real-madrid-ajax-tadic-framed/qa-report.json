@@ -1,0 +1,35 @@
+{
+  "generated": "2026-10-29T18:43:50.643Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation  is estimated; it is not printed as fact",
+      "lineups.away formation  is estimated; it is not printed as fact",
+      "MANUAL CHECK: Ajax kit: black/gold 2018-19 away shirt per several retailer listings tied to this match – confirm with a match photo",
+      "MANUAL CHECK: Schöne's goal type (free kick) per match reports – shown without label",
+      "MANUAL CHECK: adidas 2018-19 lettering approximated with the default lettering in gold",
+      "MANUAL CHECK: Line-up rows are a display arrangement",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"TADIĆ INSPIRES AJAX TO DETHRONE THE THREE-TIME CHAMPIONS AT THE BERNABÉU\" 34→33.23",
+      "\"REAL MADRID\" 112→87.36",
+      "\"ZIYECH 7' | NERES 18' | TADIĆ 62' | SCHÖNE 72'\" 27→26.06"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}
