@@ -1,6 +1,45 @@
 {
   "id": "oranje-1988",
-  "label": "Netherlands – orange home shirt, EURO 1988 (simplified: no sleeve pattern; tonal side bands are a graphic device)",
-  "colors": { "background": "#F26A1B", "stripe": "#FFFFFF", "sideStripe": "#D9580F", "text": "#FFFFFF", "rule": "#1D1D1B", "accent": "#1D1D1B", "numberGap": "#F26A1B", "nameOutline": "#D9580F", "frame": "#161616", "brand": "#FFFFFF" },
-  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+  "label": "Netherlands EURO 1988 adidas home – orange with sublimated diagonal 'upward arrow' fade pattern and white V-neck; white felt numbers approximated with Staatliches",
+  "colors": {
+    "background": "#F26A1B",
+    "stripe": "#FFFFFF",
+    "sideStripe": "#D9580F",
+    "text": "#FFFFFF",
+    "rule": "#1D1D1B",
+    "accent": "#1D1D1B",
+    "numberGap": "#F26A1B",
+    "nameOutline": "#D9580F",
+    "frame": "#161616",
+    "brand": "#FFFFFF"
+  },
+  "shirt": {
+    "base": "#F26A1B",
+    "layers": [
+      {
+        "type": "pattern",
+        "kind": "chevron",
+        "color": "#FFFFFF",
+        "opacity": 0.16,
+        "scale": 2.2
+      },
+      {
+        "type": "pattern",
+        "kind": "chevron",
+        "color": "#B9480C",
+        "opacity": 0.25,
+        "scale": 1.1
+      }
+    ],
+    "collar": {
+      "type": "v",
+      "color": "#FFFFFF",
+      "width": 0.08
+    }
+  },
+  "hero": {
+    "font": "Staatliches-Regular.ttf",
+    "nameLetterSpacing": 8,
+    "sizeScale": 1.05
+  }
 }

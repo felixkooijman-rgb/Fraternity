@@ -1,6 +1,6 @@
 {
   "id": "excelsior31",
-  "label": "Excelsior '31 Rijssen – red home shirt (simplified: plain red, tonal side bands are a graphic device, not a kit detail)",
+  "label": "Excelsior '31 – plain red home shirt (club: red shirt, white shorts, red socks); no further front details verified",
   "colors": {
     "background": "#D9161D",
     "stripe": "#FFFFFF",
@@ -13,9 +13,7 @@
     "frame": "#161616",
     "brand": "#FFFFFF"
   },
-  "stripes": {
-    "side": true,
-    "collar": false,
-    "lowerShirt": false
+  "shirt": {
+    "base": "#D9161D"
   }
 }

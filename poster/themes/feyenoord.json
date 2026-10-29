@@ -1,6 +1,33 @@
 {
   "id": "feyenoord",
-  "label": "Feyenoord – red/white club colours with black (club identity; exact 1970 final kit not verified)",
-  "colors": { "background": "#D5001C", "stripe": "#FFFFFF", "text": "#FFFFFF", "rule": "#111111", "accent": "#111111", "numberGap": "#D5001C", "nameOutline": "#D5001C", "frame": "#161616", "brand": "#111111" },
-  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+  "label": "Feyenoord 1969-70 – red/white half-and-half shirt (which half is red to be confirmed); felt block numbers approximated with Staatliches",
+  "colors": {
+    "background": "#D5001C",
+    "stripe": "#FFFFFF",
+    "text": "#FFFFFF",
+    "rule": "#111111",
+    "accent": "#111111",
+    "numberGap": "#D5001C",
+    "nameOutline": "#D5001C",
+    "frame": "#161616",
+    "brand": "#111111"
+  },
+  "shirt": {
+    "base": "#FFFFFF",
+    "layers": [
+      {
+        "type": "halves",
+        "color": "#D5001C",
+        "side": "left"
+      }
+    ],
+    "panel": {
+      "color": "#D5001C"
+    }
+  },
+  "hero": {
+    "font": "Staatliches-Regular.ttf",
+    "nameLetterSpacing": 8,
+    "sizeScale": 1.05
+  }
 }

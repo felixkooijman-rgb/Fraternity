@@ -1,6 +1,6 @@
 {
   "id": "hercules",
-  "label": "USV Hercules Utrecht – navy/white vertically striped shirt (colour sampled from the official kit design, #00305C)",
+  "label": "USV Hercules 2023-24 – white with navy (#00305C) vertical stripes and navy polo collar, per the official kit design",
   "colors": {
     "background": "#00305C",
     "stripe": "#FFFFFF",
@@ -12,9 +12,24 @@
     "frame": "#161616",
     "brand": "#00305C"
   },
-  "stripes": {
-    "side": true,
-    "collar": true,
-    "lowerShirt": true
+  "shirt": {
+    "base": "#FFFFFF",
+    "layers": [
+      {
+        "type": "stripes",
+        "color": "#00305C",
+        "count": 7,
+        "ratio": 0.5,
+        "phase": 0.25
+      }
+    ],
+    "panel": {
+      "color": "#00305C"
+    },
+    "collar": {
+      "type": "polo",
+      "color": "#00305C",
+      "width": 0.07
+    }
   }
 }

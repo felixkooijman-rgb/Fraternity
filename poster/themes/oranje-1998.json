@@ -1,6 +1,42 @@
 {
   "id": "oranje-1998",
-  "label": "Netherlands – orange home shirt, World Cup 1998 (simplified; tonal side bands are a graphic device)",
-  "colors": { "background": "#F47A20", "stripe": "#FFFFFF", "sideStripe": "#DB6612", "text": "#FFFFFF", "rule": "#13294B", "accent": "#13294B", "numberGap": "#F47A20", "nameOutline": "#DB6612", "frame": "#161616", "brand": "#FFFFFF" },
-  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+  "label": "Netherlands 1998 Nike home – orange with black polo collar (white trim) and black side panels",
+  "colors": {
+    "background": "#F47A20",
+    "stripe": "#FFFFFF",
+    "sideStripe": "#DB6612",
+    "text": "#FFFFFF",
+    "rule": "#111111",
+    "accent": "#111111",
+    "numberGap": "#F47A20",
+    "nameOutline": "#DB6612",
+    "frame": "#161616",
+    "brand": "#FFFFFF"
+  },
+  "shirt": {
+    "base": "#F47A20",
+    "layers": [
+      {
+        "type": "rect",
+        "color": "#111111",
+        "x0": 0,
+        "x1": 0.07,
+        "y0": 0.12,
+        "y1": 1
+      },
+      {
+        "type": "rect",
+        "color": "#111111",
+        "x0": 0.93,
+        "x1": 1,
+        "y0": 0.12,
+        "y1": 1
+      }
+    ],
+    "collar": {
+      "type": "polo",
+      "color": "#111111",
+      "width": 0.085
+    }
+  }
 }

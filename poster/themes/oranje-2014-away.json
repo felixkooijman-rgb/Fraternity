@@ -1,7 +1,49 @@
 {
   "id": "oranje-2014-away",
-  "label": "Netherlands – dark blue away shirt with orange numbering, World Cup 2014 (vs Spain)",
-  "colors": { "background": "#17233F", "stripe": "#FFFFFF", "sideStripe": "#1F2E52", "text": "#FFFFFF", "rule": "#F47A20", "accent": "#FFFFFF", "numberGap": "#17233F", "nameOutline": "#17233F", "frame": "#161616", "brand": "#FFFFFF" },
-  "stripes": { "side": true, "collar": false, "lowerShirt": false },
-  "hero": { "fill": "#F47A20", "line": "#FFFFFF", "gap": "#17233F", "nameLine": false }
+  "label": "Netherlands 2014 Nike away – bright blue fading to imperial purple, isometric chevron grid, blue V-neck, orange details; Wim Crouwel lettering approximated with Oxanium",
+  "colors": {
+    "background": "#2B3E9A",
+    "stripe": "#FFFFFF",
+    "sideStripe": "#1F2E52",
+    "text": "#FFFFFF",
+    "rule": "#F47A20",
+    "accent": "#FFFFFF",
+    "numberGap": "#2E4AAE",
+    "nameOutline": "#2A3A92",
+    "frame": "#161616",
+    "brand": "#FFFFFF"
+  },
+  "hero": {
+    "font": "Oxanium-Variable.ttf",
+    "weight": 800,
+    "fill": "#F47A20",
+    "line": "#FFFFFF",
+    "gap": "#2E4AAE",
+    "nameLine": false,
+    "nameLetterSpacing": 6,
+    "sizeScale": 1.0,
+    "numberScale": 1.28
+  },
+  "shirt": {
+    "base": "#2350B5",
+    "layers": [
+      {
+        "type": "gradient",
+        "from": "#2E62D0",
+        "to": "#3A1F6E"
+      },
+      {
+        "type": "pattern",
+        "kind": "chevron",
+        "color": "#0E1A48",
+        "opacity": 0.28,
+        "scale": 1.3
+      }
+    ],
+    "collar": {
+      "type": "v",
+      "color": "#1B3D93",
+      "width": 0.08
+    }
+  }
 }

@@ -9,6 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const { formatMinute } = require('./validate');
+const { drawShirt } = require('./shirt');
 
 const W = 2000;
 const H = 3000;
@@ -30,14 +31,14 @@ function fontFaces(theme) {
   return `
     @font-face { font-family: 'Poster Display'; src: url(data:font/ttf;base64,${b64('Anton-Regular.ttf')}) format('truetype'); }
     @font-face { font-family: 'Poster Text'; font-weight: 200 700; src: url(data:font/ttf;base64,${b64('Oswald-Variable.ttf')}) format('truetype'); }${heroFont ? `
-    @font-face { font-family: 'Poster Hero'; src: url(data:font/ttf;base64,${b64(heroFont)}) format('truetype'); }` : ''}`;
+    @font-face { font-family: 'Poster Hero'; font-weight: 100 900; src: url(data:font/ttf;base64,${b64(heroFont)}) format('truetype'); }` : ''}`;
 }
 
 // Surname / shirt number in the kit's lettering style: the glyph plus an optional thin
 // parallel line (a copy in the line colour, partly covered by a copy in the background
 // colour). The group is fitted as one unit by the renderer (data-sync).
 function heroText(x, y, str, size, style, { ls = 0, maxw, line = true, id } = {}) {
-  const attrs = `font-family="${style.family}" font-size="${size}" text-anchor="middle"${ls ? ` letter-spacing="${ls}"` : ''}`;
+  const attrs = `font-family="${style.family}" font-size="${size}"${style.weight ? ` font-weight="${style.weight}"` : ''} text-anchor="middle"${ls ? ` letter-spacing="${ls}"` : ''}`;
   const [dx, dy] = style.direction;
   const parts = [`<g${id ? ` id="${id}"` : ''} data-sync="1">`];
   if (line) {
@@ -149,8 +150,11 @@ function buildSvg(data, theme, opts = {}) {
   // ---------- background + shirt graphics (clipped to the art area) ----------
   out.push(`<rect x="${-bleed}" y="${-bleed}" width="${W + 2 * bleed}" height="${H + 2 * bleed}" fill="${framed ? c.frame : c.background}"/>`);
   out.push(`<g clip-path="url(#art)">`);
-  out.push(`<rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}" fill="${c.background}"/>`);
-  const sp = theme.stripes || {};
+  const defs = [];
+  // theme.shirt draws the front of the match shirt; older themes use the simple stripe set.
+  if (theme.shirt) out.push(drawShirt(theme.shirt, { rand, art, paint, ax, ay, defs }));
+  else out.push(`<rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}" fill="${c.background}"/>`);
+  const sp = theme.shirt ? {} : theme.stripes || {};
   if (sp.side) {
     const side = c.sideStripe || c.stripe;
     out.push(`<path d="${stripe(rand, ax(0.043), ax(0.146), top, bottom)}" fill="${side}"/>`);
@@ -220,6 +224,7 @@ function buildSvg(data, theme, opts = {}) {
   const th = theme.hero || {};
   const style = {
     family: th.font ? 'Poster Hero' : 'Poster Display',
+    weight: th.weight,
     fill: th.fill || c.text,
     line: th.line || c.accent,
     gap: th.gap || c.numberGap,
@@ -281,7 +286,8 @@ function buildSvg(data, theme, opts = {}) {
   const brandSize = onStripe ? 28 : 32;
   const brandEnd = art.x + art.w - 44;
   const brandY = H - F - 40;
-  out.push(text(brandEnd, brandY, upper(data.brand?.name || 'FRATERNITY'), { size: brandSize, weight: 700, fill: c.brand, ls: 1.5, anchor: 'end', maxw: 230, id: 'brand-text' }));
+  out.push(text(brandEnd, brandY, upper(data.brand?.name || 'FRATERNITY'), { size: brandSize, weight: 700, fill: c.brand, ls: 1.5, anchor: 'end', maxw: 230, id: 'brand-text',
+    outline: theme.shirt && (theme.shirt.layers || []).length ? { color: c.nameOutline, width: 6 } : undefined }));
   if (onStripe) out[out.length - 1] = out[out.length - 1].replace('<text ', `<text data-cx="${ax(0.906)}" `);
   const mark = brandMark();
   if (mark) {
@@ -293,7 +299,7 @@ function buildSvg(data, theme, opts = {}) {
   const safe = { x: art.x + 4, y: art.y + 4, w: art.w - 8, h: art.h - 8 }; // ≥10 mm from trim either way
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${-bleed} ${-bleed} ${W + 2 * bleed} ${H + 2 * bleed}" width="${W + 2 * bleed}" height="${H + 2 * bleed}" data-safe="${safe.x} ${safe.y} ${safe.w} ${safe.h}" data-trim="0 0 ${W} ${H}">
 <title>${esc(`${match.home.display} ${match.score.home}:${match.score.away} ${match.away.display} – ${p.display} ${p.number}`)}</title>
-<defs><style>${fontFaces(theme)}</style><clipPath id="art"><rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}"/></clipPath></defs>
+<defs><style>${fontFaces(theme)}</style>${defs.join('')}<clipPath id="art"><rect x="${paint.x}" y="${paint.y}" width="${paint.w}" height="${paint.h}"/></clipPath></defs>
 ${out.join('\n')}
 </svg>`;
   return { svg, W, H, bleed };

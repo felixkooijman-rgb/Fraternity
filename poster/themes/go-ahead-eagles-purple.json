@@ -1,6 +1,6 @@
 {
   "id": "go-ahead-eagles-purple",
-  "label": "Go Ahead Eagles \u2013 purple cup-final away shirt with gold inline lettering (2024-25). Tonal side bands are a graphic device; Squada One approximates the kit font.",
+  "label": "Go Ahead Eagles cup-final away – purple with magenta leaf pattern, gold inline lettering (Squada One approximation)",
   "colors": {
     "background": "#4A1C72",
     "stripe": "#FFFFFF",
@@ -12,11 +12,6 @@
     "nameOutline": "#4A1C72",
     "frame": "#161616",
     "brand": "#FFFFFF"
-  },
-  "stripes": {
-    "side": true,
-    "collar": false,
-    "lowerShirt": false
   },
   "hero": {
     "font": "SquadaOne-Regular.ttf",
@@ -33,5 +28,17 @@
     "nameLetterSpacing": 10,
     "sizeScale": 1.12,
     "numberScale": 1.2
+  },
+  "shirt": {
+    "base": "#4A1C72",
+    "layers": [
+      {
+        "type": "pattern",
+        "kind": "leaf",
+        "color": "#7A2A8F",
+        "opacity": 1,
+        "scale": 1.4
+      }
+    ]
   }
 }

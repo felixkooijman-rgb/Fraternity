@@ -1,6 +1,40 @@
 {
   "id": "ajax-1995-away",
-  "label": "Ajax – navy Umbro away shirt worn in the 1995 Champions League final",
-  "colors": { "background": "#14224A", "stripe": "#FFFFFF", "sideStripe": "#1B2D5E", "text": "#FFFFFF", "rule": "#D2122E", "accent": "#D2122E", "numberGap": "#14224A", "nameOutline": "#14224A", "frame": "#161616", "brand": "#FFFFFF" },
-  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+  "label": "Ajax 1994-95 Umbro away – navy with repeating berry-red twisted-crest motif and diagonal shadow stripes (motif stylised, not the crest)",
+  "colors": {
+    "background": "#14224A",
+    "stripe": "#FFFFFF",
+    "sideStripe": "#1B2D5E",
+    "text": "#FFFFFF",
+    "rule": "#D2122E",
+    "accent": "#D2122E",
+    "numberGap": "#14224A",
+    "nameOutline": "#14224A",
+    "frame": "#161616",
+    "brand": "#FFFFFF"
+  },
+  "shirt": {
+    "base": "#14224A",
+    "layers": [
+      {
+        "type": "pattern",
+        "kind": "diagonal",
+        "color": "#1C2E60",
+        "opacity": 1,
+        "scale": 2.6
+      },
+      {
+        "type": "pattern",
+        "kind": "crest",
+        "color": "#8E1B3A",
+        "opacity": 0.85,
+        "scale": 1.4
+      }
+    ],
+    "collar": {
+      "type": "polo",
+      "color": "#8E1B3A",
+      "width": 0.08
+    }
+  }
 }
