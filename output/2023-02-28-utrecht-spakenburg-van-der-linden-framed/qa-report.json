@@ -1,0 +1,40 @@
+{
+  "generated": "2026-10-29T17:54:50.908Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation 4-3-3 is estimated; it is not printed as fact",
+      "lineups.away formation 4-3-3 is estimated; it is not printed as fact",
+      "MANUAL CHECK: The request said 'Spakenburg tegen Ajax'; the 1-4 header by captain Van der Linden was against FC Utrecht – this poster is FC Utrecht – Spakenburg",
+      "MANUAL CHECK: Van der Linden's #9 is confirmed for the semi-final vs PSV (04.04.2023, fcupdate/voetbal.com) and his profiles; not seen on a line-up of this exact match",
+      "MANUAL CHECK: Goal minute: 75' (spakenburg.com, Sofascore, voetbal.com) vs 74' (RTV Utrecht) – 75' used",
+      "MANUAL CHECK: Attendance differs (20,346 spakenburg.com vs 21,733 ESPN) – not printed",
+      "MANUAL CHECK: Line-up rows (both teams) are a display arrangement from player roles, not verified positions",
+      "MANUAL CHECK: Exact 2022-23 Spakenburg shirt (2021-22 was blue/white hoops by Macron) and its number lettering not verified – simplified blue field and default lettering used; send a shirt photo to match it",
+      "MANUAL CHECK: Crests and sponsors not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"CAPTAIN VAN DER LINDEN HEADS IN THE 1-4 AS AMATEURS SPAKENBURG REACH THE SEMI-FINALS\" 34→28.6",
+      "\"FC UTRECHT\" 112→98.84",
+      "\"SPAKENBURG\" 112→89.02",
+      "\"VINK 12' | ADMIRAAL 59' | ARTIEN 66' | VAN DER LINDEN 75'\" 27→20.66",
+      "\"VAN DER LINDEN\" 300→193.48",
+      "\"VAN DER HOORN\" 30→29.7"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

@@ -197,8 +197,8 @@ function buildSvg(data, theme, opts = {}) {
       .join(SEP);
     const home = list('home');
     const away = list('away');
-    if (home) out.push(text(CX - 100, 958, home, { size: 27, weight: 500, fill: c.text, anchor: 'end', maxw: 590 }));
-    if (away) out.push(text(CX + 100, 958, away, { size: 27, weight: 500, fill: c.text, anchor: 'start', maxw: 590 }));
+    if (home) out.push(text(CX - 100, 958, home, { size: 27, weight: 500, fill: c.text, anchor: 'end', maxw: 500 }));
+    if (away) out.push(text(CX + 100, 958, away, { size: 27, weight: 500, fill: c.text, anchor: 'start', maxw: 500 }));
   }
   // Shootout result under the score when the hero moment is a goal rather than the shootout.
   if (match.penalties && featured.moment?.kind !== 'shootout') {

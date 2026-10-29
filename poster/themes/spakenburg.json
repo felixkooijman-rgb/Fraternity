@@ -1,0 +1,17 @@
+{
+  "id": "spakenburg",
+  "label": "SV Spakenburg – blue/white (simplified: blue field, tonal side bands; exact 2022-23 shirt design and lettering not verified)",
+  "colors": {
+    "background": "#1B4F9C",
+    "stripe": "#FFFFFF",
+    "sideStripe": "#143E7E",
+    "text": "#FFFFFF",
+    "rule": "#0B1E3D",
+    "accent": "#FFFFFF",
+    "numberGap": "#1B4F9C",
+    "nameOutline": "#1B4F9C",
+    "frame": "#161616",
+    "brand": "#FFFFFF"
+  },
+  "stripes": { "side": true, "collar": false, "lowerShirt": false }
+}

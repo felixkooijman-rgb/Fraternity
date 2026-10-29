@@ -1,0 +1,100 @@
+{
+  "slug": "2023-02-28-utrecht-spakenburg-van-der-linden",
+  "theme": "spakenburg",
+  "match": {
+    "home": { "name": "FC Utrecht", "display": "FC Utrecht" },
+    "away": { "name": "SV Spakenburg", "display": "Spakenburg" },
+    "score": { "home": 1, "away": 4 },
+    "date": "2023-02-28",
+    "stadium": "Stadion Galgenwaard",
+    "city": "Utrecht",
+    "country": "Netherlands",
+    "competition": "KNVB Beker",
+    "phase": "Quarter-Final"
+  },
+  "goals": [
+    { "team": "away", "player": "Wimilio Vink", "display": "VINK", "minute": 12, "type": "regular", "assist": "Luuk Admiraal" },
+    { "team": "away", "player": "Luuk Admiraal", "display": "ADMIRAAL", "minute": 59, "type": "regular" },
+    { "team": "home", "player": "Anastasios Douvikas", "display": "DOUVIKAS", "minute": 64, "type": "regular" },
+    { "team": "away", "player": "Maties Artien", "display": "ARTIEN", "minute": 66, "type": "regular" },
+    { "team": "away", "player": "Floris van der Linden", "display": "VAN DER LINDEN", "minute": 75, "type": "header", "assist": "Vince Gino Dekker" }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Floris van der Linden",
+      "display": "VAN DER LINDEN",
+      "number": 9,
+      "team": "away",
+      "position": "Forward (captain)",
+      "started": true
+    },
+    "moment": { "kind": "goal", "minute": 75 },
+    "headline": "Captain Van der Linden heads in the 1-4 as amateurs Spakenburg reach the semi-finals"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": { "value": "4-3-3", "status": "estimated" },
+      "rows": [
+        ["Van der Streek", "Douvikas", "Boussaid"],
+        ["Brouwers", "Toornstra", "Jensen"],
+        ["Klaiber", "Van der Hoorn", "Sagnan", "Ter Avest"],
+        ["Barkas"]
+      ],
+      "subs": [],
+      "manager": null
+    },
+    "away": {
+      "formation": { "value": "4-3-3", "status": "estimated" },
+      "rows": [
+        ["Admiraal", "Van der Linden", "Dekker"],
+        ["Wesdorp", "Vink", "Veenhoven"],
+        ["Green", "Werkman", "Artien", "Verhagen"],
+        ["Damen"]
+      ],
+      "subs": [],
+      "manager": null
+    }
+  },
+  "display": { "showScorers": true, "showLineups": true, "showSubs": false },
+  "variants": {
+    "framed": { "display": { "showFrame": true } },
+    "frameless": { "display": { "showFrame": false } }
+  },
+  "brand": { "name": "FRATERNITY" },
+  "verification": {
+    "confirmed": [
+      "FC Utrecht 1-4 SV Spakenburg, Tuesday 28.02.2023, Stadion Galgenwaard, KNVB Beker quarter-final; Spakenburg became the third amateur club ever in the semi-finals (VI, NOS, FC Utrecht, spakenburg.com)",
+      "Goals: Vink 12', Admiraal 59', Douvikas 64', Artien 66', Van der Linden 75' (spakenburg.com, Sofascore, voetbal.com, Sportsmole)",
+      "Van der Linden's 1-4 was a header from a Dekker cross (voetbal.com match report, NOS liveblog)",
+      "Van der Linden was Spakenburg's captain (nl.wikipedia, spakenburg.com)",
+      "Spakenburg XI: Damen, Verhagen, Artien, Werkman, Green, Van der Linden, Vink, Wesdorp, Veenhoven, Admiraal, Dekker (Utrechtfans, voetbal.com)",
+      "FC Utrecht XI: Barkas, Ter Avest, Jensen, Brouwers, Douvikas, Klaiber, Toornstra, Van der Streek, Boussaid, Sagnan, Van der Hoorn (spakenburg.com)",
+      "SV Spakenburg club colours blue and white (club, kit archive)"
+    ],
+    "needs_manual_check": [
+      "The request said 'Spakenburg tegen Ajax'; the 1-4 header by captain Van der Linden was against FC Utrecht – this poster is FC Utrecht – Spakenburg",
+      "Van der Linden's #9 is confirmed for the semi-final vs PSV (04.04.2023, fcupdate/voetbal.com) and his profiles; not seen on a line-up of this exact match",
+      "Goal minute: 75' (spakenburg.com, Sofascore, voetbal.com) vs 74' (RTV Utrecht) – 75' used",
+      "Attendance differs (20,346 spakenburg.com vs 21,733 ESPN) – not printed",
+      "Line-up rows (both teams) are a display arrangement from player roles, not verified positions",
+      "Exact 2022-23 Spakenburg shirt (2021-22 was blue/white hoops by Macron) and its number lettering not verified – simplified blue field and default lettering used; send a shirt photo to match it",
+      "Crests and sponsors not reproduced (no licensed assets)"
+    ],
+    "sources": [
+      { "title": "VI – Stuntploeg Spakenburg droogt FC Utrecht af", "url": "https://www.vi.nl/nieuws/stuntploeg-spakenburg-droogt-fc-utrecht-af-en-schrijft-bekergeschiedenis", "used_for": "result, goals" },
+      { "title": "NOS liveblog", "url": "https://nos.nl/liveblog/2465634-spakenburg-tweede-divisie-op-weg-naar-enorme-bekerstunt-tegen-fc-utrecht-1-4", "used_for": "goals, header" },
+      { "title": "SV Spakenburg – wedstrijdverslag", "url": "https://spakenburg.com/wedstrijdverslagen/spakenburg-bekert-verder-na-gigastunt-tegen-fc-utrecht/", "used_for": "goals, Utrecht XI, attendance" },
+      { "title": "FC Utrecht – uitgeschakeld door SV Spakenburg", "url": "https://www.fcutrecht.nl/nieuws/2023/februari/fc-utrecht-uitgeschakeld-door-sv-spakenburg/", "used_for": "result" },
+      { "title": "RTV Utrecht – liveblog", "url": "https://www.rtvutrecht.nl/sport/3546654/liveblog-sensatie-in-de-maak-spakenburg-vernedert-fc-utrecht", "used_for": "goal minutes (74')" },
+      { "title": "voetbal.com – opstelling", "url": "https://www.voetbal.com/match-report/co52/nederland-knvb-beker/ma9573757/fc-utrecht_sv-spakenburg/lineup/", "used_for": "header, assist, line-ups" },
+      { "title": "Utrechtfans – FC Utrecht met deze elf tegen Spakenburg", "url": "https://www.utrechtfans.nl/fc-utrecht-met-deze-elf-tegen-spakenburg-silberbauer-afwezig/", "used_for": "line-ups" },
+      { "title": "Sofascore – match", "url": "https://www.sofascore.com/football/match/sv-spakenburg-fc-utrecht/YibsKjb", "used_for": "goal minutes" },
+      { "title": "Sportsmole – match", "url": "https://www.sportsmole.co.uk/football/knvb-beker/fc-utrecht-vs-spakenburg_game_173581.html", "used_for": "goal minutes" },
+      { "title": "ESPN – match", "url": "https://www.espn.com/soccer/match/_/gameId/665801", "used_for": "result, attendance" },
+      { "title": "fcupdate – Spakenburg - PSV opstellingen", "url": "https://www.fcupdate.nl/voetbalcompetities/nederland/toto-knvb-beker/programma-uitslagen/2022-2023/spakenburg-psv-04-04/opstellingen", "used_for": "shirt number 9 (2022-23)" },
+      { "title": "nl.wikipedia – Floris van der Linden", "url": "https://nl.wikipedia.org/wiki/Floris_van_der_Linden_(voetballer)", "used_for": "captaincy" },
+      { "title": "Football Kit Archive – SV Spakenburg kits", "url": "https://footballkitarchive.com/sv-spakenburg-kits", "used_for": "kit colours" }
+    ]
+  }
+}

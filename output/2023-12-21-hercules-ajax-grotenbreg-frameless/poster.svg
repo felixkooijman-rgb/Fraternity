@@ -23,7 +23,7 @@
 <text id="score" x="1000" y="900" font-family="Poster Text" font-size="112" font-weight="600" text-anchor="middle" fill="#FFFFFF">3:2</text>
 <text x="885" y="900" font-family="Poster Text" font-size="112" font-weight="600" text-anchor="end" fill="#FFFFFF">HERCULES</text>
 <text x="1115" y="900" font-family="Poster Text" font-size="112" font-weight="600" text-anchor="start" fill="#FFFFFF">AJAX</text>
-<text x="900" y="958" font-family="Poster Text" font-size="27" font-weight="500" text-anchor="end" fill="#FFFFFF">PIETERS 16' | PIETERS 66' | GROTENBREG 90+3'</text>
+<text x="900" y="958" font-family="Poster Text" font-size="26.22" font-weight="500" text-anchor="end" fill="#FFFFFF">PIETERS 16' | PIETERS 66' | GROTENBREG 90+3'</text>
 <text x="1100" y="958" font-family="Poster Text" font-size="27" font-weight="500" text-anchor="start" fill="#FFFFFF">BROBBEY 83' | AKPOM 89'</text>
 <rect x="400" y="1003.5" width="1200" height="5" fill="#FFFFFF"></rect>
 <g id="surname">
