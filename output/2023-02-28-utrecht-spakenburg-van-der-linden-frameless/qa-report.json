@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T17:54:54.559Z",
+  "generated": "2026-10-29T18:30:20.900Z",
   "data": {
     "errors": [],
     "warnings": [
@@ -10,8 +10,8 @@
       "MANUAL CHECK: Goal minute: 75' (spakenburg.com, Sofascore, voetbal.com) vs 74' (RTV Utrecht) – 75' used",
       "MANUAL CHECK: Attendance differs (20,346 spakenburg.com vs 21,733 ESPN) – not printed",
       "MANUAL CHECK: Line-up rows (both teams) are a display arrangement from player roles, not verified positions",
-      "MANUAL CHECK: Exact 2022-23 Spakenburg shirt (2021-22 was blue/white hoops by Macron) and its number lettering not verified – simplified blue field and default lettering used; send a shirt photo to match it",
-      "MANUAL CHECK: Crests and sponsors not reproduced (no licensed assets)"
+      "MANUAL CHECK: Crests and sponsors not reproduced (no licensed assets)",
+      "MANUAL CHECK: Back-number lettering of the black away shirt not seen (photo shows the front) – default lettering used; neon accent taken from the captain's armband"
     ]
   },
   "layout": {

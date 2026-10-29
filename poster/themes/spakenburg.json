@@ -1,16 +1,16 @@
 {
-  "id": "spakenburg",
-  "label": "SV Spakenburg – blue/white (simplified: blue field, tonal side bands; exact 2022-23 shirt design and lettering not verified)",
+  "id": "spakenburg-away-black",
+  "label": "SV Spakenburg – black away shirt with white print (2022-23, per match photo). Accent = Van der Linden's neon captain's armband; tonal side bands are a graphic device.",
   "colors": {
-    "background": "#1B4F9C",
+    "background": "#0E1319",
     "stripe": "#FFFFFF",
-    "sideStripe": "#143E7E",
+    "sideStripe": "#1A212B",
     "text": "#FFFFFF",
-    "rule": "#0B1E3D",
-    "accent": "#FFFFFF",
-    "numberGap": "#1B4F9C",
-    "nameOutline": "#1B4F9C",
-    "frame": "#161616",
+    "rule": "#FFFFFF",
+    "accent": "#D9E86A",
+    "numberGap": "#0E1319",
+    "nameOutline": "#0E1319",
+    "frame": "#2A2A2A",
     "brand": "#FFFFFF"
   },
   "stripes": { "side": true, "collar": false, "lowerShirt": false }

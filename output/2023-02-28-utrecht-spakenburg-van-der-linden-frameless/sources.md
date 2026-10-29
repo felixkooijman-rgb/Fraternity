@@ -25,6 +25,7 @@
 - Spakenburg XI: Damen, Verhagen, Artien, Werkman, Green, Van der Linden, Vink, Wesdorp, Veenhoven, Admiraal, Dekker (Utrechtfans, voetbal.com)
 - FC Utrecht XI: Barkas, Ter Avest, Jensen, Brouwers, Douvikas, Klaiber, Toornstra, Van der Streek, Boussaid, Sagnan, Van der Hoorn (spakenburg.com)
 - SV Spakenburg club colours blue and white (club, kit archive)
+- Spakenburg wore a black away shirt with white print; Van der Linden wore the captain's armband (match photo supplied by the brand)
 
 ## Needs manual confirmation
 
@@ -33,5 +34,5 @@
 - [ ] Goal minute: 75' (spakenburg.com, Sofascore, voetbal.com) vs 74' (RTV Utrecht) – 75' used
 - [ ] Attendance differs (20,346 spakenburg.com vs 21,733 ESPN) – not printed
 - [ ] Line-up rows (both teams) are a display arrangement from player roles, not verified positions
-- [ ] Exact 2022-23 Spakenburg shirt (2021-22 was blue/white hoops by Macron) and its number lettering not verified – simplified blue field and default lettering used; send a shirt photo to match it
 - [ ] Crests and sponsors not reproduced (no licensed assets)
+- [ ] Back-number lettering of the black away shirt not seen (photo shows the front) – default lettering used; neon accent taken from the captain's armband
