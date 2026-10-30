@@ -1,0 +1,217 @@
+{
+  "slug": "2024-05-10-willem-ii-telstar-meerveld",
+  "theme": "willem-ii-2023-24",
+  "match": {
+    "home": {
+      "name": "Willem II",
+      "display": "Willem II"
+    },
+    "away": {
+      "name": "Telstar",
+      "display": "Telstar"
+    },
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "date": "2024-05-10",
+    "stadium": "Koning Willem II Stadion",
+    "city": "Tilburg",
+    "country": "Netherlands",
+    "competition": "Keuken Kampioen Divisie",
+    "phase": "Matchday 38"
+  },
+  "goals": [
+    {
+      "team": "away",
+      "player": "Jay Kruiver",
+      "display": "KRUIVER",
+      "minute": 33,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Freek Heerkens",
+      "display": "HEERKENS",
+      "minute": 45,
+      "type": "own_goal"
+    },
+    {
+      "team": "home",
+      "player": "Thijs Oosting",
+      "display": "OOSTING",
+      "minute": 47,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Rob Nizet",
+      "display": "NIZET",
+      "minute": 81,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Ringo Meerveld",
+      "display": "MEERVELD",
+      "minute": 90,
+      "stoppage": 3,
+      "type": "regular",
+      "assist": "Rob Nizet"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Ringo Meerveld",
+      "display": "MEERVELD",
+      "number": 16,
+      "team": "home",
+      "position": "Midfielder",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 90,
+      "stoppage": 3
+    },
+    "headline": "Meerveld's stoppage-time winner completes the comeback as Willem II are crowned champions"
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "4-4-2",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Oosting",
+          "Hilterman"
+        ],
+        [
+          "Meerveld",
+          "Verreth",
+          "Bosch",
+          "Doodeman"
+        ],
+        [
+          "Sigurgeirsson",
+          "Behounek",
+          "Schouten",
+          "Heerkens"
+        ],
+        [
+          "Smits"
+        ]
+      ],
+      "subs": [
+        "Nizet"
+      ],
+      "manager": "Peter Maes"
+    },
+    "away": {
+      "formation": {
+        "value": "3-4-3",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Seedorf",
+          "Eddahchouri",
+          "El Kachati"
+        ],
+        [
+          "Oude Kotte",
+          "Overtoom",
+          "Van de Loo",
+          "Kruiver"
+        ],
+        [
+          "Bakker",
+          "Plat",
+          "Apau"
+        ],
+        [
+          "Koeman Jr."
+        ]
+      ],
+      "subs": [],
+      "manager": null
+    }
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false
+  },
+  "variants": {
+    "framed": {
+      "display": {
+        "showFrame": true
+      }
+    },
+    "frameless": {
+      "display": {
+        "showFrame": false
+      }
+    }
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "verification": {
+    "confirmed": [
+      "Willem II 3-2 Telstar, 10.05.2024, Koning Willem II Stadion Tilburg, final day of the Keuken Kampioen Divisie 2023-24; Willem II champions (ESPN, fcupdate, Voetbalprimeur)",
+      "Goals: Kruiver 33', Heerkens 45' (OG), Oosting 47', Nizet 81', Meerveld 90+3' assisted by Nizet (ESPN)",
+      "Starting XIs (ESPN line-ups, Voetbaluitslagen.be); Nizet came on as a substitute",
+      "Ringo Meerveld #16 (Wikipedia infobox 2023-24 mirrors)",
+      "2023-24 home shirt: 'Tricolores' stripes with red polo collar (Willem II webshop)"
+    ],
+    "needs_manual_check": [
+      "Matchday: final round of a 20-team Eerste Divisie = matchday 38 (the reference poster says 34) – verify",
+      "Meerveld #16 from Wikipedia infobox, not an official squad list",
+      "Stripe order/widths taken from the reference poster and club description – confirm against a match photo",
+      "Back lettering: varsity style approximated with Graduate (OFL), emboldened",
+      "Formation rows are a display arrangement",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ],
+    "sources": [
+      {
+        "title": "ESPN – Willem II 3-2 Telstar",
+        "url": "https://www.espn.com/soccer/match/_/gameId/675972/telstar-willem-ii",
+        "used_for": "result, goals, assists"
+      },
+      {
+        "title": "ESPN NL – opstellingen",
+        "url": "https://www.espn.nl/voetbal/lineups/_/wedstrijdId/675972",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "Voetbaluitslagen.be – Willem II tegen Telstar",
+        "url": "https://voetbaluitslagen.be/wedstrijd/eerste-divisie/2023/525118/",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "fcupdate – Willem II kampioen",
+        "url": "https://www.fcupdate.nl/voetbalnieuws/2024/05/willem-ii-kampioen-van-de-keuken-kampioen-divisie-tilburg-uit-zijn-dak",
+        "used_for": "title context"
+      },
+      {
+        "title": "Voetbalprimeur – Willem II kroont zich tot kampioen",
+        "url": "https://www.voetbalprimeur.nl/nieuws/1199012/willem-ii-kroont-zich-tot-kampioen-na-knappe-comeback-tegen-telstar.html",
+        "used_for": "comeback narrative"
+      },
+      {
+        "title": "Willem II webshop – thuisshirt 2023-2024",
+        "url": "https://webshop.willem-ii.nl/nl/thuisshirt-2023-2024-junior.html?id=286411151",
+        "used_for": "kit description"
+      },
+      {
+        "title": "Wikipedia – Ringo Meerveld",
+        "url": "https://en.wikipedia.org/wiki/Ringo_Meerveld",
+        "used_for": "shirt number"
+      }
+    ]
+  },
+  "collection": "nederlandse-voetbalmomenten"
+}

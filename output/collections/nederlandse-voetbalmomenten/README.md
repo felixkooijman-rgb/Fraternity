@@ -1,6 +1,6 @@
 # Collectie: nederlandse-voetbalmomenten
 
-11 posters, chronologisch. Elke poster: `print.pdf`, `print.png`, `poster.svg`, `shop-2048.jpg` (2048×2048) en `sources.md`, in een versie met en zonder lijst.
+12 posters, chronologisch. Elke poster: `print.pdf`, `print.png`, `poster.svg`, `shop-2048.jpg` (2048×2048) en `sources.md`, in een versie met en zonder lijst.
 
 | # | Moment | Wedstrijd | Datum | Speler | Map |
 |---|---|---|---|---|---|
@@ -15,6 +15,7 @@
 | 9 | Van Persie's flying header sparks a 5-1 rout of the world champions | Spain 1-5 Netherlands (World Cup 2014, Group B) | 13.06.2014 | VAN PERSIE #9 – 44' | `output/2014-06-13-spanje-nederland-van-persie-*` |
 | 10 | Tadić inspires Ajax to dethrone the three-time champions at the Bernabéu | Real Madrid 1-4 Ajax (Champions League, Round of 16) | 05.03.2019 | TADIĆ #10 – 62' | `output/2019-03-05-real-madrid-ajax-tadic-*` |
 | 11 | Weghorst finishes the rehearsed free kick in the 101st minute to force extra time | Netherlands 2-2 Argentina (World Cup 2022, Quarter-Final) | 09.12.2022 | WEGHORST #19 – 90+11' | `output/2022-12-09-nederland-argentinie-weghorst-*` |
+| 12 | Meerveld's stoppage-time winner completes the comeback as Willem II are crowned champions | Willem II 3-2 Telstar (Keuken Kampioen Divisie, Matchday 38) | 10.05.2024 | MEERVELD #16 – 90+3' | `output/2024-05-10-willem-ii-telstar-meerveld-*` |
 
 ## Nog handmatig te controleren
 
@@ -107,3 +108,12 @@
 - [ ] Line-up rows are a display arrangement (NED 3-4-3, ARG 5-3-2)
 - [ ] Crests, sponsors and manufacturer logos not reproduced (no licensed assets)
 - [ ] Back-of-shirt lettering approximated – send a photo of the back print to match it exactly
+
+**MEERVELD – 10.05.2024**
+
+- [ ] Matchday: final round of a 20-team Eerste Divisie = matchday 38 (the reference poster says 34) – verify
+- [ ] Meerveld #16 from Wikipedia infobox, not an official squad list
+- [ ] Stripe order/widths taken from the reference poster and club description – confirm against a match photo
+- [ ] Back lettering: varsity style approximated with Graduate (OFL), emboldened
+- [ ] Formation rows are a display arrangement
+- [ ] Crests, sponsors and manufacturer logos not reproduced (no licensed assets)

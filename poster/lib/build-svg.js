@@ -52,8 +52,18 @@ function heroText(x, y, str, size, style, { ls = 0, maxw, line = true, id } = {}
     parts.push(`<text x="${(x + dx * lo).toFixed(1)}" y="${(y + dy * lo).toFixed(1)}" ${attrs} fill="${style.line}">${esc(str)}</text>`);
     parts.push(`<text x="${(x + dx * go).toFixed(1)}" y="${(y + dy * go).toFixed(1)}" ${attrs} fill="${style.gap}">${esc(str)}</text>`);
   }
-  const stroke = style.stroke ? ` stroke="${style.stroke}" stroke-width="${(size * style.strokeWidth).toFixed(1)}" stroke-linejoin="round" paint-order="stroke"` : '';
-  parts.push(`<text x="${x}" y="${y}" ${attrs} fill="${style.fill}"${stroke} data-qa="1"${maxw ? ` data-maxw="${maxw}"` : ''}>${esc(str)}</text>`);
+  if (style.embolden) {
+    // Thin kit fonts (e.g. varsity lettering) are thickened with a same-colour stroke;
+    // the contrast outline then sits on a copy underneath.
+    const e = size * style.embolden;
+    if (style.stroke) {
+      parts.push(`<text x="${x}" y="${y}" ${attrs} fill="${style.stroke}" stroke="${style.stroke}" stroke-width="${(2 * e + 2 * size * style.strokeWidth).toFixed(1)}" stroke-linejoin="miter">${esc(str)}</text>`);
+    }
+    parts.push(`<text x="${x}" y="${y}" ${attrs} fill="${style.fill}" stroke="${style.fill}" stroke-width="${(2 * e).toFixed(1)}" stroke-linejoin="miter" data-qa="1"${maxw ? ` data-maxw="${maxw}"` : ''}>${esc(str)}</text>`);
+  } else {
+    const stroke = style.stroke ? ` stroke="${style.stroke}" stroke-width="${(size * style.strokeWidth).toFixed(1)}" stroke-linejoin="round" paint-order="stroke"` : '';
+    parts.push(`<text x="${x}" y="${y}" ${attrs} fill="${style.fill}"${stroke} data-qa="1"${maxw ? ` data-maxw="${maxw}"` : ''}>${esc(str)}</text>`);
+  }
   parts.push('</g>');
   return parts.join('\n');
 }
@@ -244,6 +254,7 @@ function buildSvg(data, theme, opts = {}) {
     flowing,
     stroke: th.stroke || (flowing ? c.textOutline : null),
     strokeWidth: th.strokeWidth ?? 0.012,
+    embolden: th.embolden || 0,
     fill: th.fill || c.text,
     line: th.line || c.accent,
     gap: th.gap || c.numberGap,

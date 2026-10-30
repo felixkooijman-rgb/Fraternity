@@ -1,0 +1,78 @@
+{
+  "id": "willem-ii-2023-24",
+  "label": "Willem II 2023-24 home – 'Tricolores' red/white/navy vertical stripes with red polo collar; varsity back lettering approximated with Graduate (emboldened)",
+  "colors": {
+    "background": "#FFFFFF",
+    "stripe": "#FFFFFF",
+    "text": "#14204A",
+    "textOutline": "#FFFFFF",
+    "rule": "#14204A",
+    "accent": "#14204A",
+    "numberGap": "#FFFFFF",
+    "nameOutline": "#FFFFFF",
+    "frame": "#161616",
+    "brand": "#14204A"
+  },
+  "shirt": {
+    "base": "#FFFFFF",
+    "layers": [
+      {
+        "type": "rect",
+        "color": "#D0102A",
+        "x0": 0,
+        "x1": 0.1111111111111111,
+        "y0": 0,
+        "y1": 1
+      },
+      {
+        "type": "rect",
+        "color": "#14204A",
+        "x0": 0.2222222222222222,
+        "x1": 0.3333333333333333,
+        "y0": 0,
+        "y1": 1
+      },
+      {
+        "type": "rect",
+        "color": "#D0102A",
+        "x0": 0.4444444444444444,
+        "x1": 0.5555555555555556,
+        "y0": 0,
+        "y1": 1
+      },
+      {
+        "type": "rect",
+        "color": "#14204A",
+        "x0": 0.6666666666666666,
+        "x1": 0.7777777777777777,
+        "y0": 0,
+        "y1": 1
+      },
+      {
+        "type": "rect",
+        "color": "#D0102A",
+        "x0": 0.8888888888888888,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "collar": {
+      "type": "polo",
+      "color": "#D0102A",
+      "width": 0.075
+    }
+  },
+  "hero": {
+    "font": "Graduate-Regular.ttf",
+    "fill": "#14204A",
+    "stroke": "#FFFFFF",
+    "strokeWidth": 0.012,
+    "embolden": 0.022,
+    "numberLine": false,
+    "nameLine": false,
+    "nameLetterSpacing": 10,
+    "sizeScale": 1.0,
+    "numberScale": 1.05
+  }
+}

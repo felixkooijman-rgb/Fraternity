@@ -1,0 +1,37 @@
+{
+  "generated": "2026-10-30T13:11:34.524Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation 4-4-2 is estimated; it is not printed as fact",
+      "lineups.away formation 3-4-3 is estimated; it is not printed as fact",
+      "MANUAL CHECK: Matchday: final round of a 20-team Eerste Divisie = matchday 38 (the reference poster says 34) – verify",
+      "MANUAL CHECK: Meerveld #16 from Wikipedia infobox, not an official squad list",
+      "MANUAL CHECK: Stripe order/widths taken from the reference poster and club description – confirm against a match photo",
+      "MANUAL CHECK: Back lettering: varsity style approximated with Graduate (OFL), emboldened",
+      "MANUAL CHECK: Formation rows are a display arrangement",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"MEERVELD'S STOPPAGE-TIME WINNER COMPLETES THE COMEBACK AS WILLEM II ARE CROWNED CHAMPIONS\" 34→26.11",
+      "\"MEERVELD\" 300→217.28",
+      "\"16\" 1134→961.53",
+      "\"SIGURGEIRSSON\" 30→29.86"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}
