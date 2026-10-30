@@ -1,0 +1,44 @@
+{
+  "id": "ajax-1972-home",
+  "label": "Ajax 1971-72 home – white with a broad red central band (classic design; exact final kit not verified)",
+  "colors": {
+    "background": "#FFFFFF",
+    "stripe": "#FFFFFF",
+    "text": "#111111",
+    "textOutline": "#FFFFFF",
+    "rule": "#111111",
+    "accent": "#111111",
+    "numberGap": "#FFFFFF",
+    "nameOutline": "#FFFFFF",
+    "frame": "#161616",
+    "brand": "#111111"
+  },
+  "shirt": {
+    "base": "#FFFFFF",
+    "layers": [
+      {
+        "type": "rect",
+        "color": "#D2122E",
+        "x0": 0.34,
+        "x1": 0.66,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "collar": {
+      "type": "crew",
+      "color": "#D2122E",
+      "width": 0.07
+    }
+  },
+  "hero": {
+    "font": "Staatliches-Regular.ttf",
+    "fill": "#111111",
+    "stroke": "#FFFFFF",
+    "strokeWidth": 0.014,
+    "numberLine": false,
+    "nameLine": false,
+    "nameLetterSpacing": 8,
+    "sizeScale": 1.05
+  }
+}

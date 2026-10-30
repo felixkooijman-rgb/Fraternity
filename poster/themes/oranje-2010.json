@@ -1,0 +1,48 @@
+{
+  "id": "oranje-2010",
+  "label": "Netherlands 2010 Nike home – plain orange, black crew neck, subtle white side stripes; number colour to be confirmed",
+  "colors": {
+    "background": "#F37021",
+    "stripe": "#FFFFFF",
+    "text": "#FFFFFF",
+    "textOutline": "#C2540F",
+    "rule": "#111111",
+    "accent": "#111111",
+    "numberGap": "#F37021",
+    "nameOutline": "#C2540F",
+    "frame": "#161616",
+    "brand": "#FFFFFF"
+  },
+  "shirt": {
+    "base": "#F37021",
+    "layers": [
+      {
+        "type": "rect",
+        "color": "#FFFFFF",
+        "x0": 0.045,
+        "x1": 0.052,
+        "y0": 0.12,
+        "y1": 1
+      },
+      {
+        "type": "rect",
+        "color": "#FFFFFF",
+        "x0": 0.948,
+        "x1": 0.955,
+        "y0": 0.12,
+        "y1": 1
+      }
+    ],
+    "collar": {
+      "type": "crew",
+      "color": "#111111",
+      "width": 0.075
+    }
+  },
+  "hero": {
+    "fill": "#111111",
+    "stroke": "#FFFFFF",
+    "strokeWidth": 0.01,
+    "numberLine": false
+  }
+}

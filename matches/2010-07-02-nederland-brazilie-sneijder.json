@@ -1,0 +1,193 @@
+{
+  "slug": "2010-07-02-nederland-brazilie-sneijder",
+  "theme": "oranje-2010",
+  "match": {
+    "home": {
+      "name": "Netherlands",
+      "display": "Nederland"
+    },
+    "away": {
+      "name": "Brazil",
+      "display": "Brazilië"
+    },
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "date": "2010-07-02",
+    "stadium": "Nelson Mandela Bay Stadium",
+    "city": "Port Elizabeth",
+    "country": "South Africa",
+    "competition": "World Cup 2010",
+    "phase": "Quarter-Final",
+    "attendance": 40186
+  },
+  "goals": [
+    {
+      "team": "away",
+      "player": "Robinho",
+      "display": "ROBINHO",
+      "minute": 10,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Wesley Sneijder",
+      "display": "SNEIJDER",
+      "minute": 53,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Wesley Sneijder",
+      "display": "SNEIJDER",
+      "minute": 68,
+      "type": "header"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Wesley Sneijder",
+      "display": "SNEIJDER",
+      "number": 10,
+      "team": "home",
+      "position": "Midfielder",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 68
+    },
+    "headline": "Sneijder heads the winner as Oranje knock out five-time champions Brazil"
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false
+  },
+  "variants": {
+    "framed": {
+      "display": {
+        "showFrame": true
+      }
+    },
+    "frameless": {
+      "display": {
+        "showFrame": false
+      }
+    }
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Netherlands 2-1 Brazil, 02.07.2010, Nelson Mandela Bay Stadium Port Elizabeth, World Cup quarter-final; attendance 40,186 (ESPN, 11v11, Wikipedia)",
+      "Goals: Robinho 10', Sneijder 53' & 68' (ESPN, Sky Sports)",
+      "Starting XIs (Sky Sports, ESPN)"
+    ],
+    "needs_manual_check": [
+      "53' goal: FIFA credited Sneijder; some outlets list a Felipe Melo own goal – FIFA attribution used",
+      "Sneijder's 68' winner was a header – verify",
+      "Sneijder #10 well established; not seen on this match sheet in my sources",
+      "Netherlands wore the orange home kit (Brazil reportedly in blue) – confirm with a photo; number colour (black) to be confirmed",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ],
+    "sources": [
+      {
+        "title": "ESPN – Netherlands 2-1 Brazil",
+        "url": "https://www.espn.com/soccer/match/_/gameId/264117/brazil-netherlands",
+        "used_for": "goals, line-ups"
+      },
+      {
+        "title": "Sky Sports – starting line-ups",
+        "url": "https://www.skysports.com/football/netherlands-vs-brazil/teams/218453",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "11v11 – Netherlands v Brazil",
+        "url": "https://www.11v11.com/matches/netherlands-v-brazil-02-july-2010-290011/",
+        "used_for": "venue, attendance"
+      },
+      {
+        "title": "Wikipedia – 2010 World Cup knockout stage",
+        "url": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage",
+        "used_for": "goal attribution"
+      },
+      {
+        "title": "Football Kit Archive – Netherlands 2010 home",
+        "url": "https://www.footballkitarchive.com/netherlands-2010-home-kit-6533/",
+        "used_for": "kit"
+      }
+    ]
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Robben",
+          "Van Persie",
+          "Kuyt"
+        ],
+        [
+          "Sneijder"
+        ],
+        [
+          "De Jong",
+          "Van Bommel"
+        ],
+        [
+          "Van Bronckhorst",
+          "Mathijsen",
+          "Heitinga",
+          "Van der Wiel"
+        ],
+        [
+          "Stekelenburg"
+        ]
+      ],
+      "subs": [
+        "Ooijer"
+      ],
+      "manager": null
+    },
+    "away": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Robinho",
+          "Luís Fabiano"
+        ],
+        [
+          "Kaká"
+        ],
+        [
+          "Dani Alves",
+          "Felipe Melo",
+          "Gilberto Silva"
+        ],
+        [
+          "Bastos",
+          "Juan",
+          "Lúcio",
+          "Maicon"
+        ],
+        [
+          "Júlio César"
+        ]
+      ],
+      "subs": [],
+      "manager": null
+    }
+  }
+}

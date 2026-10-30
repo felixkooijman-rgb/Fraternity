@@ -1,0 +1,122 @@
+{
+  "slug": "2002-05-08-feyenoord-dortmund-van-hooijdonk-frameless",
+  "theme": "feyenoord-2002",
+  "match": {
+    "home": {
+      "name": "Feyenoord",
+      "display": "Feyenoord"
+    },
+    "away": {
+      "name": "Borussia Dortmund",
+      "display": "Dortmund"
+    },
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "date": "2002-05-08",
+    "stadium": "De Kuip",
+    "city": "Rotterdam",
+    "country": "Netherlands",
+    "competition": "UEFA Cup",
+    "phase": "Final"
+  },
+  "goals": [
+    {
+      "team": "home",
+      "player": "Pierre van Hooijdonk",
+      "display": "VAN HOOIJDONK",
+      "minute": 33,
+      "type": "penalty"
+    },
+    {
+      "team": "home",
+      "player": "Pierre van Hooijdonk",
+      "display": "VAN HOOIJDONK",
+      "minute": 40,
+      "type": "free_kick"
+    },
+    {
+      "team": "away",
+      "player": "Márcio Amoroso",
+      "display": "AMOROSO",
+      "minute": 47,
+      "type": "penalty"
+    },
+    {
+      "team": "home",
+      "player": "Jon Dahl Tomasson",
+      "display": "TOMASSON",
+      "minute": 50,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Jan Koller",
+      "display": "KOLLER",
+      "minute": 58,
+      "type": "regular"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Pierre van Hooijdonk",
+      "display": "VAN HOOIJDONK",
+      "number": 9,
+      "team": "home",
+      "position": "Forward",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 40
+    },
+    "headline": "Van Hooijdonk's free kick in De Kuip puts Feyenoord on course for the UEFA Cup"
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": false,
+    "showSubs": false,
+    "showFrame": false
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Feyenoord 3-2 Borussia Dortmund, 08.05.2002, De Kuip, UEFA Cup final (Wikipedia, UEFA, DFB data center)",
+      "Goals: Van Hooijdonk 33' (pen) & 40', Amoroso 47' (pen), Tomasson 50', Koller 58'; Kohler sent off 31' (ESPN, UEFA, Wikipedia)",
+      "Van Hooijdonk #9 (DFB data center line-up)"
+    ],
+    "needs_manual_check": [
+      "The 40' goal was a direct free kick per match reports – verify",
+      "Dortmund XI not fully verified – line-ups not printed",
+      "Feyenoord 2001-02 shirt (halves, collar) and which half is red not verified against match photos",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ],
+    "sources": [
+      {
+        "title": "en.wikipedia – 2002 UEFA Cup final",
+        "url": "https://en.wikipedia.org/wiki/2002_UEFA_Cup_final",
+        "used_for": "result, goals"
+      },
+      {
+        "title": "UEFA – Final joy for Feyenoord",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/025a-0eab03e95fa6-ade15fdef681-1000--final-joy-for-feyenoord/",
+        "used_for": "match report"
+      },
+      {
+        "title": "DFB data center – Feyenoord 3:2 Dortmund",
+        "url": "https://datencenter.dfb.de/en/data-center/europa-league/2001-2002/0/feyenoord-rotterdam-borussia-dortmund-609438",
+        "used_for": "line-up, shirt numbers"
+      },
+      {
+        "title": "ESPN – Feyenoord 3-2 Dortmund",
+        "url": "https://www.espn.com/soccer/matchstats/_/gameId/48434",
+        "used_for": "goal minutes"
+      }
+    ]
+  }
+}

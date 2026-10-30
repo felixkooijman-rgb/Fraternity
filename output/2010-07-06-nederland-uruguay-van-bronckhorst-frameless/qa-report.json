@@ -1,0 +1,35 @@
+{
+  "generated": "2026-10-30T13:06:50.611Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "MANUAL CHECK: Official home/away order (Uruguay listed first by ESPN/Sky) – verify",
+      "MANUAL CHECK: Line-ups not printed (Uruguay XI listing in my sources mixes starters and subs)",
+      "MANUAL CHECK: Netherlands in the orange home kit – confirm with a photo; number colour to be confirmed",
+      "MANUAL CHECK: Robben's 73' noted as a header – shown without label",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "MANUAL CHECK: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"CAPTAIN VAN BRONCKHORST'S LONG-RANGE SCREAMER OPENS THE ROAD TO THE WORLD CUP FINAL\" 34→27.87",
+      "\"NEDERLAND\" 112→102.47",
+      "\"VAN BRONCKHORST 18' | SNEIJDER 70' | ROBBEN 73'\" 27→23.85",
+      "\"VAN BRONCKHORST\" 330→166.5"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

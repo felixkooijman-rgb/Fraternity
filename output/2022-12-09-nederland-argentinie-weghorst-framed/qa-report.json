@@ -1,0 +1,36 @@
+{
+  "generated": "2026-10-30T13:06:57.547Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation  is estimated; it is not printed as fact",
+      "lineups.away formation  is estimated; it is not printed as fact",
+      "MANUAL CHECK: Weghorst's 83' was a header – verify",
+      "MANUAL CHECK: Netherlands wore the 2022 orange home kit vs Argentina – confirm with a photo; 2022 number colour (navy) to be confirmed",
+      "MANUAL CHECK: Line-up rows are a display arrangement (NED 3-4-3, ARG 5-3-2)",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "MANUAL CHECK: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"WEGHORST FINISHES THE REHEARSED FREE KICK IN THE 101ST MINUTE TO FORCE EXTRA TIME\" 34→30.06",
+      "\"NEDERLAND\" 112→102.47",
+      "\"ARGENTINIË\" 112→102.38",
+      "\"WEGHORST\" 300→290.65"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

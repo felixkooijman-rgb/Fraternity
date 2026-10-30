@@ -1,0 +1,31 @@
+{
+  "generated": "2026-10-30T13:06:25.571Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation  is estimated; it is not printed as fact",
+      "lineups.away formation  is estimated; it is not printed as fact",
+      "MANUAL CHECK: Second goal noted as a header in several accounts – verify",
+      "MANUAL CHECK: Ajax kit in the final (classic white with red band) not verified against match photos",
+      "MANUAL CHECK: Line-up rows are a display arrangement (Inter 4-4-1-1 per StatsBomb)",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "MANUAL CHECK: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ]
+  },
+  "layout": {
+    "fitted": [],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

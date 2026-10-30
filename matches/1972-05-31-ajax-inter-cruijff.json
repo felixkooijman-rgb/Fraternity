@@ -1,0 +1,177 @@
+{
+  "slug": "1972-05-31-ajax-inter-cruijff",
+  "theme": "ajax-1972-home",
+  "match": {
+    "home": {
+      "name": "Ajax",
+      "display": "Ajax"
+    },
+    "away": {
+      "name": "Inter",
+      "display": "Inter"
+    },
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "date": "1972-05-31",
+    "stadium": "De Kuip",
+    "city": "Rotterdam",
+    "country": "Netherlands",
+    "competition": "European Cup",
+    "phase": "Final",
+    "attendance": 61354
+  },
+  "goals": [
+    {
+      "team": "home",
+      "player": "Johan Cruijff",
+      "display": "CRUIJFF",
+      "minute": 47,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Johan Cruijff",
+      "display": "CRUIJFF",
+      "minute": 78,
+      "type": "header"
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Johan Cruijff",
+      "display": "CRUIJFF",
+      "number": 14,
+      "team": "home",
+      "position": "Forward",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 78
+    },
+    "headline": "Two Cruijff goals in De Kuip retain the European Cup for Ajax"
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false
+  },
+  "variants": {
+    "framed": {
+      "display": {
+        "showFrame": true
+      }
+    },
+    "frameless": {
+      "display": {
+        "showFrame": false
+      }
+    }
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Ajax 2-0 Inter, 31.05.1972, De Kuip Rotterdam, European Cup final; attendance 61,354 (Wikipedia, StatsBomb)",
+      "Goals: Cruijff 47', 78' (Wikipedia, simple.wikipedia)",
+      "Cruijff #14 (Wikidata record of the final)",
+      "Starting XIs (simple.wikipedia, Wikipedia)"
+    ],
+    "needs_manual_check": [
+      "Second goal noted as a header in several accounts – verify",
+      "Ajax kit in the final (classic white with red band) not verified against match photos",
+      "Line-up rows are a display arrangement (Inter 4-4-1-1 per StatsBomb)",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ],
+    "sources": [
+      {
+        "title": "en.wikipedia – 1972 European Cup final",
+        "url": "https://en.wikipedia.org/wiki/1972_European_Cup_final",
+        "used_for": "result, goals, line-ups"
+      },
+      {
+        "title": "simple.wikipedia – 1972 European Cup final",
+        "url": "https://simple.wikipedia.org/wiki/1972_European_Cup_final",
+        "used_for": "line-ups, numbers"
+      },
+      {
+        "title": "Wikidata – 1972 European Cup Final",
+        "url": "https://www.wikidata.org/wiki/Q590815",
+        "used_for": "Cruijff #14"
+      },
+      {
+        "title": "StatsBomb – A data history of the European Cup: 1972",
+        "url": "https://blogarchive.statsbomb.com/articles/soccer/a-data-history-of-the-european-cup-1972-ajax-2-0-inter-milan/",
+        "used_for": "formations"
+      }
+    ]
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Swart",
+          "Cruijff",
+          "Keizer"
+        ],
+        [
+          "Mühren",
+          "Neeskens",
+          "Haan"
+        ],
+        [
+          "Krol",
+          "Blankenburg",
+          "Hulshoff",
+          "Suurbier"
+        ],
+        [
+          "Stuy"
+        ]
+      ],
+      "subs": [],
+      "manager": null
+    },
+    "away": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Boninsegna"
+        ],
+        [
+          "Mazzola"
+        ],
+        [
+          "Oriali",
+          "Frustalupi",
+          "Bedin",
+          "Jair"
+        ],
+        [
+          "Facchetti",
+          "Giubertoni",
+          "Burgnich",
+          "Bellugi"
+        ],
+        [
+          "Bordon"
+        ]
+      ],
+      "subs": [],
+      "manager": null
+    }
+  }
+}

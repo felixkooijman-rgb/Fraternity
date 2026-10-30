@@ -1,0 +1,39 @@
+{
+  "id": "oranje-2022",
+  "label": "Netherlands 2022 Nike home – 'laser orange' with darker orange all-over swirl (lion's mane) graphic; number colour to be confirmed",
+  "colors": {
+    "background": "#FF8C1A",
+    "stripe": "#FFFFFF",
+    "text": "#FFFFFF",
+    "textOutline": "#C9600A",
+    "rule": "#1B2A4A",
+    "accent": "#1B2A4A",
+    "numberGap": "#FF8C1A",
+    "nameOutline": "#C9600A",
+    "frame": "#161616",
+    "brand": "#FFFFFF"
+  },
+  "shirt": {
+    "base": "#FF8C1A",
+    "layers": [
+      {
+        "type": "pattern",
+        "kind": "swirl",
+        "color": "#F07A0C",
+        "opacity": 1,
+        "scale": 2.2
+      }
+    ],
+    "collar": {
+      "type": "crew",
+      "color": "#1B2A4A",
+      "width": 0.07
+    }
+  },
+  "hero": {
+    "fill": "#1B2A4A",
+    "stroke": "#FFFFFF",
+    "strokeWidth": 0.012,
+    "numberLine": false
+  }
+}

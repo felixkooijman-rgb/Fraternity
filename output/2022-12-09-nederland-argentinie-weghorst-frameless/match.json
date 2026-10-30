@@ -1,0 +1,191 @@
+{
+  "slug": "2022-12-09-nederland-argentinie-weghorst-frameless",
+  "theme": "oranje-2022",
+  "match": {
+    "home": {
+      "name": "Netherlands",
+      "display": "Nederland"
+    },
+    "away": {
+      "name": "Argentina",
+      "display": "Argentinië"
+    },
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "afterExtraTime": true,
+    "penalties": {
+      "home": 3,
+      "away": 4
+    },
+    "date": "2022-12-09",
+    "stadium": "Lusail Stadium",
+    "city": "Lusail",
+    "country": "Qatar",
+    "competition": "World Cup 2022",
+    "phase": "Quarter-Final"
+  },
+  "goals": [
+    {
+      "team": "away",
+      "player": "Nahuel Molina",
+      "display": "MOLINA",
+      "minute": 35,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Lionel Messi",
+      "display": "MESSI",
+      "minute": 73,
+      "type": "penalty"
+    },
+    {
+      "team": "home",
+      "player": "Wout Weghorst",
+      "display": "WEGHORST",
+      "minute": 83,
+      "type": "header"
+    },
+    {
+      "team": "home",
+      "player": "Wout Weghorst",
+      "display": "WEGHORST",
+      "minute": 90,
+      "type": "regular",
+      "stoppage": 11
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Wout Weghorst",
+      "display": "WEGHORST",
+      "number": 19,
+      "team": "home",
+      "position": "Forward",
+      "started": false
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 90,
+      "stoppage": 11
+    },
+    "headline": "Weghorst finishes the rehearsed free kick in the 101st minute to force extra time"
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": true,
+    "showSubs": false,
+    "showFrame": false
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Netherlands 2-2 Argentina after extra time, Argentina won 4-3 on penalties, 09.12.2022, Lusail Stadium, World Cup quarter-final (FIFA, ESPN)",
+      "Goals: Molina 35', Messi 73' (pen), Weghorst 83' & 90+11' (FIFA, Sky Sports)",
+      "Weghorst #19, came on as a substitute (ESPN, Sky Sports)",
+      "Starting XIs (The Star, TNT Sports, Sky Sports)"
+    ],
+    "needs_manual_check": [
+      "Weghorst's 83' was a header – verify",
+      "Netherlands wore the 2022 orange home kit vs Argentina – confirm with a photo; 2022 number colour (navy) to be confirmed",
+      "Line-up rows are a display arrangement (NED 3-4-3, ARG 5-3-2)",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ],
+    "sources": [
+      {
+        "title": "FIFA – Netherlands v Argentina",
+        "url": "https://www.fifa.com/en/match-centre/match/17/255711/285074/400128139",
+        "used_for": "result, goals"
+      },
+      {
+        "title": "ESPN – Netherlands 2-2 Argentina",
+        "url": "https://www.espn.com/soccer/match/_/gameId/633844/argentina-netherlands",
+        "used_for": "goals, shirt numbers"
+      },
+      {
+        "title": "Sky Sports – starting line-ups",
+        "url": "https://www.skysports.com/football/netherlands-vs-argentina/teams/463021",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "The Star – starting line-ups",
+        "url": "https://www.the-star.co.ke/sports/football/2022-12-09-netherlands-v-argentina-world-cup-starting-line-ups/",
+        "used_for": "line-ups"
+      },
+      {
+        "title": "Footy Headlines – Netherlands 2022 kits",
+        "url": "https://www.footyheadlines.com/2021/11/netherlands-2022-world-cup-home-kit.html",
+        "used_for": "kit"
+      }
+    ]
+  },
+  "lineups": {
+    "note": "Rows are a display arrangement (attack → goalkeeper), not verified tactical positions.",
+    "home": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Gakpo",
+          "Depay",
+          "Bergwijn"
+        ],
+        [
+          "Blind",
+          "De Jong",
+          "De Roon",
+          "Dumfries"
+        ],
+        [
+          "Aké",
+          "Van Dijk",
+          "Timber"
+        ],
+        [
+          "Noppert"
+        ]
+      ],
+      "subs": [
+        "Weghorst"
+      ],
+      "manager": null
+    },
+    "away": {
+      "formation": {
+        "value": "",
+        "status": "estimated"
+      },
+      "rows": [
+        [
+          "Álvarez",
+          "Messi"
+        ],
+        [
+          "Mac Allister",
+          "Enzo Fernández",
+          "De Paul"
+        ],
+        [
+          "Acuña",
+          "L. Martínez",
+          "Otamendi",
+          "Romero",
+          "Molina"
+        ],
+        [
+          "E. Martínez"
+        ]
+      ],
+      "subs": [],
+      "manager": null
+    }
+  }
+}

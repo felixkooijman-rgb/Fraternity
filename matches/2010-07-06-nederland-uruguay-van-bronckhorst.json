@@ -1,0 +1,136 @@
+{
+  "slug": "2010-07-06-nederland-uruguay-van-bronckhorst",
+  "theme": "oranje-2010",
+  "match": {
+    "home": {
+      "name": "Uruguay",
+      "display": "Uruguay"
+    },
+    "away": {
+      "name": "Netherlands",
+      "display": "Nederland"
+    },
+    "score": {
+      "home": 2,
+      "away": 3
+    },
+    "date": "2010-07-06",
+    "stadium": "Green Point Stadium",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "competition": "World Cup 2010",
+    "phase": "Semi-Final",
+    "attendance": 62479
+  },
+  "goals": [
+    {
+      "team": "away",
+      "player": "Giovanni van Bronckhorst",
+      "display": "VAN BRONCKHORST",
+      "minute": 18,
+      "type": "regular"
+    },
+    {
+      "team": "home",
+      "player": "Diego Forlán",
+      "display": "FORLÁN",
+      "minute": 41,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Wesley Sneijder",
+      "display": "SNEIJDER",
+      "minute": 70,
+      "type": "regular"
+    },
+    {
+      "team": "away",
+      "player": "Arjen Robben",
+      "display": "ROBBEN",
+      "minute": 73,
+      "type": "header"
+    },
+    {
+      "team": "home",
+      "player": "Maxi Pereira",
+      "display": "M. PEREIRA",
+      "minute": 90,
+      "type": "regular",
+      "stoppage": 2
+    }
+  ],
+  "featured": {
+    "player": {
+      "full_name": "Giovanni van Bronckhorst",
+      "display": "VAN BRONCKHORST",
+      "number": 5,
+      "team": "away",
+      "position": "Left-back (captain)",
+      "started": true
+    },
+    "moment": {
+      "kind": "goal",
+      "minute": 18
+    },
+    "headline": "Captain Van Bronckhorst's long-range screamer opens the road to the World Cup final"
+  },
+  "display": {
+    "showScorers": true,
+    "showLineups": false,
+    "showSubs": false
+  },
+  "variants": {
+    "framed": {
+      "display": {
+        "showFrame": true
+      }
+    },
+    "frameless": {
+      "display": {
+        "showFrame": false
+      }
+    }
+  },
+  "brand": {
+    "name": "FRATERNITY"
+  },
+  "collection": "nederlandse-voetbalmomenten",
+  "verification": {
+    "confirmed": [
+      "Uruguay 2-3 Netherlands, 06.07.2010, Green Point Stadium Cape Town, World Cup semi-final; attendance 62,479 (ESPN)",
+      "Goals: Van Bronckhorst 18', Forlán 41', Sneijder 70', Robben 73', M. Pereira 90+2' (ESPN, CNN)",
+      "Van Bronckhorst #5 and captain (ESPN, Sky Sports)"
+    ],
+    "needs_manual_check": [
+      "Official home/away order (Uruguay listed first by ESPN/Sky) – verify",
+      "Line-ups not printed (Uruguay XI listing in my sources mixes starters and subs)",
+      "Netherlands in the orange home kit – confirm with a photo; number colour to be confirmed",
+      "Robben's 73' noted as a header – shown without label",
+      "Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ],
+    "sources": [
+      {
+        "title": "ESPN – Netherlands 3-2 Uruguay",
+        "url": "https://www.espn.co.uk/football/match/_/gameId/264120/netherlands-uruguay",
+        "used_for": "goals, venue, attendance"
+      },
+      {
+        "title": "ESPN – line-ups",
+        "url": "https://www.espn.com/soccer/lineups/_/gameId/264120",
+        "used_for": "shirt numbers"
+      },
+      {
+        "title": "Sky Sports – starting line-ups",
+        "url": "https://www.skysports.com/football/uruguay-vs-netherlands/teams/220750",
+        "used_for": "captain, #5"
+      },
+      {
+        "title": "CNN – minute by minute",
+        "url": "https://www.cnn.com/2010/SPORT/football/07/06/world.cup.uruguay.netherlands.minute/index.html",
+        "used_for": "goals"
+      }
+    ]
+  }
+}

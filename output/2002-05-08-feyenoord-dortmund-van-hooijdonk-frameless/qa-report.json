@@ -1,0 +1,35 @@
+{
+  "generated": "2026-10-30T13:06:33.312Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "MANUAL CHECK: The 40' goal was a direct free kick per match reports – verify",
+      "MANUAL CHECK: Dortmund XI not fully verified – line-ups not printed",
+      "MANUAL CHECK: Feyenoord 2001-02 shirt (halves, collar) and which half is red not verified against match photos",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "MANUAL CHECK: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"VAN HOOIJDONK'S FREE KICK IN DE KUIP PUTS FEYENOORD ON COURSE FOR THE UEFA CUP\" 34→30.96",
+      "\"FEYENOORD\" 112→103.15",
+      "\"DORTMUND\" 112→105.44",
+      "\"VAN HOOIJDONK (P) 33' | VAN HOOIJDONK 40' | TOMASSON 50'\" 27→20",
+      "\"VAN HOOIJDONK\" 330→197.4"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}

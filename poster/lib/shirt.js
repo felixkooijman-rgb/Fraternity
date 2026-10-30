@@ -58,6 +58,8 @@ const PATTERNS = {
   diagonal: (s, color) => ({ w: 70 * s, h: 70 * s, body: `<path d="M0 ${70 * s} L${70 * s} 0 L${70 * s} ${22 * s} L${22 * s} ${70 * s} Z" fill="${color}"/>` }),
   // Stylised leaf/feather outline (Go Ahead Eagles purple cup-final shirt).
   leaf: (s, color) => ({ w: 64 * s, h: 96 * s, body: `<path d="M${32 * s} ${4 * s} C${58 * s} ${30 * s} ${58 * s} ${66 * s} ${32 * s} ${92 * s} C${6 * s} ${66 * s} ${6 * s} ${30 * s} ${32 * s} ${4 * s} Z M${32 * s} ${12 * s} L${32 * s} ${88 * s}" fill="none" stroke="${color}" stroke-width="${2.2 * s}"/>` }),
+  // Flowing swirls (Nike Netherlands 2022: "dancing swirl" inspired by a lion's mane).
+  swirl: (s, color) => ({ w: 140 * s, h: 90 * s, body: `<path d="M0 ${45 * s} C${35 * s} ${5 * s} ${70 * s} ${85 * s} ${105 * s} ${45 * s} S${140 * s} ${25 * s} ${140 * s} ${45 * s} M0 ${75 * s} C${35 * s} ${35 * s} ${70 * s} ${115 * s} ${105 * s} ${75 * s}" fill="none" stroke="${color}" stroke-width="${9 * s}" stroke-linecap="round"/>` }),
   // Repeating abstract roundel (Ajax 1994-95 away: twisted crest motifs; not the actual crest).
   crest: (s, color) => ({ w: 120 * s, h: 120 * s, body: `<g fill="none" stroke="${color}" stroke-width="${5 * s}"><circle cx="${40 * s}" cy="${40 * s}" r="${22 * s}"/><path d="M${24 * s} ${40 * s} C${34 * s} ${26 * s} ${46 * s} ${54 * s} ${56 * s} ${40 * s}"/><circle cx="${100 * s}" cy="${100 * s}" r="${22 * s}"/><path d="M${84 * s} ${100 * s} C${94 * s} ${86 * s} ${106 * s} ${114 * s} ${116 * s} ${100 * s}"/></g>` }),
 };

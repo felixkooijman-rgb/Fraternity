@@ -46,11 +46,15 @@ async function main() {
   const outDir = path.join(ROOT, 'output', 'collections', id);
   fs.mkdirSync(outDir, { recursive: true });
 
-  // Contact sheet: as many columns as fit a 2:3 poster grid in a square.
-  const cols = Math.ceil(Math.sqrt(items.length * 1.5));
-  const rows = Math.ceil(items.length / cols);
+  // Contact sheet: pick the column count that gives the largest 2:3 posters in the square.
   const gap = 48;
-  const cellW = Math.floor(Math.min((SIZE - gap * (cols + 1)) / cols, ((SIZE - gap * (rows + 1)) / rows) * 2 / 3));
+  const fit = (c) => {
+    const r = Math.ceil(items.length / c);
+    return Math.floor(Math.min((SIZE - gap * (c + 1)) / c, ((SIZE - gap * (r + 1)) / r) * 2 / 3));
+  };
+  let cols = 1;
+  for (let c = 2; c <= items.length; c++) if (fit(c) > fit(cols)) cols = c;
+  const cellW = fit(cols);
   const cellH = Math.round(cellW * 1.5);
   const imgs = items.map((i) => `<img src="data:image/jpeg;base64,${fs.readFileSync(i.preview).toString('base64')}" style="width:${cellW}px;height:${cellH}px;box-shadow:0 12px 28px rgba(0,0,0,.22)">`).join('');
   const browser = await chromium.launch();

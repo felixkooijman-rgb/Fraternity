@@ -1,0 +1,36 @@
+{
+  "generated": "2026-10-30T13:06:37.583Z",
+  "data": {
+    "errors": [],
+    "warnings": [
+      "lineups.home formation  is estimated; it is not printed as fact",
+      "lineups.away formation  is estimated; it is not printed as fact",
+      "MANUAL CHECK: 53' goal: FIFA credited Sneijder; some outlets list a Felipe Melo own goal – FIFA attribution used",
+      "MANUAL CHECK: Sneijder's 68' winner was a header – verify",
+      "MANUAL CHECK: Sneijder #10 well established; not seen on this match sheet in my sources",
+      "MANUAL CHECK: Netherlands wore the orange home kit (Brazil reportedly in blue) – confirm with a photo; number colour (black) to be confirmed",
+      "MANUAL CHECK: Crests, sponsors and manufacturer logos not reproduced (no licensed assets)",
+      "MANUAL CHECK: Back-of-shirt lettering approximated – send a photo of the back print to match it exactly"
+    ]
+  },
+  "layout": {
+    "fitted": [
+      "\"SNEIJDER HEADS THE WINNER AS ORANJE KNOCK OUT FIVE-TIME CHAMPIONS BRAZIL\" 34→33.12",
+      "\"NEDERLAND\" 112→102.47",
+      "\"VAN BRONCKHORST\" 30→24.63"
+    ],
+    "errors": []
+  },
+  "output": {
+    "trim_px": [
+      6000,
+      9000
+    ],
+    "bleed_px": 36,
+    "print_png_px": [
+      6072,
+      9072
+    ],
+    "dpi_at": "50.8 × 76.2 cm trim @ 300 dpi"
+  }
+}
