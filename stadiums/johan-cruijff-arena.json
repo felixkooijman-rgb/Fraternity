@@ -1,0 +1,13 @@
+{
+  "slug": "johan-cruijff-arena",
+  "name": "Johan Cruijff ArenA",
+  "osmName": "Johan Cruijff ArenA",
+  "country": "NL",
+  "city": "Amsterdam",
+  "club": "Ajax",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#D2122E"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

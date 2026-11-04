@@ -1,0 +1,13 @@
+{
+  "slug": "de-grolsch-veste",
+  "name": "De Grolsch Veste",
+  "osmName": "Grolsch Veste",
+  "country": "NL",
+  "city": "Enschede",
+  "club": "FC Twente",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#E30613"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "de-kuip",
+  "name": "De Kuip",
+  "osmName": "Stadion Feijenoord",
+  "country": "NL",
+  "city": "Rotterdam",
+  "club": "Feyenoord",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#D5001C"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "goffertstadion",
+  "name": "Goffertstadion",
+  "osmName": "Goffert",
+  "country": "NL",
+  "city": "Nijmegen",
+  "club": "NEC",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#D2122E"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

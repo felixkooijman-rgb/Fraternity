@@ -1,0 +1,13 @@
+{
+  "slug": "philips-stadion",
+  "name": "Philips Stadion",
+  "osmName": "Philips Stadion",
+  "country": "NL",
+  "city": "Eindhoven",
+  "club": "PSV",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#E1181F"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

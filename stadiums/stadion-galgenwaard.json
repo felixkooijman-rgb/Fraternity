@@ -1,0 +1,13 @@
+{
+  "slug": "stadion-galgenwaard",
+  "name": "Stadion Galgenwaard",
+  "osmName": "Galgenwaard",
+  "country": "NL",
+  "city": "Utrecht",
+  "club": "FC Utrecht",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#E30613"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

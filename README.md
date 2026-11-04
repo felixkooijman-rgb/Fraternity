@@ -28,3 +28,15 @@ node poster/collection.js nederlandse-voetbalmomenten
 ```
 
 to get `output/collections/<id>/overview-2048.jpg` (contact sheet) and a `README.md` list with every open check.
+
+## Stadium map posters
+
+City-map posters with the stadium highlighted in club colour (white streets, grey buildings, title block at the bottom). One file per stadium in `stadiums/` (name, OSM name, city, club, colour – no hand-typed coordinates).
+
+```bash
+node poster/stadium-map.js --all --fetch
+```
+
+`--fetch` downloads the map extract from the Overpass API (host `overpass-api.de` must be reachable; override with `OVERPASS_URL`) and caches it in `stadiums/cache/`; later renders work offline from the cache. Output: `output/stadium-<slug>-{framed,frameless}/` with `poster.svg`, `print.pdf`, `print.png`, `preview.jpg`, `shop-2048.jpg`.
+
+Map data © OpenStreetMap contributors (ODbL 1.0): commercial prints are allowed, the attribution printed on the poster is required and must stay.

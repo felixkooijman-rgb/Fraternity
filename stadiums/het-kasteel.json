@@ -1,0 +1,13 @@
+{
+  "slug": "het-kasteel",
+  "name": "Het Kasteel",
+  "osmName": "Kasteel",
+  "country": "NL",
+  "city": "Rotterdam",
+  "club": "Sparta Rotterdam",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#D2122E"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

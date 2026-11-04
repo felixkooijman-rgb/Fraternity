@@ -1,0 +1,13 @@
+{
+  "slug": "abe-lenstra-stadion",
+  "name": "Abe Lenstra Stadion",
+  "osmName": "Abe Lenstra",
+  "country": "NL",
+  "city": "Heerenveen",
+  "club": "sc Heerenveen",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#0057A8"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "euroborg",
+  "name": "Euroborg",
+  "osmName": "Euroborg",
+  "country": "NL",
+  "city": "Groningen",
+  "club": "FC Groningen",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#00A650"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

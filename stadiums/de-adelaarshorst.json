@@ -1,0 +1,13 @@
+{
+  "slug": "de-adelaarshorst",
+  "name": "De Adelaarshorst",
+  "osmName": "Adelaarshorst",
+  "country": "NL",
+  "city": "Deventer",
+  "club": "Go Ahead Eagles",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#E30613"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

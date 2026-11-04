@@ -1,0 +1,13 @@
+{
+  "slug": "koning-willem-ii-stadion",
+  "name": "Koning Willem II Stadion",
+  "osmName": "Koning Willem II",
+  "country": "NL",
+  "city": "Tilburg",
+  "club": "Willem II",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#D0102A"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

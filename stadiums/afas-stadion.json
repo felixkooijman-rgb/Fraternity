@@ -1,0 +1,13 @@
+{
+  "slug": "afas-stadion",
+  "name": "AFAS Stadion",
+  "osmName": "AFAS Stadion",
+  "country": "NL",
+  "city": "Alkmaar",
+  "club": "AZ",
+  "widthM": 1600,
+  "colors": {
+    "stadium": "#DB0021"
+  },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}
