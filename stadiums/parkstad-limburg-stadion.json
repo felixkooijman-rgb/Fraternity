@@ -1,0 +1,11 @@
+{
+  "slug": "parkstad-limburg-stadion",
+  "name": "Parkstad Limburg Stadion",
+  "osmName": "Parkstad Limburg",
+  "country": "NL",
+  "city": "Kerkrade",
+  "club": "Roda JC Kerkrade",
+  "widthM": 1600,
+  "colors": { "stadium": "#FFCC00" },
+  "note": "Location is looked up by osmName in OpenStreetMap on --fetch; set \"center\": [lat, lon] only from a verified source if the lookup fails."
+}

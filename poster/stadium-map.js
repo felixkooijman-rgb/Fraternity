@@ -202,7 +202,7 @@ function buildMapSvg(cfg, extract, { framed }) {
     return `<path d="${d}" fill="none" stroke="${STYLE.ink}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"${tunnel}/>`;
   }).join('')));
   if (stadium) {
-    out.push(g('stadium', `<path d="${areaPath(stadium, proj)}" fill="${club}" fill-rule="evenodd"/>`
+    out.push(g('stadium', `<path d="${areaPath(stadium, proj)}" fill="${club}" stroke="${STYLE.ink}" stroke-width="3" stroke-linejoin="round" fill-rule="evenodd"/>`
       + pitches.map((e) => `<path d="${areaPath(e, proj)}" fill="#3C9A3A" stroke="#FFFFFF" stroke-width="2" fill-rule="evenodd"/>`).join('')));
   }
 
